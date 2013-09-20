@@ -1,0 +1,3 @@
+Best regressors for dependent, light2: ['light1', 'light3']
+RMS value error = 101.4 and RMS percent error = 0.18
+
