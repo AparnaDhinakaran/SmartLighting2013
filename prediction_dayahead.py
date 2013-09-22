@@ -1,9 +1,14 @@
 """Contains the functions which perform day ahead predictions."""
 
+import numpy as np
 import sqlite3
+from collections import Counter
 from scipy import stats
 
-def pullData(todayUnixTime, table):
+MILLISECONDS_IN_ONE_DAY = 86400000
+MILLISECONDS_IN_THIRTY_MINUTES = 1800000
+
+def pullData(todayUnixTime, table, days):
     """
     Usage:
     >>> pullData(1338966000000, 'nasalight2')
@@ -28,16 +33,15 @@ def pullData(todayUnixTime, table):
     # }
     halfHourLight = dict()
     
-    MILLISECONDS_IN_ONE_WEEK = 604800000
     # The unixtime from seven days before TODAYUNIXTIME
-    sevenDaysAgo = todayUnixTime - MILLISECONDS_IN_ONE_WEEK
+    beforeUnixTime = todayUnixTime - (MILLISECONDS_IN_ONE_DAY * days)
     
     # Connect to the database
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
     
     # Execute a database query which returns rows of data from past seven days
-    cursor.execute('SELECT unixtime, light, cluster FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster >= %d' %(table, todayUnixTime, sevenDaysAgo, 0))
+    cursor.execute('SELECT unixtime, light, cluster FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster >= %d' %(table, todayUnixTime, beforeUnixTime, 0))
     
     # pastValues is a list of data tuples from the last seven days.
     # Each tuple looks like: (unixtime, light, cluster)
@@ -72,9 +76,37 @@ def simpleLinearRegression(values):
     # Use scipy.stats to calculate linear regression values
     slope, intercept, r_value, p_value, std_err = stats.linregress(x,y)
     
-    MILLISECONDS_IN_ONE_DAY = 86400000
     tomorrow = x[0] + MILLISECONDS_IN_ONE_DAY
     return slope * tomorrow + intercept
+
+def simpleAlgorithm(values):
+    """
+    This function identifies the mode cluster from the last 14 days.
+    
+    VALUES is a list of tuples. For example:
+    [(1338383036000.0, 250.41439403876828, 1), (1338383336000.0, 256.0541434335592, 1), ...]
+    """
+    # Returns a list of all the cluster values [0, 0, 1, 1, 1, 1, 1, 3, 4, 5, 5, 5, ...]
+    clusterValues = [value[2] for value in values]
+    # Find the mode cluster number in the clusterValues list
+    mode = findMode(clusterValues)
+    # Filter out values with cluster MODE
+    filteredValues = [value for value in values if value[2] == mode]
+    # Return weighted average (most recent values get higher weights)
+    mostRecentUnixTime = values[len(values) - 1][0]
+    # Creates a list of weights for each filtered value
+    weightValues = [float(value[0]) / float(mostRecentUnixTime) for value in filteredValues]
+    filteredValuesLight = [value[1] for value in filteredValues]
+    return np.average(filteredValuesLight, weights = weightValues)
+
+def findMode(list):
+    """
+    Returns the mode of a list.
+    """
+    # Use Python's Counter function on the list
+    values = Counter(list)
+    # Returns the highest occurring item
+    return values.most_common(1)[0][0]
 
 """
 ADD MORE ALGORITHMS HERE!
@@ -88,7 +120,7 @@ def dayAhead(todayUnixTime, table):
     Returns tomorrow's predicted values in a map (divided by 30 minute time intervals).
     """
     # Pulls the data from past seven days and divides data by 30 minute time interval
-    halfHourLight = pullData(todayUnixTime, table)
+    halfHourLight = pullData(todayUnixTime, table, 14)
     
     # Dictionary containing tomorrow's predicted values. Maps integers representing
     # 30 minute time intervals to tomorrow's predicted value for the corresponding
@@ -104,7 +136,8 @@ def dayAhead(todayUnixTime, table):
     # predictedValues map.
     for key in range(24):
         # SWITCH OUT DIFFERENT ALGORITHMS HERE
-        predValue = simpleLinearRegression(halfHourLight[key])
+        #predValue = simpleLinearRegression(halfHourLight[key])
+        predValue = simpleAlgorithm(halfHourLight[key])
         predictedValues[key] = predValue
         
     # Return tomorrow's predictedValues in a map.
@@ -119,13 +152,9 @@ def testDayAhead(todayUnixTime, table):
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
     
-    # TODAYUNIXTIME starts at midnight
-    MILLISECONDS_IN_ONE_DAY = 86400000
     # Calculate unixtime after 24 hours
     tomorrowUnixTime= todayUnixTime + MILLISECONDS_IN_ONE_DAY
     print 'tomorrowUnixTime: ', tomorrowUnixTime, '\n'
-    
-    MILLISECONDS_IN_THIRTY_MINUTES = 1800000
     
     for key in range(1, 24):
         cursor.execute('SELECT light FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
