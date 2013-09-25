@@ -13,7 +13,7 @@ def pullData(todayUnixTime, table, days):
     Usage:
     >>> pullData(1338966000000, 'nasalight2')
     
-    This function pulls light data from the database table TABLE starting from seven days 
+    This function pulls light data from the database table TABLE starting DAYS days 
     before TODAYUNIXTIME. It then divides the data by 30 minute time intervals and returns
     the divided data in a map.
     
@@ -62,7 +62,7 @@ def pullData(todayUnixTime, table, days):
 
 def simpleLinearRegression(values):
     """
-    This function takes a list of data tuples representing the last seven days' data
+    This function takes a list of data tuples representing previous days' data
     for a particular 30 minute time interval and returns a predicted value for the
     same 30 minute time interval for the next day using linear regression.
     
@@ -75,13 +75,28 @@ def simpleLinearRegression(values):
     y = [value[1] for value in values]
     # Use scipy.stats to calculate linear regression values
     slope, intercept, r_value, p_value, std_err = stats.linregress(x,y)
-    
+    # Tomorrow's unixtime
     tomorrow = x[0] + MILLISECONDS_IN_ONE_DAY
     return slope * tomorrow + intercept
 
+def clusterLinearRegression(values):
+    """
+    Filters values by mode cluster. Then performs a simple linear regression.
+    """
+    # Returns a list of all the cluster values [0, 0, 1, 1, 1, 1, 1, 3, 4, 5, 5, 5, ...]
+    clusterValues = [value[2] for value in values]
+    # Find the mode cluster number in the clusterValues list
+    mode = findMode(clusterValues)
+    # Filter out values with cluster MODE
+    filteredValues = [value for value in values if value[2] == mode]
+    return simpleLinearRegression(filteredValues)    
+
 def simpleAlgorithm(values):
     """
-    This function identifies the mode cluster from the last 14 days.
+    This function identifies the mode cluster from previous days. It then filters out previous
+    days' data which are not part of the mode cluster. The remaining data are weighted by
+    how close they are to the current time. The prediction returned is the weighted average
+    of this remaining data.
     
     VALUES is a list of tuples. For example:
     [(1338383036000.0, 250.41439403876828, 1), (1338383336000.0, 256.0541434335592, 1), ...]
@@ -92,12 +107,113 @@ def simpleAlgorithm(values):
     mode = findMode(clusterValues)
     # Filter out values with cluster MODE
     filteredValues = [value for value in values if value[2] == mode]
-    # Return weighted average (most recent values get higher weights)
-    mostRecentUnixTime = values[len(values) - 1][0]
+    # Lowest unixtime in the values list
+    startUnixtime = values[0][0]
+    # The differences between a data tuple's unixtime and the start unixtime in a list
+    unixtimeDiffs = [float(elem[0] - startUnixtime) for elem in filteredValues]
+    # The sum of all the differences
+    total = sum(unixtimeDiffs)
+    # A list of weight values
+    weightValues = [elem / total for elem in unixtimeDiffs]
+
     # Creates a list of weights for each filtered value
-    weightValues = [float(value[0]) / float(mostRecentUnixTime) for value in filteredValues]
+    # weightValues = [float(value[0]) / float(mostRecentUnixTime) for value in filteredValues]
+    # weightValues = [float(index) / float(len(filteredValues)) for index in range(len(filteredValues))]
+    # weightValues = [1 - (0.01 * index) for index in range(len(filteredValues))]
+    # weightValues = weightValues[::-1]
+    print weightValues
+    # A list of the light values
     filteredValuesLight = [value[1] for value in filteredValues]
+    # Return weighted average of light values
     return np.average(filteredValuesLight, weights = weightValues)
+
+def clusterAlgorithm(values):
+    """
+    This function returns a weighted average of light values (no filtering by cluster).
+    The weights are constructed by frequency of the cluster (if a data value belongs
+    in cluster 0, and cluster 0 occurs 50% of the time, the weight of the data value
+    is 50.
+    """
+    clusterMap = dict()
+    for value in values:
+        if value[2] not in clusterMap.keys():
+            clusterMap[value[2]] = []
+        clusterMap[value[2]].append(value)
+    frequency = [float(len(clusterMap[value[2]])) for value in values]
+    total = sum(frequency)
+    weightValues = [freq / total for freq in frequency]
+    print sum(weightValues)
+    lightValues = [value[1] for value in values]
+    return np.average(lightValues, weights = weightValues)    
+    
+def multiClusterAlgorithm(values):
+    """
+    This function identifies the mode cluster from the last 14 days.
+    
+    VALUES is a list of tuples. For example:
+    [(1338383036000.0, 250.41439403876828, 1), (1338383336000.0, 256.0541434335592, 1), ...]
+    """
+    clusterMap = dict()
+    # Lowest unixtime in the values list
+    startUnixtime = values[0][0]
+    # Separate values into separate clusters in the map, clusterMap
+    for value in values:
+        if value[2] not in clusterMap.keys():
+            clusterMap[value[2]] = []
+        clusterMap[value[2]].append(value)
+    
+    # An array of the predicted values per cluster
+    clusterPredicted = []
+    # An array of unixtime averages per cluster
+    unixtimeAverage = []
+    
+    # Generate predicted value for each cluster using a weighted average
+    # Adds predicted value for each cluster to clusterPredicted and adds
+    # the unixtime average for each cluster to unixtimeAverage
+    for key in clusterMap.keys():
+        clusterLength = len(clusterMap[key])  
+        totalUnixtime = sum([elem[0] for elem in clusterMap[key]])
+        unixtimeAverage.append(float(totalUnixtime) / float(clusterLength))
+        
+        clusterLight = [elem[1] for elem in clusterMap[key]]
+
+        totalDistanceFromStart = sum([elem[0] - startUnixtime for elem in clusterMap[key]])
+        clusterWeightValues = [float(elem[0] - startUnixtime) / float(totalDistanceFromStart) for elem in clusterMap[key]]
+        
+        predicted = np.average(clusterLight, weights = clusterWeightValues)
+        clusterPredicted.append(predicted)
+    
+    print clusterPredicted
+    total = sum([elem - startUnixtime for elem in unixtimeAverage])
+    # Create weighted values based on unixtime average per cluster
+    weightValues = [float(elem - startUnixtime) / float(total) for elem in unixtimeAverage]
+    print weightValues
+    # Return a weighted average across clusters
+    return np.average(clusterPredicted, weights = weightValues)
+
+def weightedAverage(values):
+    """
+    Returns weighted average of all values (no filtering by cluster).
+    """
+    # Lowest unixtime in the values list
+    startUnixtime = values[0][0]
+    # The differences between a data tuple's unixtime and the start unixtime in a list
+    unixtimeDiffs = [float(elem[0] - startUnixtime) for elem in values]
+    # The sum of all the differences
+    total = sum(unixtimeDiffs)
+    # A list of weight values
+    weightValues = [elem / total for elem in unixtimeDiffs]
+
+    # Creates a list of weights for each filtered value
+    # weightValues = [float(value[0]) / float(mostRecentUnixTime) for value in filteredValues]
+    # weightValues = [float(index) / float(len(filteredValues)) for index in range(len(filteredValues))]
+    # weightValues = [1 - (0.01 * index) for index in range(len(filteredValues))]
+    # weightValues = weightValues[::-1]
+    print weightValues
+    # A list of the light values
+    valuesLight = [value[1] for value in values]
+    # Return weighted average of light values
+    return np.average(valuesLight, weights = weightValues)
 
 def findMode(list):
     """
@@ -120,7 +236,7 @@ def dayAhead(todayUnixTime, table):
     Returns tomorrow's predicted values in a map (divided by 30 minute time intervals).
     """
     # Pulls the data from past seven days and divides data by 30 minute time interval
-    halfHourLight = pullData(todayUnixTime, table, 14)
+    halfHourLight = pullData(todayUnixTime, table, 30)
     
     # Dictionary containing tomorrow's predicted values. Maps integers representing
     # 30 minute time intervals to tomorrow's predicted value for the corresponding
@@ -134,10 +250,16 @@ def dayAhead(todayUnixTime, table):
     # For each 30 minute interval (there are 24 of them), run the algorithm on the
     # values from the last seven days. Then, add the predicted value to the
     # predictedValues map.
-    for key in range(24):
+    # for key in range(24):
+    for key in range(23):
+        """simpleAlgorithm works best so far!!!"""
         # SWITCH OUT DIFFERENT ALGORITHMS HERE
-        #predValue = simpleLinearRegression(halfHourLight[key])
+        # predValue = simpleLinearRegression(halfHourLight[key])
         predValue = simpleAlgorithm(halfHourLight[key])
+        # predValue = multiClusterAlgorithm(halfHourLight[key])
+        # predValue = weightedAverage(halfHourLight[key])
+        # predValue = clusterLinearRegression(halfHourLight[key])
+        # predValue = clusterAlgorithm(halfHourLight[key])
         predictedValues[key] = predValue
         
     # Return tomorrow's predictedValues in a map.
@@ -146,7 +268,6 @@ def dayAhead(todayUnixTime, table):
 def testDayAhead(todayUnixTime, table):
     # Calculates day ahead predictions using the dayAhead function
     predictedValues = dayAhead(todayUnixTime, table)
-    print 'predictedValues: ', predictedValues, '\n'
     
     # Connect to the database
     connection = sqlite3.connect('data.db')
@@ -156,19 +277,25 @@ def testDayAhead(todayUnixTime, table):
     tomorrowUnixTime= todayUnixTime + MILLISECONDS_IN_ONE_DAY
     print 'tomorrowUnixTime: ', tomorrowUnixTime, '\n'
     
-    for key in range(1, 24):
-        cursor.execute('SELECT light FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
+    sumErrors = 0
+    
+    # for key in range(24):
+    for key in range(23):
+        cursor.execute('SELECT AVG(light) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
         realValue = cursor.fetchall()
         print 'predictedValue: ', predictedValues[key]
         print 'realValue: ', realValue[0][0]
         percentError = abs(predictedValues[key] - realValue[0][0]) / realValue[0][0]
-        print 'percentError: ', percentError
+        sumErrors += percentError
         print 'Percentage error for key {} is {}.\n'.format(key, percentError)
-    
+        
+    print 'Average percentage error: ', sumErrors / 24
+    # print 'Average percentage error: ', sumErrors / 23
 
 # Main function (executed when you run the Python script)
 if __name__ == '__main__':
     testDayAhead(1339593858000, 'nasalight2')
+    # testDayAhead(1339138800000, 'nasalight2')
         
         
         
