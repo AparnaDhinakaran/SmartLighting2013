@@ -228,6 +228,10 @@ def findMode(list):
 ADD MORE ALGORITHMS HERE!
 """
 
+def average(values):
+    lightValues = [value[1] for value in values]
+    return np.average(lightValues)
+
 def dayAhead(todayUnixTime, table):
     """
     Usage:
@@ -250,8 +254,7 @@ def dayAhead(todayUnixTime, table):
     # For each 30 minute interval (there are 24 of them), run the algorithm on the
     # values from the last seven days. Then, add the predicted value to the
     # predictedValues map.
-    # for key in range(24):
-    for key in range(23):
+    for key in range(24):
         """simpleAlgorithm works best so far!!!"""
         # SWITCH OUT DIFFERENT ALGORITHMS HERE
         # predValue = simpleLinearRegression(halfHourLight[key])
@@ -260,6 +263,7 @@ def dayAhead(todayUnixTime, table):
         # predValue = weightedAverage(halfHourLight[key])
         # predValue = clusterLinearRegression(halfHourLight[key])
         # predValue = clusterAlgorithm(halfHourLight[key])
+        # predValue = average(halfHourLight[key])
         predictedValues[key] = predValue
         
     # Return tomorrow's predictedValues in a map.
@@ -279,8 +283,7 @@ def testDayAhead(todayUnixTime, table):
     
     sumErrors = 0
     
-    # for key in range(24):
-    for key in range(23):
+    for key in range(24):
         cursor.execute('SELECT AVG(light) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
         realValue = cursor.fetchall()
         print 'predictedValue: ', predictedValues[key]
@@ -290,7 +293,6 @@ def testDayAhead(todayUnixTime, table):
         print 'Percentage error for key {} is {}.\n'.format(key, percentError)
         
     print 'Average percentage error: ', sumErrors / 24
-    # print 'Average percentage error: ', sumErrors / 23
 
 # Main function (executed when you run the Python script)
 if __name__ == '__main__':
