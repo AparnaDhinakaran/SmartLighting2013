@@ -114,8 +114,8 @@ def fitGauss(todayUnixTime, table, days):
     # Get the fitted curve
     fit_curve = gauss(xdata, *coeff)
     	
-    plt.plot(xdata, ydata, label='Measured data')
-    plt.plot(xdata, fit_curve, label='Fitted data')
+    plt.plot(xdata, ydata, label='Measured data', color='black')
+    plt.plot(xdata, fit_curve, label='Fitted data', color='red')
     print 'Fitted mean = ', coeff[1]
     print 'Fitted standard deviation = ', coeff[2]
     
@@ -233,27 +233,26 @@ def testDayAhead(todayUnixTime, table, days):
         # Connect to the database
         connection = sqlite3.connect('data.db')
         cursor = connection.cursor()
-        realValues = [0]*24
+        realValues = [0]*24 # initializes an array of 24 zero's
         gaussPredictedValues = [0]*24
         xvalues = []
     
         for key in range(24):
             cursor.execute('SELECT AVG(light), AVG(unixtime) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
-            realValue = cursor.fetchall()
-            if realValue[0][0] == None:
-                print "EMPTY real values!"
-                return
-            realValues[key] = realValue[0][0]
-            xtemp = ((realValue[0][1] - todayUnixTime) / 100000) - 432
-            xvalues.append(xtemp)
-            gaussPredictedValues[key] = gauss(xtemp,*coeff)
+            dataTuple = cursor.fetchall()
+            if dataTuple[0][0] != None:
+                realValues[key] = dataTuple[0][0]
+                xtemp = ((dataTuple[0][1] - todayUnixTime) / 100000) - 432
+                xvalues.append(xtemp)
+                gaussPredictedValues[key] = gauss(xtemp,*coeff)
         
         energyErr = energyError(xvalues, gaussPredictedValues, xvalues, realValues)
         
         print 'EnergyError: ', energyErr
         print 'Plotting predicted values versus real values now!'
-        plt.plot(gaussPredictedValues)
-        plt.plot(realValues)
+        print xvalues
+        plt.plot(xvalues, realValues, color='black')
+        plt.plot(xvalues, gaussPredictedValues, color='green')
         plt.show()
         
         if energyErr > 0.3:
@@ -271,8 +270,8 @@ def testDayAhead(todayUnixTime, table, days):
              
             for key in range(24):
                 cursor.execute('SELECT AVG(light) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
-                realValue = cursor.fetchall()
-                percentError = abs(predictedValues[key] - realValue[0][0]) / realValue[0][0]
+                dataTuple = cursor.fetchall()
+                percentError = abs(predictedValues[key] - dataTuple[0][0]) / dataTuple[0][0]
                 sumErrors += percentError
                 print 'Percentage error for key {} is {}.\n'.format(key, percentError)
                  
@@ -280,30 +279,39 @@ def testDayAhead(todayUnixTime, table, days):
             
             
     except RuntimeError:
-        # Calculates day ahead predictions using the dayAhead function
-        predictedValues = dayAhead(todayUnixTime, table)
         
-        # Connect to the database
-        connection = sqlite3.connect('data.db')
-        cursor = connection.cursor()
-         
-        # Calculate unixtime after 24 hours
-        tomorrowUnixTime= todayUnixTime + MILLISECONDS_IN_ONE_DAY
-         
-        sumErrors = 0
-         
-        for key in range(24):
-            cursor.execute('SELECT AVG(light) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
-            realValue = cursor.fetchall()
-            percentError = abs(predictedValues[key] - realValue[0][0]) / realValue[0][0]
-            sumErrors += percentError
-            print 'Percentage error for key {} is {}.\n'.format(key, percentError)
-             
-        print 'Average percentage error: ', sumErrors / 24
+        print "Gauss RuntimeError!"
+        
+        pastValues, xdata, ydata = gaussPullData(todayUnixTime, table, days)
+        
+        plt.plot(xdata, ydata, color='blue') # funny week
+        plt.show()
+#         # Calculates day ahead predictions using the dayAhead function
+#         predictedValues = dayAhead(todayUnixTime, table)
+#         
+#         # Connect to the database
+#         connection = sqlite3.connect('data.db')
+#         cursor = connection.cursor()
+#          
+#         # Calculate unixtime after 24 hours
+#         tomorrowUnixTime= todayUnixTime + MILLISECONDS_IN_ONE_DAY
+#          
+#         sumErrors = 0
+#          
+#         for key in range(24):
+#             cursor.execute('SELECT AVG(light) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
+#             dataTuple = cursor.fetchall()
+#             percentError = abs(predictedValues[key] - dataTuple[0][0]) / dataTuple[0][0]
+#             sumErrors += percentError
+#             print 'Percentage error for key {} is {}.\n'.format(key, percentError)
+#              
+#         print 'Average percentage error: ', sumErrors / 24
         
 	
 # Main function (executed when you run the Python script)
 if __name__ == '__main__':
-    for i in range(7):
-        #testDayAhead(1339289958000 + (i)*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
-        testDayAhead(1339138800000 + (i)*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
+#     for i in range(7):
+#         testDayAhead(1339289958000 + (i)*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
+        #testDayAhead(1339138800000 + (i)*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
+    testDayAhead(1339289958000 + (0)*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
+
