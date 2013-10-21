@@ -36,9 +36,9 @@ def gaussPullData(todayUnixTime, table, days):
     pastValues = cursor.fetchall()
     del pastValues[0]
     
-    xdata = np.array([value[0] for value in pastValues]) # gets unixtimes
-    xdata = (xdata - min(xdata))/100000
-    ydata = np.array([value[1] for value in pastValues]) # gets light values
+    xdata = np.array([value[0] for value in pastValues]) # gets unixtimes as x values
+    xdata = (xdata - min(xdata))/100000 # scales unixtimes
+    ydata = np.array([value[1] for value in pastValues]) # gets light values as y values
 
     return pastValues, xdata, ydata
 
