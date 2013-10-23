@@ -188,7 +188,7 @@ def energyError(predx, predy, realx, realy):
     realArea = approxEnergy(realx, realy)
     return float(abs(predArea - realArea)) / realArea
 
-def dayAhead(todayUnixTime, table):
+def dayAhead(todayUnixTime, table, days):
     """
     Usage:
     >>> dayAhead(1338966000000, 'nasalight2')
@@ -196,7 +196,7 @@ def dayAhead(todayUnixTime, table):
     Returns tomorrow's predicted values in a map (divided by 30 minute time intervals).
     """
     # Pulls the data from past seven days and divides data by 30 minute time interval
-    halfHourLight = simplePullData(todayUnixTime, table, 30)
+    halfHourLight = simplePullData(todayUnixTime, table, days)
     
     # Dictionary containing tomorrow's predicted values. Maps integers representing
     # 30 minute time intervals to tomorrow's predicted value for the corresponding
@@ -224,6 +224,28 @@ def dayAhead(todayUnixTime, table):
         
     # Return tomorrow's predictedValues in a map.
     return predictedValues
+
+def alternateAlgo(todayUnixTime, table, days):
+    # Calculates day ahead predictions using the dayAhead function
+    predictedValues = dayAhead(todayUnixTime, table, days)
+    
+    # Connect to the database
+    connection = sqlite3.connect('data.db')
+    cursor = connection.cursor()
+     
+    # Calculate unixtime after 24 hours
+    tomorrowUnixTime= todayUnixTime + MILLISECONDS_IN_ONE_DAY
+     
+    sumErrors = 0
+     
+    for key in range(24):
+        cursor.execute('SELECT AVG(light) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
+        dataTuple = cursor.fetchall()
+        percentError = abs(predictedValues[key] - dataTuple[0][0]) / dataTuple[0][0]
+        sumErrors += percentError
+        print 'Percentage error for key {} is {}.\n'.format(key, percentError)
+         
+    print 'Average percentage error: ', sumErrors / 24
     
 def testDayAhead(todayUnixTime, table, days):
     try:
@@ -233,18 +255,18 @@ def testDayAhead(todayUnixTime, table, days):
         # Connect to the database
         connection = sqlite3.connect('data.db')
         cursor = connection.cursor()
-        realValues = [0]*24 # initializes an array of 24 zero's
-        gaussPredictedValues = [0]*24
+        realValues = [] # initializes an array of 24 zero's
+        gaussPredictedValues = []
         xvalues = []
     
         for key in range(24):
             cursor.execute('SELECT AVG(light), AVG(unixtime) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
             dataTuple = cursor.fetchall()
             if dataTuple[0][0] != None:
-                realValues[key] = dataTuple[0][0]
+                realValues.append(dataTuple[0][0])
                 xtemp = ((dataTuple[0][1] - todayUnixTime) / 100000) - 432
                 xvalues.append(xtemp)
-                gaussPredictedValues[key] = gauss(xtemp,*coeff)
+                gaussPredictedValues.append(gauss(xtemp,*coeff))
         
         energyErr = energyError(xvalues, gaussPredictedValues, xvalues, realValues)
         
@@ -256,27 +278,7 @@ def testDayAhead(todayUnixTime, table, days):
         plt.show()
         
         if energyErr > 0.3:
-            # Calculates day ahead predictions using the dayAhead function
-            predictedValues = dayAhead(todayUnixTime, table)
-            
-            # Connect to the database
-            connection = sqlite3.connect('data.db')
-            cursor = connection.cursor()
-             
-            # Calculate unixtime after 24 hours
-            tomorrowUnixTime= todayUnixTime + MILLISECONDS_IN_ONE_DAY
-             
-            sumErrors = 0
-             
-            for key in range(24):
-                cursor.execute('SELECT AVG(light) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
-                dataTuple = cursor.fetchall()
-                percentError = abs(predictedValues[key] - dataTuple[0][0]) / dataTuple[0][0]
-                sumErrors += percentError
-                print 'Percentage error for key {} is {}.\n'.format(key, percentError)
-                 
-            print 'Average percentage error: ', sumErrors / 24
-            
+            alternateAlgo(todayUnixTime, table, days)
             
     except RuntimeError:
         
@@ -284,34 +286,16 @@ def testDayAhead(todayUnixTime, table, days):
         
         pastValues, xdata, ydata = gaussPullData(todayUnixTime, table, days)
         
-        plt.plot(xdata, ydata, color='blue') # funny week
+        plt.plot(xdata, ydata, color='blue')
         plt.show()
-#         # Calculates day ahead predictions using the dayAhead function
-#         predictedValues = dayAhead(todayUnixTime, table)
-#         
-#         # Connect to the database
-#         connection = sqlite3.connect('data.db')
-#         cursor = connection.cursor()
-#          
-#         # Calculate unixtime after 24 hours
-#         tomorrowUnixTime= todayUnixTime + MILLISECONDS_IN_ONE_DAY
-#          
-#         sumErrors = 0
-#          
-#         for key in range(24):
-#             cursor.execute('SELECT AVG(light) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
-#             dataTuple = cursor.fetchall()
-#             percentError = abs(predictedValues[key] - dataTuple[0][0]) / dataTuple[0][0]
-#             sumErrors += percentError
-#             print 'Percentage error for key {} is {}.\n'.format(key, percentError)
-#              
-#         print 'Average percentage error: ', sumErrors / 24
+        
+        #alternateAlgo(todayUnixTime, table, days)
         
 	
 # Main function (executed when you run the Python script)
 if __name__ == '__main__':
-#     for i in range(7):
-#         testDayAhead(1339289958000 + (i)*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
-        #testDayAhead(1339138800000 + (i)*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
-    testDayAhead(1339289958000 + (0)*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
+    for i in range(7):
+        testDayAhead(1339289958000 + (i)*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
+        testDayAhead(1339138800000 + (i)*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
+    #testDayAhead(1339289958000 + (0)*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
 
