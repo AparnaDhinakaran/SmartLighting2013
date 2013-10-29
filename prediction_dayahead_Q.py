@@ -8,6 +8,8 @@ from scipy.integrate import simps
 
 MILLISECONDS_IN_ONE_DAY = 86400000
 MILLISECONDS_IN_THIRTY_MINUTES = 1800000
+UPPER_THRESHOLD = 600
+LOWER_THRESHOLD = 300
 
 def gaussPullData(todayUnixTime, table, days):
     """
@@ -39,7 +41,8 @@ def gaussPullData(todayUnixTime, table, days):
     xdata = np.array([value[0] for value in pastValues]) # gets unixtimes as x values
     xdata = (xdata - min(xdata))/100000 # scales unixtimes
     ydata = np.array([value[1] for value in pastValues]) # gets light values as y values
-
+    
+    #return a list of lists of xdata and ydata (each list is a segment of total data)
     return pastValues, xdata, ydata
 
 def simplePullData(todayUnixTime, table, days):
@@ -102,13 +105,18 @@ def gauss(x, *p):
 
 def fitGauss(todayUnixTime, table, days):
     pastValues, xdata, ydata = gaussPullData(todayUnixTime, table, days)
+    
+    #xdata, ydata now a list of lists
+    #need a list of a's, m's, s's
     a = np.mean(ydata)
     m = np.mean(xdata)
     s = np.std(xdata)
     
     # p0 is the initial guess for the fitting coefficients (A, mu and sigma above)
+    #need a list of p0's
     p0 = [a, m, s]
-    
+   
+    #need a list of all these 
     coeff, var_matrix = curve_fit(gauss, xdata, ydata, p0=p0, maxfev=5000)
     	
     # Get the fitted curve
@@ -121,6 +129,7 @@ def fitGauss(todayUnixTime, table, days):
     
     plt.show()
     
+    #need to return a list of coeff, xdata tuples
     return coeff, xdata
     
 def simpleAlgorithm(values):
@@ -168,8 +177,6 @@ def findMode(list):
     return values.most_common(1)[0][0]
     
 def approxEnergy(xvalues, yvalues):
-    UPPER_THRESHOLD = 600
-    LOWER_THRESHOLD = 300
     adjustedValues = []
     for value in yvalues:
         if value > 600:
@@ -266,8 +273,10 @@ def testDayAhead(todayUnixTime, table, days):
                 realValues.append(dataTuple[0][0])
                 xtemp = ((dataTuple[0][1] - todayUnixTime) / 100000) - 432
                 xvalues.append(xtemp)
+                # apply the correct coeff! coeff[x] for some x
                 gaussPredictedValues.append(gauss(xtemp,*coeff))
         
+        #sum up the energy errors for each segment!
         energyErr = energyError(xvalues, gaussPredictedValues, xvalues, realValues)
         
         print 'EnergyError: ', energyErr
@@ -277,9 +286,10 @@ def testDayAhead(todayUnixTime, table, days):
         plt.plot(xvalues, gaussPredictedValues, color='green')
         plt.show()
         
-        if energyErr > 0.3:
+        if energyErr > 0.3: #if it STILL doesn't work, use alternateAlgo
             alternateAlgo(todayUnixTime, table, days)
-            
+     
+    # hoping to get rid of runtime errors altogether..       
     except RuntimeError:
         
         print "Gauss RuntimeError!"

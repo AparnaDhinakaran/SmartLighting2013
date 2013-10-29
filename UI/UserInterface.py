@@ -21,6 +21,9 @@ User Interface Outline:
     Part B (local database):
     BACKEND:
     > Run python Database.py to create data.db
+    
+    *guidelines for sMAP folder names (Ex: 'SL_echeng')
+    
 
 ****** SENSOR AND BASE-STATION SET-UP *****
 4. Wireless sensor Set-UP
@@ -44,6 +47,18 @@ User Interface Outline:
             - "Try to spread sensors evenly about the room."
             - "Make sure to place atleast one sensor at the window."
         > Need to extract data for our backend -> which sensor is at the window (will be a regressor)
+        
+    *sensor names? set sensor ID, match sensor numbers to sMAP sensor names: put in metadata
+    *chandrayee had sensor id code, map user input sensor id to metadata id number
+    *user sensor input: directory name + sensor + NUM
+    
+    *page 13.5, confirm sensor names, numbers, etc. ALLOW CHANGES.
+    
+    *when naming sensors, categorize as 'WINDOW SENSOR' or 'LIGHT SENSOR' 'ARTIFICIAL LIGHT' 'WORKPLANE' (can do a dropdown menu)
+    *sensor placement guidelines: if you have 10, place 3 on windows, etc.
+    
+    *FINAL CONFIRMATION: would you like to make any corrections??
+    
         
 ****** WIRELESS SENSOR NETWORK SET-UP *****
 5. WSN Set-Up
