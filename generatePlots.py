@@ -74,28 +74,32 @@ def generatePlots(table):
     
     prev_string = datetime.datetime.fromtimestamp(int(minunixtime/1000)).strftime('%Y-%m-%d')
     prev = int(parse(prev_string).strftime('%s')) * 1000
+    
     midnight = prev + MILLISECONDS_IN_ONE_DAY
-    print prev, midnight, minunixtime
 
     while (midnight < maxunixtime):
-#     for i in range(2):
         cursor.execute('SELECT unixtime FROM %s WHERE unixtime >= %s AND unixtime < %s' % (table, prev, midnight))
         xdata = cursor.fetchall()
         xdata = np.array(xdata)
         xdata = (xdata - prev) / 100000 # Scale the unixtimes
+        
         cursor.execute('SELECT light FROM %s WHERE unixtime >= %s AND unixtime < %s' % (table, prev, midnight))
         ydata = cursor.fetchall()
+        
         plt.plot(xdata, ydata, color='purple')
         plt.xlabel("Unixtime")
         plt.ylabel("Light Values")
+        
         title = datetime.datetime.fromtimestamp(int(prev/1000)).strftime('%Y-%m-%d')
-        path = "./nasalight1/" + title
+        path = "./" + table + "/" + title
         save(path, ext="png", close=True, verbose=False)
+        
         prev = midnight
         midnight += MILLISECONDS_IN_ONE_DAY
 
 
 if __name__ == '__main__':
-    #allTables = ['nasalight1','nasalight2','nasalight3','nasalight4','nasalight5','nasalight6','nasalight7','nasalight8','nasalight9','light1','light2','light3','light4']
-    generatePlots('nasalight1')
+    allTables = ['nasalight1','nasalight2','nasalight3','nasalight4','nasalight5','nasalight6','nasalight7','nasalight8','nasalight9','light1','light2','light3','light4','light5','light6','light7','light8','light9','light10']
+    for table in allTables:
+        generatePlots('nasalight1')
 
