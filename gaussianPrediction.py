@@ -101,10 +101,11 @@ def gaussPullData(todayUnixTime, table, days):
     # Each tuple looks like: (unixtime, light, cluster)
     pastValues = cursor.fetchall()
     
-    if pastValues != None:
+    if len(pastValues) > 0:
         del pastValues[0]
     else:
-        raise Exception("EMPTY PAST DATA!")
+        print "EMPTY PAST DATA!"
+        return [], []
     
     all_x_data = np.array([value[0] for value in pastValues]) # gets unixtimes as x values
     all_x_data = (all_x_data - beforeUnixTime)/100000 # scales unixtimes
@@ -151,10 +152,11 @@ def gaussPullDataWithSplit(todayUnixTime, table, days):
     # Each tuple looks like: (unixtime, light, cluster)
     pastValues = cursor.fetchall()
     
-    if pastValues != None:
+    if len(pastValues) > 0:
         del pastValues[0]
     else:
-        raise Exception("EMPTY PAST DATA!")
+        print "EMPTY PAST DATA!"
+        return [], []
     
     all_x_data = np.array([value[0] for value in pastValues]) # gets unixtimes as x values
     all_x_data = (all_x_data - beforeUnixTime)/100000 # scales unixtimes
@@ -205,88 +207,100 @@ def fitGauss(todayUnixTime, table, days):
     # xdata, ydata now a list of lists
     xdata, ydata = gaussPullDataWithSplit(todayUnixTime, table, days)
     
-    # An array of the coefficients
-    coeff_list = []
-
-    for i in range(len(xdata)):
-        a = np.mean(ydata[i])
-        m = np.mean(xdata[i])
-        s = np.std(xdata[i])
-        
-        # p0 is the initial guess for the fitting coefficients (A, mu and sigma above)
-        p0 = [a, m, s]
-        
-        coeff, var_matrix = curve_fit(gauss, xdata[i], ydata[i], p0=p0, maxfev=5000)
-        
-        coeff_list.append(coeff)
-        
-        # Get the fitted curve
-        fit_curve = gauss(xdata[i], *coeff)
-            
-        plt.plot(xdata[i], ydata[i], label='Measured data', color='black')
-        plt.plot(xdata[i], fit_curve, label='Fitted data', color='blue')
-        
-        plt.xlabel("Unixtime")
-        plt.ylabel("Light Values")
-        
-        title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
-        path = "./" + table + "/" + title + "_split" + str(i)
-        save(path, ext="png", close=True, verbose=False)
+    if len(xdata) > 0:
     
-    return coeff_list, xdata
+        # An array of the coefficients
+        coeff_list = []
+        filtered_xdata = []
+    
+        for i in range(len(xdata)):
+            a = np.mean(ydata[i])
+            m = np.mean(xdata[i])
+            s = np.std(xdata[i])
+            
+            # p0 is the initial guess for the fitting coefficients (A, mu and sigma above)
+            p0 = [a, m, s]
+            
+            try:
+                coeff = curve_fit(gauss, xdata[i], ydata[i], p0=p0, maxfev=5000)[0]
+                coeff_list.append(coeff)
+                filtered_xdata.append(xdata[i])
+                
+                # Get the fitted curve
+                fit_curve = gauss(xdata[i], *coeff)
+                    
+                plt.plot(xdata[i], ydata[i], label='Measured data', color='black')
+                plt.plot(xdata[i], fit_curve, label='Fitted data', color='blue')
+                
+                plt.xlabel("Unixtime")
+                plt.ylabel("Light Values")
+                
+                title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
+                path = "./" + table + "/" + title + "_split" + str(i)
+                save(path, ext="png", close=True, verbose=False)
+            except TypeError:
+                continue
+        
+        return coeff_list, filtered_xdata
+    
+    else:
+        return [], []
 
 def testDayAhead(todayUnixTime, table, days):
     try:
         coeff_list, xdata = fitGauss(todayUnixTime, table, days)
-        tomorrowUnixTime = todayUnixTime + MILLISECONDS_IN_ONE_DAY
-    
-        # Connect to the database
-        connection = sqlite3.connect('data.db')
-        cursor = connection.cursor()
+        if len(xdata) > 0:
+            tomorrowUnixTime = todayUnixTime + MILLISECONDS_IN_ONE_DAY
         
-        realValues = []
-        gaussPredictedValues = []
-        xvalues = []
-    
-        for key in range(24):
-            cursor.execute('SELECT AVG(light), AVG(unixtime) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
-            dataTuple = cursor.fetchall()
-            if dataTuple[0][0] != None:
-                xtemp = (dataTuple[0][1] - todayUnixTime)/100000 # - 432??
-                # apply the correct coeff! coeff[x] for some x
-                for i in range(len(xdata)):
-                    times = xdata[i]
-                    if times[len(times) - 1] >= ((xtemp - MILLISECONDS_IN_ONE_DAY) / 100000):
-                        xvalues.append(xtemp)
-                        realValues.append(dataTuple[0][0])
-                        gaussPredictedValues.append(gauss(xtemp,*coeff_list[i]))
-                        break
+            # Connect to the database
+            connection = sqlite3.connect('data.db')
+            cursor = connection.cursor()
+            
+            realValues = []
+            gaussPredictedValues = []
+            xvalues = []
+        
+            for key in range(24):
+                cursor.execute('SELECT AVG(light), AVG(unixtime) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
+                dataTuple = cursor.fetchall()
+                if dataTuple[0][0] != None:
+                    xtemp = (dataTuple[0][1] - todayUnixTime)/100000 # - 432??
+                    # apply the correct coeff! coeff[x] for some x
+                    for i in range(len(xdata)):
+                        times = xdata[i]
+                        if times[len(times) - 1] >= ((xtemp - MILLISECONDS_IN_ONE_DAY) / 100000):
+                            xvalues.append(xtemp)
+                            realValues.append(dataTuple[0][0])
+                            gaussPredictedValues.append(gauss(xtemp,*coeff_list[i]))
+                            break
+                else:
+                    print 'EMPTY REAL DATA IN TIME INTERVAL %d!' % (key)
+            
+            #sum up the energy errors for each segment!
+            energyErr = energyError(xvalues, gaussPredictedValues, xvalues, realValues)
+            
+            print 'EnergyError: ', energyErr
+            
+            
+            if energyErr > 0.3: #if it STILL doesn't work, use alternateAlgo
+                print 'FAIL! energyErr too high'
+                plt.plot(xvalues, realValues, color='black')
+                plt.plot(xvalues, gaussPredictedValues, color='red')
             else:
-                print 'EMPTY REAL DATA IN TIME INTERVAL %d!' % (key)
-        
-        #sum up the energy errors for each segment!
-        energyErr = energyError(xvalues, gaussPredictedValues, xvalues, realValues)
-        
-        print 'EnergyError: ', energyErr
-        
-        
-        if energyErr > 0.3: #if it STILL doesn't work, use alternateAlgo
-            print 'FAIL! energyErr too high'
-            plt.plot(xvalues, realValues, color='black')
-            plt.plot(xvalues, gaussPredictedValues, color='red')
+                plt.plot(xvalues, realValues, color='black')
+                plt.plot(xvalues, gaussPredictedValues, color='green')
+                # plt.show()
+               
+            plt.xlabel("Unixtime")
+            plt.ylabel("Light Values")
+            
+            title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
+            path = "./" + table + "/" + title + "_predicted_vs_real"
+            save(path, ext="png", close=True, verbose=False)
+               
+            return energyErr
         else:
-            plt.plot(xvalues, realValues, color='black')
-            plt.plot(xvalues, gaussPredictedValues, color='green')
-            # plt.show()
-           
-        plt.xlabel("Unixtime")
-        plt.ylabel("Light Values")
-        
-        title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
-        path = "./" + table + "/" + title + "_predicted_vs_real"
-        save(path, ext="png", close=True, verbose=False)
-           
-        return energyErr
+            return 0
      
     # hoping to get rid of runtime errors altogether..       
     except RuntimeError:
@@ -317,6 +331,7 @@ def testTable(table):
     maxunixtime = unixtimedata[0][1]
     
     prev = floorMidnight(minunixtime)
+    print prev
     
     midnight = prev + MILLISECONDS_IN_ONE_DAY 
     
@@ -324,6 +339,7 @@ def testTable(table):
     
     totalError = 0.0
     
+#     while midnight < maxunixtime:
     for i in range(daysToTest):
         totalError += testDayAhead(midnight, table, 1)
         midnight += MILLISECONDS_IN_ONE_DAY
@@ -332,12 +348,7 @@ def testTable(table):
           
 
 if __name__ == '__main__':
-    allTables = ['nasalight1', 'nasalight2', 'nasalight3', 'nasalight4']#'nasalight5,'nasalight6','nasalight7','nasalight8','nasalight9','light1','light2','light3','light4','light5','light6','light7','light8','light9','light10']
+    allTables = ['nasalight5']#,'light5','light6','light7','light8','light9','light10']
     for table in allTables:
         testTable(table)
-#     start = floorMidnight(1339289958000)
-#     totalError = 0.0
-#     daysToTest = 10
-#     for i in range(daysToTest):
-#         totalError += testDayAhead(start + i*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
-#     print 'Average error for %s over %d days: %f percent' % ('nasalight2', daysToTest, (float(totalError) / daysToTest) * 100)
+        
