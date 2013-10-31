@@ -15,6 +15,59 @@ MILLISECONDS_IN_THIRTY_MINUTES = 1800000
 UPPER_THRESHOLD = 600
 LOWER_THRESHOLD = 300
 
+#taken from http://www.jesshamrick.com/2012/09/03/saving-figures-from-pyplot/
+def save(path, ext='png', close=True, verbose=True):
+    """Save a figure from pyplot.
+ 
+    Parameters
+    ----------
+    path : string
+        The path (and filename, without the extension) to save the
+        figure to.
+ 
+    ext : string (default='png')
+        The file extension. This must be supported by the active
+        matplotlib backend (see matplotlib.backends module).  Most
+        backends support 'png', 'pdf', 'ps', 'eps', and 'svg'.
+ 
+    close : boolean (default=True)
+        Whether to close the figure after saving.  If you want to save
+        the figure multiple times (e.g., to multiple formats), you
+        should NOT close it in between saves or you will have to
+        re-plot it.
+ 
+    verbose : boolean (default=True)
+        Whether to print information about when and where the image
+        has been saved.
+ 
+    """
+    
+    # Extract the directory and filename from the given path
+    directory = os.path.split(path)[0]
+    filename = "%s.%s" % (os.path.split(path)[1], ext)
+    if directory == '':
+        directory = '.'
+ 
+    # If the directory does not exist, create it
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+ 
+    # The final path to save to
+    savepath = os.path.join(directory, filename)
+ 
+    if verbose:
+        print("Saving figure to '%s'..." % savepath),
+ 
+    # Actually save the figure
+    plt.savefig(savepath)
+    
+    # Close it
+    if close:
+        plt.close()
+ 
+    if verbose:
+        print("Done")
+
 def approxEnergy(xvalues, yvalues):
     adjustedValues = []
     for value in yvalues:
@@ -58,8 +111,14 @@ def gaussPullData(todayUnixTime, table, days):
     
     all_y_data = np.array([value[1] for value in pastValues]) # gets light values as y values
     
-#     plt.plot(all_x_data, all_y_data, color = 'red')
-#     plt.show()
+    plt.plot(all_x_data, all_y_data, color = 'red')
+    # plt.show()
+    plt.xlabel("Unixtime")
+    plt.ylabel("Light Values")
+    
+    title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
+    path = "./" + table + "/" + title + "_gauss_runtime_error"
+    save(path, ext="png", close=True, verbose=False)
     
     #return a list of lists of xdata and ydata (each list is a segment of total data)
     return all_x_data, all_y_data
@@ -113,7 +172,7 @@ def gaussPullDataWithSplit(todayUnixTime, table, days):
         x = all_x_data[i]
         y = all_y_data[i]
         if y < 0.5*runningAverage:
-#             print "splitting data!"
+            print "splitting data!"
             xdata.append([])
             ydata.append([])
             runningAverage = y
@@ -122,13 +181,17 @@ def gaussPullDataWithSplit(todayUnixTime, table, days):
         xdata[len(xdata) - 1].append(x)
         ydata[len(ydata) - 1].append(y)
         
-#     print len(xdata)
-#     print len(ydata)
-        
-#     for i in range(len(xdata)):
-#         plt.plot(xdata[i], ydata[i], color = 'purple')
-        
-#     plt.show()
+          
+    for i in range(len(xdata)):
+        plt.plot(xdata[i], ydata[i], color = 'purple')
+          
+    # plt.show()
+    plt.xlabel("Unixtime")
+    plt.ylabel("Light Values")
+    
+    title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
+    path = "./" + table + "/" + title + "_prevday"
+    save(path, ext="png", close=True, verbose=False)
     
     #return a list of lists of xdata and ydata (each list is a segment of total data)
     return xdata, ydata
@@ -160,9 +223,15 @@ def fitGauss(todayUnixTime, table, days):
         # Get the fitted curve
         fit_curve = gauss(xdata[i], *coeff)
             
-#         plt.plot(xdata[i], ydata[i], label='Measured data', color='black')
-#         plt.plot(xdata[i], fit_curve, label='Fitted data', color='red')
-#         plt.show()
+        plt.plot(xdata[i], ydata[i], label='Measured data', color='black')
+        plt.plot(xdata[i], fit_curve, label='Fitted data', color='blue')
+        
+        plt.xlabel("Unixtime")
+        plt.ylabel("Light Values")
+        
+        title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
+        path = "./" + table + "/" + title + "_split" + str(i)
+        save(path, ext="png", close=True, verbose=False)
     
     return coeff_list, xdata
 
@@ -199,15 +268,24 @@ def testDayAhead(todayUnixTime, table, days):
         energyErr = energyError(xvalues, gaussPredictedValues, xvalues, realValues)
         
         print 'EnergyError: ', energyErr
-        print 'Plotting predicted values versus real values now!'
-#         print xvalues
-#         plt.plot(xvalues, realValues, color='black')
-#         plt.plot(xvalues, gaussPredictedValues, color='green')
-#         plt.show()
+        
         
         if energyErr > 0.3: #if it STILL doesn't work, use alternateAlgo
             print 'FAIL! energyErr too high'
-            
+            plt.plot(xvalues, realValues, color='black')
+            plt.plot(xvalues, gaussPredictedValues, color='red')
+        else:
+            plt.plot(xvalues, realValues, color='black')
+            plt.plot(xvalues, gaussPredictedValues, color='green')
+            # plt.show()
+           
+        plt.xlabel("Unixtime")
+        plt.ylabel("Light Values")
+        
+        title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
+        path = "./" + table + "/" + title + "_predicted_vs_real"
+        save(path, ext="png", close=True, verbose=False)
+           
         return energyErr
      
     # hoping to get rid of runtime errors altogether..       
@@ -216,10 +294,7 @@ def testDayAhead(todayUnixTime, table, days):
         print "Gauss RuntimeError!"
         print "Plotting values which caused runtime error..."
         
-        pastValues, xdata, ydata = gaussPullData(todayUnixTime, table, days)
-        
-        plt.plot(xdata, ydata, color='blue')
-        plt.show()
+        xdata, ydata = gaussPullData(todayUnixTime, table, days)
         
         return 0
         
@@ -228,16 +303,41 @@ def floorMidnight(unix):
     Takes in unixtime (in milliseconds!) UNIX and returns a unixtime (in milliseconds!) of the 
     closest midnight before the given UNIX time.
     """
-    midnight_string = datetime.datetime.fromtimestamp(unix/1000).strftime('%Y-%m-%d')
+    midnight_string = datetime.datetime.fromtimestamp(int(unix)/1000).strftime('%Y-%m-%d')
     return int(parse(midnight_string).strftime('%s')) * 1000
 
-if __name__ == '__main__':
-    start = floorMidnight(1339289958000)
-#     for i in range(7):
-#         gaussPullData(start + i*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
-#         gaussPullDataWithSplit(start + i*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
-#     fitGauss(start + 3*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)'
+def testTable(table):
+    # Connect to the database
+    connection = sqlite3.connect('data.db')
+    cursor = connection.cursor()
+    
+    cursor.execute('SELECT MIN(unixtime), MAX(unixtime) FROM %s' % (table))
+    unixtimedata = cursor.fetchall()
+    minunixtime = unixtimedata[0][0]
+    maxunixtime = unixtimedata[0][1]
+    
+    prev = floorMidnight(minunixtime)
+    
+    midnight = prev + MILLISECONDS_IN_ONE_DAY 
+    
+    daysToTest = 10
+    
     totalError = 0.0
-    for i in range(10):
-        totalError += testDayAhead(start + i*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
-    print 'Average error: %f percent' % ((float(totalError) / 7) * 100)
+    
+    for i in range(daysToTest):
+        totalError += testDayAhead(midnight, table, 1)
+        midnight += MILLISECONDS_IN_ONE_DAY
+        
+    print 'Average error for %s over %d days: %f percent' % (table, daysToTest, (float(totalError) / daysToTest) * 100)
+          
+
+if __name__ == '__main__':
+    allTables = ['nasalight1', 'nasalight2', 'nasalight3', 'nasalight4']#'nasalight5,'nasalight6','nasalight7','nasalight8','nasalight9','light1','light2','light3','light4','light5','light6','light7','light8','light9','light10']
+    for table in allTables:
+        testTable(table)
+#     start = floorMidnight(1339289958000)
+#     totalError = 0.0
+#     daysToTest = 10
+#     for i in range(daysToTest):
+#         totalError += testDayAhead(start + i*MILLISECONDS_IN_ONE_DAY, 'nasalight2', 1)
+#     print 'Average error for %s over %d days: %f percent' % ('nasalight2', daysToTest, (float(totalError) / daysToTest) * 100)
