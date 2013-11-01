@@ -358,7 +358,7 @@ def testTable(table):
           
 
 if __name__ == '__main__':
-    allTables = ['light1']#, 'light2', 'light3', 'light4']#, 'light2', 'light3', 'light4']#,'light5','light6','light7','light8','light9','light10']
+    allTables = ['light1', 'light2', 'light3', 'light4']#, 'light2', 'light3', 'light4']#,'light5','light6','light7','light8','light9','light10']
     for table in allTables:
         testTable(table)
         
