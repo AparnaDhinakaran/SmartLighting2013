@@ -77,8 +77,11 @@ def approxEnergy(xvalues, yvalues):
             adjustedValues.append(LOWER_THRESHOLD)
         else:
             adjustedValues.append(value)
-    xbar = xvalues[1] - xvalues[0]
-    predArea = simps(adjustedValues, dx=xbar) #Probably need to change later, unknown dx
+    if len(xvalues) > 1:
+        xbar = xvalues[1] - xvalues[0]
+        predArea = simps(adjustedValues, dx=xbar) #Probably need to change later, unknown dx
+    else:
+        predArea = 0
     return predArea
     
 def energyError(predx, predy, realx, realy):
@@ -95,17 +98,11 @@ def gaussPullData(todayUnixTime, table, days):
     cursor = connection.cursor()
     
     # Execute a database query which returns rows of data from past seven days
-    cursor.execute('SELECT unixtime, light, cluster FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster >= %d' %(table, todayUnixTime, beforeUnixTime, 0))
+    cursor.execute('SELECT unixtime, light, cluster FROM %s WHERE unixtime < %d AND unixtime >= %d AND cluster >= %d' %(table, todayUnixTime, beforeUnixTime, 0))
     
     # pastValues is a list of data tuples from the last seven days.
     # Each tuple looks like: (unixtime, light, cluster)
     pastValues = cursor.fetchall()
-    
-    if len(pastValues) > 0:
-        del pastValues[0]
-    else:
-        print "EMPTY PAST DATA!"
-        return [], []
     
     all_x_data = np.array([value[0] for value in pastValues]) # gets unixtimes as x values
     all_x_data = (all_x_data - beforeUnixTime)/100000 # scales unixtimes
@@ -146,17 +143,11 @@ def gaussPullDataWithSplit(todayUnixTime, table, days):
     cursor = connection.cursor()
     
     # Execute a database query which returns rows of data from past seven days
-    cursor.execute('SELECT unixtime, light, cluster FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster >= %d' %(table, todayUnixTime, beforeUnixTime, 0))
+    cursor.execute('SELECT unixtime, light, cluster FROM %s WHERE unixtime < %d AND unixtime >= %d AND cluster >= %d' %(table, todayUnixTime, beforeUnixTime, 0))
     
     # pastValues is a list of data tuples from the last seven days.
     # Each tuple looks like: (unixtime, light, cluster)
     pastValues = cursor.fetchall()
-    
-    if len(pastValues) > 0:
-        del pastValues[0]
-    else:
-        print "EMPTY PAST DATA!"
-        return [], []
     
     all_x_data = np.array([value[0] for value in pastValues]) # gets unixtimes as x values
     all_x_data = (all_x_data - beforeUnixTime)/100000 # scales unixtimes
@@ -168,24 +159,25 @@ def gaussPullDataWithSplit(todayUnixTime, table, days):
     xdata.append([])
     ydata.append([])
     
-    runningAverage = all_y_data[0]
-    
-    for i in range(len(all_x_data)):
-        x = all_x_data[i]
-        y = all_y_data[i]
-        if y < 0.5*runningAverage:
-            print "splitting data!"
-            xdata.append([])
-            ydata.append([])
-            runningAverage = y
-        else:
-            runningAverage = (runningAverage + y) / 2
-        xdata[len(xdata) - 1].append(x)
-        ydata[len(ydata) - 1].append(y)
+    if len(all_x_data) > 0:
+        runningAverage = all_y_data[0]
         
-          
-    for i in range(len(xdata)):
-        plt.plot(xdata[i], ydata[i], color = 'purple')
+        for i in range(len(all_x_data)):
+            x = all_x_data[i]
+            y = all_y_data[i]
+            if y < 0.5*runningAverage:
+                print "splitting data!"
+                xdata.append([])
+                ydata.append([])
+                runningAverage = y
+            else:
+                runningAverage = (runningAverage + y) / 2
+            xdata[len(xdata) - 1].append(x)
+            ydata[len(ydata) - 1].append(y)
+            
+              
+        for i in range(len(xdata)):
+            plt.plot(xdata[i], ydata[i], color = 'purple')
           
     # plt.show()
     plt.xlabel("Unixtime")
@@ -207,7 +199,7 @@ def fitGauss(todayUnixTime, table, days):
     # xdata, ydata now a list of lists
     xdata, ydata = gaussPullDataWithSplit(todayUnixTime, table, days)
     
-    if len(xdata) > 0:
+    if len(xdata[0]) > 0:
     
         # An array of the coefficients
         coeff_list = []
@@ -261,7 +253,7 @@ def testDayAhead(todayUnixTime, table, days):
             xvalues = []
         
             for key in range(24):
-                cursor.execute('SELECT AVG(light), AVG(unixtime) FROM %s WHERE unixtime <= %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
+                cursor.execute('SELECT AVG(light), AVG(unixtime) FROM %s WHERE unixtime < %d AND unixtime >= %d AND cluster <= %d AND cluster >= %d' %(table, tomorrowUnixTime, todayUnixTime, key * 3 + 2, key * 3))
                 dataTuple = cursor.fetchall()
                 if dataTuple[0][0] != None:
                     xtemp = (dataTuple[0][1] - todayUnixTime)/100000 # - 432??
@@ -271,34 +263,37 @@ def testDayAhead(todayUnixTime, table, days):
                         if times[len(times) - 1] >= ((xtemp - MILLISECONDS_IN_ONE_DAY) / 100000):
                             xvalues.append(xtemp)
                             realValues.append(dataTuple[0][0])
-                            gaussPredictedValues.append(gauss(xtemp,*coeff_list[i]))
+                            gaussPredictedValues.append(gauss(xtemp,*coeff_list[i])) # this may give runtime error
                             break
                 else:
                     print 'EMPTY REAL DATA IN TIME INTERVAL %d!' % (key)
             
-            #sum up the energy errors for each segment!
-            energyErr = energyError(xvalues, gaussPredictedValues, xvalues, realValues)
-            
-            print 'EnergyError: ', energyErr
-            
-            
-            if energyErr > 0.3: #if it STILL doesn't work, use alternateAlgo
-                print 'FAIL! energyErr too high'
-                plt.plot(xvalues, realValues, color='black')
-                plt.plot(xvalues, gaussPredictedValues, color='red')
+            if len(realValues) > 1:
+                #sum up the energy errors for each segment!
+                energyErr = energyError(xvalues, gaussPredictedValues, xvalues, realValues)
+                
+                print 'EnergyError: ', energyErr
+                
+                if energyErr > 0.3: #if it STILL doesn't work, use alternateAlgo
+                    print 'FAIL! energyErr too high'
+                    plt.plot(xvalues, realValues, color='black')
+                    plt.plot(xvalues, gaussPredictedValues, color='red')
+                else:
+                    plt.plot(xvalues, realValues, color='black')
+                    plt.plot(xvalues, gaussPredictedValues, color='green')
+                    # plt.show()
+                
+                return energyErr
             else:
-                plt.plot(xvalues, realValues, color='black')
-                plt.plot(xvalues, gaussPredictedValues, color='green')
-                # plt.show()
-               
+                print 'NOT ENOUGH REAL DATA!'
+                return 0
+            
             plt.xlabel("Unixtime")
             plt.ylabel("Light Values")
-            
             title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
             path = "./" + table + "/" + title + "_predicted_vs_real"
             save(path, ext="png", close=True, verbose=False)
-               
-            return energyErr
+            
         else:
             return 0
      
@@ -308,7 +303,8 @@ def testDayAhead(todayUnixTime, table, days):
         print "Gauss RuntimeError!"
         print "Plotting values which caused runtime error..."
         
-        xdata, ydata = gaussPullData(todayUnixTime, table, days)
+        # gaussPullData will plot previous day's data which caused runtime error
+        gaussPullData(todayUnixTime, table, days)
         
         return 0
         
@@ -330,12 +326,14 @@ def testTable(table):
     minunixtime = unixtimedata[0][0]
     maxunixtime = unixtimedata[0][1]
     
-    prev = floorMidnight(minunixtime)
-    print prev
+#     prev = floorMidnight(minunixtime)
+#     print prev
+#     
+#     midnight = prev + MILLISECONDS_IN_ONE_DAY 
     
-    midnight = prev + MILLISECONDS_IN_ONE_DAY 
+    midnight = floorMidnight(1355632459000)
     
-    daysToTest = 10
+    daysToTest = 7
     
     totalError = 0.0
     
@@ -348,7 +346,7 @@ def testTable(table):
           
 
 if __name__ == '__main__':
-    allTables = ['nasalight5']#,'light5','light6','light7','light8','light9','light10']
+    allTables = ['light1']#, 'light2', 'light3', 'light4']#,'light5','light6','light7','light8','light9','light10']
     for table in allTables:
         testTable(table)
         
