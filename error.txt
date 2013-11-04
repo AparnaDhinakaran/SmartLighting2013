@@ -1,0 +1,154 @@
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+TypeError for split 2!
+TypeError for split 3!
+Gauss RuntimeError for split 4!
+EnergyError: 0.365155
+FAIL! energyErr too high
+splitting data!
+splitting data!
+splitting data!
+EnergyError: 0.288633
+splitting data!
+splitting data!
+Gauss RuntimeError for split 2!
+EnergyError: 0.026758
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+TypeError for split 2!
+TypeError for split 3!
+TypeError for split 4!
+Gauss RuntimeError for split 5!
+EMPTY REAL DATA IN TIME INTERVAL 9!
+EnergyError: 0.326204
+FAIL! energyErr too high
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+Gauss RuntimeError for split 0!
+TypeError for split 2!
+TypeError for split 4!
+TypeError for split 5!
+TypeError for split 6!
+Gauss RuntimeError for split 7!
+EnergyError: 0.645365
+FAIL! energyErr too high
+Average error for light1 over 5 days: 33.042291 percent
+splitting data!
+splitting data!
+TypeError for split 1!
+EnergyError: 0.017500
+splitting data!
+splitting data!
+splitting data!
+Gauss RuntimeError for split 0!
+Gauss RuntimeError for split 1!
+Gauss RuntimeError for split 2!
+EnergyError: 0.231041
+splitting data!
+splitting data!
+splitting data!
+Gauss RuntimeError for split 0!
+TypeError for split 1!
+Gauss RuntimeError for split 3!
+EnergyError: 0.072186
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+Gauss RuntimeError for split 0!
+TypeError for split 3!
+TypeError for split 4!
+Gauss RuntimeError for split 5!
+EMPTY REAL DATA IN TIME INTERVAL 9!
+EnergyError: 0.496564
+FAIL! energyErr too high
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+TypeError for split 2!
+TypeError for split 3!
+EnergyError: 0.409886
+FAIL! energyErr too high
+Average error for light2 over 5 days: 24.543521 percent
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+Gauss RuntimeError for split 0!
+TypeError for split 3!
+EnergyError: 0.000000
+splitting data!
+splitting data!
+Gauss RuntimeError for split 1!
+EnergyError: 0.162530
+splitting data!
+splitting data!
+Gauss RuntimeError for split 0!
+Gauss RuntimeError for split 2!
+EnergyError: 0.051244
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+TypeError for split 2!
+TypeError for split 3!
+EMPTY REAL DATA IN TIME INTERVAL 9!
+EnergyError: 0.531577
+FAIL! energyErr too high
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+TypeError for split 2!
+TypeError for split 3!
+Gauss RuntimeError for split 4!
+EnergyError: 0.443831
+FAIL! energyErr too high
+Average error for light3 over 5 days: 23.783642 percent
+splitting data!
+splitting data!
+TypeError for split 1!
+EnergyError: 0.009274
+splitting data!
+splitting data!
+Gauss RuntimeError for split 1!
+EnergyError: 0.183653
+splitting data!
+splitting data!
+splitting data!
+Gauss RuntimeError for split 0!
+TypeError for split 1!
+Gauss RuntimeError for split 3!
+EnergyError: 0.057935
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+TypeError for split 2!
+TypeError for split 3!
+Gauss RuntimeError for split 4!
+EMPTY REAL DATA IN TIME INTERVAL 9!
+EnergyError: 0.534306
+FAIL! energyErr too high
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+splitting data!
+TypeError for split 3!
+TypeError for split 4!
+EnergyError: 0.408120
+FAIL! energyErr too high
+Average error for light4 over 5 days: 23.865761 percent

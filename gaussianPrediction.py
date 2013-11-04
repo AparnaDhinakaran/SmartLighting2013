@@ -112,7 +112,6 @@ def gaussPullData(todayUnixTime, table, days):
     all_y_data = np.array([value[1] for value in pastValues]) # gets light values as y values
     
     plt.plot(all_x_data, all_y_data, color = 'red')
-    # plt.show()
     plt.xlabel("Unixtime")
     plt.ylabel("Light Values")
     
@@ -168,7 +167,7 @@ def gaussPullDataWithSplit(todayUnixTime, table, days):
             x = all_x_data[i]
             y = all_y_data[i]
             if y < 0.5*runningAverage:
-                print "splitting data!"
+                f.write("splitting data!\n")
                 xdata.append([])
                 ydata.append([])
                 runningAverage = y
@@ -180,10 +179,7 @@ def gaussPullDataWithSplit(todayUnixTime, table, days):
               
         for i in range(len(xdata)):
             plt.plot(xdata[i], ydata[i], color = 'purple')
-            print xdata[i]
-            print ydata[i]
           
-    # plt.show()
     plt.xlabel("Unixtime")
     plt.ylabel("Light Values")
     
@@ -238,13 +234,13 @@ def fitGauss(todayUnixTime, table, days):
                 save(path, ext="png", close=True, verbose=False)
                 
             except TypeError:
-                print "TypeError for split %d!" % (i)
+                f.write("TypeError for split %d!\n" % (i))
+#                 print "TypeError for split %d!" % (i)
                 continue
             
             except RuntimeError:
-                 
-                print "Gauss RuntimeError for split %d!" % (i)
-                 
+                f.write("Gauss RuntimeError for split %d!\n" % (i))
+#                 print "Gauss RuntimeError for split %d!" % (i)
                 continue
         
         return coeff_list, filtered_xdata
@@ -253,7 +249,6 @@ def fitGauss(todayUnixTime, table, days):
         return [], []
 
 def testDayAhead(todayUnixTime, table, days):
-#     try:
     coeff_list, xdata = fitGauss(todayUnixTime, table, days)
     if len(xdata) > 0:
         tomorrowUnixTime = todayUnixTime + MILLISECONDS_IN_ONE_DAY
@@ -280,22 +275,23 @@ def testDayAhead(todayUnixTime, table, days):
                         gaussPredictedValues.append(gauss(xtemp,*coeff_list[i])) # this may give runtime error
                         break
             else:
-                print 'EMPTY REAL DATA IN TIME INTERVAL %d!' % (key)
+                f.write('EMPTY REAL DATA IN TIME INTERVAL %d!\n' % (key))
+#                 print 'EMPTY REAL DATA IN TIME INTERVAL %d!' % (key)
         
         if len(realValues) > 1:
             #sum up the energy errors for each segment!
             energyErr = energyError(xvalues, gaussPredictedValues, xvalues, realValues)
-            
-            print 'EnergyError: ', energyErr
+            f.write('EnergyError: %f\n' % (energyErr))
+#             print 'EnergyError: ', energyErr
             
             if energyErr > 0.3: #if it STILL doesn't work, use alternateAlgo
-                print 'FAIL! energyErr too high'
+#                 print 'FAIL! energyErr too high'
+                f.write('FAIL! energyErr too high\n')
                 plt.plot(xvalues, realValues, color='black')
                 plt.plot(xvalues, gaussPredictedValues, color='red')
             else:
                 plt.plot(xvalues, realValues, color='black')
                 plt.plot(xvalues, gaussPredictedValues, color='green')
-                # plt.show()
                 
             plt.xlabel("Unixtime")
             plt.ylabel("Light Values")
@@ -306,7 +302,8 @@ def testDayAhead(todayUnixTime, table, days):
         
             return energyErr
         else:
-            print 'NOT ENOUGH REAL DATA!'
+            f.write('NOT ENOUGH REAL DATA!\n')
+#             print 'NOT ENOUGH REAL DATA!'
 
             plt.xlabel("Unixtime")
             plt.ylabel("Light Values")
@@ -353,12 +350,15 @@ def testTable(table):
     for i in range(daysToTest):
         totalError += testDayAhead(midnight, table, 1)
         midnight += MILLISECONDS_IN_ONE_DAY
-        
-    print 'Average error for %s over %d days: %f percent' % (table, daysToTest, (float(totalError) / daysToTest) * 100)
+       
+    f.write('Average error for %s over %d days: %f percent\n' % (table, daysToTest, (float(totalError) / daysToTest) * 100))
+    #print 'Average error for %s over %d days: %f percent' % (table, daysToTest, (float(totalError) / daysToTest) * 100)
           
 
 if __name__ == '__main__':
+    f = open('error.txt', 'w')
     allTables = ['light1', 'light2', 'light3', 'light4']#, 'light2', 'light3', 'light4']#,'light5','light6','light7','light8','light9','light10']
     for table in allTables:
         testTable(table)
+    f.close()
         
