@@ -71,9 +71,4 @@ User Interface Outline:
         1. Check number of light sensors with internal count
         
 """
-        
-    
 
-    
-    
-    
