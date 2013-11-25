@@ -1,0 +1,9 @@
+Average error for nasalight1 over 235 days: 1.580152 percent
+Average error for nasalight2 over 233 days: 0.715823 percent
+Average error for nasalight3 over 238 days: 4.267561 percent
+Average error for nasalight4 over 238 days: 7.659425 percent
+Average error for nasalight5 over 238 days: 2.173188 percent
+Average error for nasalight6 over 238 days: 1.070903 percent
+Average error for nasalight7 over 238 days: 3.190691 percent
+Average error for nasalight8 over 238 days: 2.773825 percent
+Average error for nasalight9 over 238 days: 3.447097 percent

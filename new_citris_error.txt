@@ -1,0 +1,10 @@
+Average error for light1 over 297 days: 11.034411 percent
+Average error for light2 over 210 days: 14.401311 percent
+Average error for light3 over 173 days: 313.325075 percent
+Average error for light4 over 186 days: 11.290112 percent
+Average error for light5 over 55 days: 10.982895 percent
+Average error for light6 over 55 days: 21.975132 percent
+Average error for light7 over 55 days: 0.274289 percent
+Average error for light8 over 55 days: 15.427378 percent
+Average error for light9 over 55 days: 18.612188 percent
+Average error for light10 over 55 days: 971.556655 percent
