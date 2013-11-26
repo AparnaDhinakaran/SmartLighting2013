@@ -1,4 +1,0 @@
-Average error for light1 over 250 days: 13.108880 percent
-Average error for light2 over 210 days: 14.401311 percent
-Average error for light3 over 173 days: 313.325075 percent
-Average error for light4 over 186 days: 11.290112 percent
