@@ -1,6 +1,8 @@
 """
 User Interface Outline:
 
+Pre-install: INSTALL TKINTER!
+
 **** SOFTWARE SETUP *****
 1. Pretty Title : Smart Lighting 2013 
 2. Tiny-OS Installation : "Installing Tiny-OS" Still Image (Loading Bar)
