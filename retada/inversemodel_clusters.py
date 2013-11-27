@@ -16,6 +16,9 @@ def inversemodel(testbed,dependents,regressors,option='noaltitude'):
     elif testbed=='Hesse':
         open('inverse_model_coefficients_Hesse.txt','w').close()
         traintimes = [1355644800000,1356508800000] #Dec16toDec26(midnight-to-midnight)
+    elif testbed == 'NewCitris':
+        open('inverse_model_coefficients_NewCitris.txt', 'w').close()
+        traintimes = [1377887460000, 1382563860000]
 
     #connect db
     connection=sqlite3.connect('data.db')
@@ -93,6 +96,8 @@ def inversemodel(testbed,dependents,regressors,option='noaltitude'):
                     filename='inverse_model_coefficients_NASA.txt'
                 elif testbed=='Hesse':
                     filename='inverse_model_coefficients_Hesse.txt'
+                elif testbed == 'NewCitris':
+                    filename = 'inverse_model_coefficients_NewCitris.txt'
                 savedata=open(filename,'a')
 
                 #regression
@@ -133,6 +138,9 @@ def inversemodel_hour(testbed,dependents,regressors,option='noaltitude'):
     elif testbed=='Hesse':
         open('inverse_model_coefficients_Hesse_hour.txt','w').close()
         traintimes = [1362175776000,1362729428000] #Mar1toMar7
+    elif testbed == 'NewCitris':
+        open('inverse_model_coefficients_NewCitris.txt', 'w').close()
+        traintimes = [1377887460000, 1382563860000]
 
     #connect db
     connection=sqlite3.connect('data.db')
@@ -214,6 +222,8 @@ def inversemodel_hour(testbed,dependents,regressors,option='noaltitude'):
                     filename='inverse_model_coefficients_NASA_hour.txt'
                 elif testbed=='Hesse':
                     filename='inverse_model_coefficients_Hesse_hour.txt'
+                elif testbed == 'NewCitris':
+                    filename = 'inverse_model_coefficients_NewCitris_hour.txt'
                 savedata=open(filename,'a')
 
                 #regression
