@@ -25,6 +25,10 @@ def record_error(tt,testbed,dep,regs,clust_type,option):
     if testbed == 'Hesse':
         savefile = open('results_Hesse.txt','a')
         f = open('compreg_Hesse.txt','a')
+    if testbed == 'NewCitris':
+        savefile = open('results_NewCitris.txt','a')
+        f = open('compreg_NewCitris.txt','a')
+
 
     #head files
     savefile.write('\n\n From '+start+' to '+end+'\n Testbed: '+str(testbed)+' Dependents: '+str(dep)+' Regressors: '+str(regs)+'\n')
@@ -71,6 +75,9 @@ def compare_regression(tt,testbed,depmotes,regmotes,clust_type='interval',option
     if testbed == 'Hesse':
         savefile = open('results_Hesse.txt','a')
         f = open('compreg_Hesse.txt','a')
+    if testbed == 'NewCitris':
+        savefile = open('results_NewCitris.txt','a')
+        f = open('compreg_NewCitris.txt','a')
     savefile.write('\n/////START COMPARE REGRESSION/////\n')
     savefile.close()
     f.write('\n/////START COMPARE REGRESSION/////\n')
@@ -82,6 +89,8 @@ def compare_regression(tt,testbed,depmotes,regmotes,clust_type='interval',option
         window = ['nasalight8']
     elif testbed == 'Hesse':
         window = ['light1']
+    elif testbed == 'NewCitris':
+        window = ['light8']
     in_list = regmotes
     out_list = []
     for i in range(0,len(in_list)+1):
@@ -110,6 +119,9 @@ def compare_regression(tt,testbed,depmotes,regmotes,clust_type='interval',option
     if testbed == 'Hesse':
         savefile = open('results_Hesse.txt','a')
         f = open('compreg_Hesse.txt','a')
+    if testbed == 'NewCitris':
+        savefile = open('results_NewCitris.txt', 'a')
+        f = open('compreg_NewCitris.txt', 'a')
     savefile.write('\n/////COMPLETED COMPARE REGRESSION/////\n')
     savefile.close()
     f.write('\n/////COMPLETED COMPARE REGRESSION/////\n')

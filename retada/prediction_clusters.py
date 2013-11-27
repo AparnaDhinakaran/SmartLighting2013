@@ -40,6 +40,8 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
         win_reg = 'light1'
     elif testbed == 'NASA':
         win_reg = 'nasalight8'
+    elif testbed == 'NewCitris':
+        win_reg = 'light8'
     data = alldata[win_reg]
 
     #initialize
@@ -78,6 +80,8 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
             openfile=open('inverse_model_coefficients_NASA.txt')
         elif testbed == 'Hesse':
             openfile=open('inverse_model_coefficients_Hesse.txt')
+        elif testbed == 'NewCitris':
+            openfile=open('inverse_model_coefficients_NewCitris.txt')
         getdata=openfile.readlines()
 
         #option
@@ -223,6 +227,9 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
     elif testbed == 'Hesse':
         savefile=open('results_Hesse.txt','a')
         text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
+    elif testbed == 'NewCitris':
+        savefile=open('results_NewCitris.txt','a')
+        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
     savefile.write(text)
     savefile.close()
     return round(rmsvalue,2),round(rmspercent,2),predictedfinal,actual,counted,uncounted,countedlim,time
@@ -258,6 +265,8 @@ def prediction_hour(traintimes,testbed,dependent,regressors,option='noaltitude')
         win_reg = 'light1' 
     elif testbed == 'NASA':
         win_reg = 'nasalight8' 
+    elif testbed == 'NewCitris':
+        win_reg = 'light8' 
     data = alldata[win_reg]
 
     #initialize
@@ -295,6 +304,8 @@ def prediction_hour(traintimes,testbed,dependent,regressors,option='noaltitude')
             openfile=open('inverse_model_coefficients_NASA_hour.txt')
         elif testbed == 'Hesse':
             openfile=open('inverse_model_coefficients_Hesse_hour.txt')
+        elif testbed == 'NewCitris':
+            openfile=open('inverse_model_coefficients_NewCitris_hour.txt')
         getdata=openfile.readlines()
 
         #option
@@ -418,6 +429,9 @@ def prediction_hour(traintimes,testbed,dependent,regressors,option='noaltitude')
         text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
     elif testbed == 'Hesse':
         savefile=open('results_Hesse_hour.txt','a')
+        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
+    elif testbed == 'NewCitris':
+        savefile=open('results_NewCitris_hour.txt','a')
         text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
     savefile.write(text)
     savefile.close()
