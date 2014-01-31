@@ -12,9 +12,12 @@ from scipy.integrate import simps
 
 MILLISECONDS_IN_ONE_DAY = 86400000
 MILLISECONDS_IN_THIRTY_MINUTES = 1800000
+# Upper lux threshold
 UPPER_THRESHOLD = 600
+# Lower lux threshold
 LOWER_THRESHOLD = 300
 
+# A dictionary mapping table name to the minimum unixtime recorded in the table
 startTestTimes = {'light1': 1355632459000, 'light2': 1355628435000, 'light3': 1355628599000,\
         'light4': 1355628673000, 'nasalight1': 1337903271000, 'nasalight2': 1337903401000,\
         'nasalight3': 1337903403000, 'nasalight4': 1337903405000, 'nasalight5': 1337903407000,\
@@ -23,7 +26,7 @@ startTestTimes = {'light1': 1355632459000, 'light2': 1355628435000, 'light3': 13
         'light7': 1377887400000, 'light8': 1377887460000, 'light9': 1377887460000,\
         'light10': 1377887520000}
 
-#taken from http://www.jesshamrick.com/2012/09/03/saving-figures-from-pyplot/
+# Taken from http://www.jesshamrick.com/2012/09/03/saving-figures-from-pyplot/
 def save(path, ext='png', close=True, verbose=True):
     """Save a figure from pyplot.
 
@@ -77,6 +80,13 @@ def save(path, ext='png', close=True, verbose=True):
         print("Done")
 
 def approxEnergy(xvalues, yvalues):
+    """
+    Helper function that adjusts yvalues to be within the threshold and returns
+    the area under the curve defined by the given xvalues and new yvalues.
+    
+    XVALUES is a list of floating point numbers.
+    YVALUES is a list of floating point numbers.
+    """
     adjustedValues = []
     for value in yvalues:
         if value > UPPER_THRESHOLD:
@@ -93,46 +103,24 @@ def approxEnergy(xvalues, yvalues):
     return predArea
 
 def energyError(predx, predy, realx, realy):
+    """
+    Calculates the area under the predicted curve and the area under the real curve.
+    Returns the error.
+
+    PREDX is a list of floating point numbers (the x values of predicted curve).
+    PREDY is a list of floating point numbers (the y values of predicted curve).
+    REALX is a list of floating point numbers (the x values of real curve).
+    REALY is a list of floating point numbers (the y values of real curve).
+    """
     predArea = approxEnergy(predx, predy)
     realArea = approxEnergy(realx, realy)
     return float(abs(predArea - realArea)) / realArea
-
-def gaussPullData(todayUnixTime, table, days):
-    # The unixtime from seven DAYS days before TODAYUNIXTIME
-    beforeUnixTime = todayUnixTime - (MILLISECONDS_IN_ONE_DAY * days)
-
-    # Connect to the database
-    connection = sqlite3.connect('data.db')
-    cursor = connection.cursor()
-
-    # Execute a database query which returns rows of data from past seven days
-    cursor.execute('SELECT unixtime, light, cluster FROM %s WHERE unixtime < %d AND unixtime >= %d AND cluster >= %d' %(table, todayUnixTime, beforeUnixTime, 0))
-
-    # pastValues is a list of data tuples from the last seven days.
-    # Each tuple looks like: (unixtime, light, cluster)
-    pastValues = cursor.fetchall()
-
-    all_x_data = np.array([value[0] for value in pastValues]) # gets unixtimes as x values
-    all_x_data = (all_x_data - beforeUnixTime)/100000 # scales unixtimes
-
-    all_y_data = np.array([value[1] for value in pastValues]) # gets light values as y values
-
-    plt.plot(all_x_data, all_y_data, color = 'red')
-    plt.xlabel("Unixtime")
-    plt.ylabel("Light Values")
-
-    title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
-    path = "./" + table + "/" + title + "_gauss_runtime_error"
-    #save(path, ext="png", close=True, verbose=False)
-
-    #return a list of lists of xdata and ydata (each list is a segment of total data)
-    return all_x_data, all_y_data
 
 
 def gaussPullDataWithSplit(todayUnixTime, table, days):
     """
     Usage:
-        >>> gaussPullData(1338966000000, 'nasalight2')
+        >>> gaussPullDataWithSplit(1338966000000, 'nasalight2', 1)
 
     This function pulls light data from the database table TABLE starting DAYS days 
     before TODAYUNIXTIME. It then segments the data if there are sharp drops in
@@ -156,10 +144,14 @@ def gaussPullDataWithSplit(todayUnixTime, table, days):
     # Each tuple looks like: (unixtime, light, cluster)
     pastValues = cursor.fetchall()
 
-    all_x_data = np.array([value[0] for value in pastValues]) # gets unixtimes as x values
-    all_x_data = (all_x_data - beforeUnixTime)/100000 # scales unixtimes
-
-    all_y_data = np.array([value[1] for value in pastValues]) # gets light values as y values
+    # Gets unixtimes as x values
+    all_x_data = np.array([value[0] for value in pastValues])
+    
+    # Scales unixtimes
+    all_x_data = (all_x_data - beforeUnixTime)/100000
+    
+    # Gets light values as y values
+    all_y_data = np.array([value[1] for value in pastValues])
 
     xdata = []
     ydata = []
@@ -202,6 +194,13 @@ def gauss(x, *p):
     return A*np.exp(-(x-mu)**2/(2.*sigma**2))
 
 def fitGauss(todayUnixTime, table, days):
+    """
+    This function calls gaussPullData to retrieve the raw light data. Then it attempts
+    to fit a gaussian curve on the raw data. If it fails to fit the curve, it will catch
+    the error and continue executing.
+
+    Returns the coeff_list (a list) and filtered_xdata (a list of lists!).
+    """
     # xdata, ydata now a list of lists
     xdata, ydata = gaussPullDataWithSplit(todayUnixTime, table, days)
 
@@ -241,12 +240,10 @@ def fitGauss(todayUnixTime, table, days):
 
             except TypeError:
                 #f.write("TypeError for split %d!\n" % (i))
-#                 print "TypeError for split %d!" % (i)
                 continue
 
             except RuntimeError:
                 #f.write("Gauss RuntimeError for split %d!\n" % (i))
-#                 print "Gauss RuntimeError for split %d!" % (i)
                 continue
 
         return coeff_list, filtered_xdata
@@ -255,6 +252,9 @@ def fitGauss(todayUnixTime, table, days):
         return [], []
 
 def testDayAhead(todayUnixTime, table, days):
+    """
+    Returns the error for the dayahead prediction for the day starting at todayUnixTime.
+    """
     coeff_list, xdata = fitGauss(todayUnixTime, table, days)
     if len(xdata) > 0:
         tomorrowUnixTime = todayUnixTime + MILLISECONDS_IN_ONE_DAY
@@ -280,16 +280,15 @@ def testDayAhead(todayUnixTime, table, days):
                         realValues.append(dataTuple[0][0])
                         gaussPredictedValues.append(gauss(xtemp,*coeff_list[i])) # this may give runtime error
                         break
-            #else:
-                #f.write('EMPTY REAL DATA IN TIME INTERVAL %d!\n' % (key))
+            else:
+                f.write('EMPTY REAL DATA IN TIME INTERVAL %d!\n' % (key))
 
         if len(realValues) > 1:
             #sum up the energy errors for each segment!
             energyErr = energyError(xvalues, gaussPredictedValues, xvalues, realValues)
             #f.write('EnergyError: %f\n' % (energyErr))
 
-            if energyErr > 0.3: #if it STILL doesn't work, use alternateAlgo
-                #                 print 'FAIL! energyErr too high'
+            if energyErr > 0.3: #TODO: if it STILL doesn't work, use alternateAlgo
                 #f.write('FAIL! energyErr too high\n')
                 plt.plot(xvalues, realValues, color='black')
                 plt.plot(xvalues, gaussPredictedValues, color='red')
@@ -303,33 +302,30 @@ def testDayAhead(todayUnixTime, table, days):
             title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
             path = "./" + table + "/" + title + "_predicted_vs_real"
             #save(path, ext="png", close=True, verbose=False)
-
             return energyErr
         else:
             #f.write('NOT ENOUGH REAL DATA!\n')
-#             print 'NOT ENOUGH REAL DATA!'
-
             plt.xlabel("Unixtime")
             plt.ylabel("Light Values")
             title = datetime.datetime.fromtimestamp(int(todayUnixTime/1000)).strftime('%Y-%m-%d')
             path = "./" + table + "/" + title + "_predicted_vs_real"
             #save(path, ext="png", close=True, verbose=False)
-
             return 0
-
     else:
         return 0
 
-
 def floorMidnight(unix):
     """
-    Takes in unixtime (in milliseconds!) UNIX and returns a unixtime (in milliseconds!) of the 
-    closest midnight before the given UNIX time.
+    Takes in unixtime (in milliseconds!) UNIX and returns a unixtime (in milliseconds!) of
+    the midnight before the given UNIX time.
     """
     midnight_string = datetime.datetime.fromtimestamp(int(unix)/1000).strftime('%Y-%m-%d')
     return int(parse(midnight_string).strftime('%s')) * 1000
 
 def testTable(table):
+    """
+    Returns the average error when testing each day in the table TABLE.
+    """
     # Connect to the database
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
@@ -338,30 +334,23 @@ def testTable(table):
     unixtimedata = cursor.fetchall()
     maxunixtime = float(unixtimedata[0][1])
 
-#     prev = floorMidnight(minunixtime)
-#     print prev
-#     
-#     midnight = prev + MILLISECONDS_IN_ONE_DAY 
-
+    # Get the unixtime for midnight of the first day in the table TABLE
     midnight = floorMidnight(startTestTimes[table])
-
     daysToTest = 350 
-
     totalError = 0.0
-
     daysTested = 0
 
-#     while midnight < maxunixtime:
+    #while midnight < maxunixtime:
     for i in range(daysToTest):
         if midnight < maxunixtime:
             totalError += testDayAhead(midnight, table, 1)
+            # increment unixtime to go to the next day
             midnight += MILLISECONDS_IN_ONE_DAY
             daysTested += 1
 
     f.write('Average error for %s over %d days: %f percent\n' % (table, daysTested, (float(totalError) / daysTested) * 100))
-    #print 'Average error for %s over %d days: %f percent' % (table, daysToTest, (float(totalError) / daysToTest) * 100)
 
-
+# Main function. Run by entering 'python gaussianPrediction.py' in terminal.
 if __name__ == '__main__':
     f = open('new_citris_error.txt', 'w')
     allTables = ['light1', 'light2', 'light3', 'light4', 'light5',\
