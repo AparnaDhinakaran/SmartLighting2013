@@ -64,3 +64,67 @@ RMS value error is 211.44696208 and RMS percent error is 2.37569637702 for light
 RMS value error is 206.474995755 and RMS percent error is 2.3403864889 for light10 using noaltitude and ['light8', 'light8']
 
 /////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light5 Regressors: ['light8']
+
+RMS value error is 386.85648865 and RMS percent error is 4.43503517079 for light5 using noaltitude and ['light8']
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light5 Regressors: ['light8', 'light8']
+
+RMS value error is 435.529354079 and RMS percent error is 4.8187772198 for light5 using noaltitude and ['light8', 'light8']
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light6 Regressors: ['light8']
+
+RMS value error is 406.644864663 and RMS percent error is 4.50999740795 for light6 using noaltitude and ['light8']
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light6 Regressors: ['light8', 'light8']
+
+RMS value error is 406.644864663 and RMS percent error is 4.50999740795 for light6 using noaltitude and ['light8', 'light8']
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light7 Regressors: ['light8']
+
+RMS value error is 115.64046255 and RMS percent error is 7.01961800686 for light7 using noaltitude and ['light8']
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light7 Regressors: ['light8', 'light8']
+
+RMS value error is 115.100603361 and RMS percent error is 7.12081721748 for light7 using noaltitude and ['light8', 'light8']
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light9 Regressors: ['light8']
+
+RMS value error is 230.918448079 and RMS percent error is 3.80973254417 for light9 using noaltitude and ['light8']
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light9 Regressors: ['light8', 'light8']
+
+RMS value error is 233.804477886 and RMS percent error is 3.79387468325 for light9 using noaltitude and ['light8', 'light8']
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light10 Regressors: ['light8']
+
+RMS value error is 211.44696208 and RMS percent error is 2.37569637702 for light10 using noaltitude and ['light8']
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light10 Regressors: ['light8', 'light8']
+
+RMS value error is 226.719397465 and RMS percent error is 2.42573832703 for light10 using noaltitude and ['light8', 'light8']
+
+/////COMPLETED COMPARE REGRESSION/////

@@ -54,3 +54,57 @@ Hours 6 to 18  7068  7068  211.45  2.38  7056  0  12
 Hours 6 to 18  7068  7068  206.47  2.34  7056  0  12
 
 /////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light5 Regressors: ['light8']
+Hours 6 to 18  6984  6984  386.86  4.44  6972  0  12
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light5 Regressors: ['light8', 'light8']
+Hours 6 to 18  6984  6984  435.53  4.82  6972  0  12
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light6 Regressors: ['light8']
+Hours 6 to 18  7092  7092  406.64  4.51  7080  0  12
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light6 Regressors: ['light8', 'light8']
+Hours 6 to 18  7092  7092  406.64  4.51  7080  0  12
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light7 Regressors: ['light8']
+Hours 6 to 18  7080  7080  115.64  7.02  7068  0  12
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light7 Regressors: ['light8', 'light8']
+Hours 6 to 18  7080  7080  115.1  7.12  7068  0  12
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light9 Regressors: ['light8']
+Hours 6 to 18  6988  6988  230.92  3.81  6976  0  12
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light9 Regressors: ['light8', 'light8']
+Hours 6 to 18  6988  6988  233.8  3.79  6976  0  12
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light10 Regressors: ['light8']
+Hours 6 to 18  7068  7068  211.45  2.38  7056  0  12
+
+
+ From Fri, 30 Aug 2013 11:31:00 to Wed, 23 Oct 2013 14:31:00
+ Testbed: NewCitris Dependents: light10 Regressors: ['light8', 'light8']
+Hours 6 to 18  7068  7068  226.72  2.43  7056  0  12
+
+/////COMPLETED COMPARE REGRESSION/////
