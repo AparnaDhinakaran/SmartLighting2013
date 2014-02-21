@@ -1,15 +1,15 @@
-Best regressors for dependent, light5: ['light8', 'light8']
-RMS value error = 375.62 and RMS percent error = 4.02
+Best regressors for dependent, light5: ['light8']
+RMS value error = 386.86 and RMS percent error = 4.44
 
 Best regressors for dependent, light6: ['light8']
 RMS value error = 406.64 and RMS percent error = 4.51
 
-Best regressors for dependent, light7: ['light8', 'light8']
-RMS value error = 121.0 and RMS percent error = 7.01
+Best regressors for dependent, light7: ['light8']
+RMS value error = 115.64 and RMS percent error = 7.02
 
-Best regressors for dependent, light9: ['light8']
-RMS value error = 230.92 and RMS percent error = 3.81
+Best regressors for dependent, light9: ['light8', 'light8']
+RMS value error = 233.8 and RMS percent error = 3.79
 
-Best regressors for dependent, light10: ['light8', 'light8']
-RMS value error = 206.47 and RMS percent error = 2.34
+Best regressors for dependent, light10: ['light8']
+RMS value error = 211.45 and RMS percent error = 2.38
 

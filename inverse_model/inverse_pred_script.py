@@ -62,6 +62,28 @@ def createBestReg(testbed):
             min_index = np.argmin(np.array(rmsper))
             best.write('Best regressors for dependent, '+mote+': '+str(rmserrs[mote][min_index][2])+'\nRMS value error = '+str(rmserrs[mote][min_index][0])+' and RMS percent error = '+str(rmserrs[mote][min_index][1])+'\n\n')
         best.close()
+        
+    elif testbed == 'NewNasa':
+        #possible dependents: nasalight2,3,5,6,7
+        #possible co-regressors: nasalight1,4 or none
+        #possible artificial regs: lighta,b,c,d
+        #NASA always uses nasalight8 as window regressor
+        depmotes = ['nasalight2','nasalight3','nasalight5','nasalight6','nasalight7']
+        #regmotes = ['nasalight4','nasalight1'] #noartificial
+        regmotes = ['nasalight1','nasalight4','lighta','lightb','lightc','lightd'] #yesartificial
+        validtimes = [1386033540000,1391559480000] #Jun8toJun20(midnight-to-midnight) exception: 'nasalight3'
+        rmserrs = cr.compare_regression(validtimes,testbed,depmotes,regmotes,'all','noaltitude')
+        best = open('newnasa.txt','w')
+        for mote in depmotes:
+            rmsper = []
+            for count in range(len(rmserrs[mote])):
+                rmsper.append(rmserrs[mote][count][1])
+            min_index = np.argmin(np.array(rmsper))
+            best.write('Best regressors for dependent, '+mote+': '+str(rmserrs[mote][min_index][2])+'\nRMS value error = '+str(rmserrs[mote][min_index][0])+' and RMS percent error = '+str(rmserrs[mote][min_index][1])+'\n\n')
+        best.close()
+       
+
+
     print 'Done! Woohoo!'
 
 #comment this section above out if you do not need to create a new bestreg file
@@ -188,3 +210,7 @@ def single(testbed,dependent,regressors):
     plt.ylabel('Illuminance (Lux)')
     plt.savefig(dependent+'scatter')
     plt.close()
+
+
+createBestReg('NewNasa')
+
