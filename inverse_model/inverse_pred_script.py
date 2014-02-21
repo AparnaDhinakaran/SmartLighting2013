@@ -102,6 +102,10 @@ def plot(testbed):
     elif testbed == 'NewCitris':
         dependents = ['light5', 'light6', 'light7', 'light9', 'light10']
         validtimes = [1377887460000, 1382563860000]
+    elif testbed == 'NewNasa':
+        dependents = "NEED TO KNOW WHAT THE HECK THE DEPENDENTS AND WINDOW SENSOR ARE"
+        print("KYUNAM MUST TALK TO US")
+        validtimes = [1386033540000,1391559480000]
     regs = dict()
     for dependent in dependents:
         regs[dependent] = []
