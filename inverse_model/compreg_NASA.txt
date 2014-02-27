@@ -1,0 +1,1604 @@
+
+/////START COMPARE REGRESSION/////
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+Hours 6 to 18  1623  1623  166.17  1.08  1623  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1644  1644  140.43  1.58  1644  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1561  1561  49.39  0.36  1561  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lighta']
+Hours 6 to 18  1342  1342  109.34  0.73  1342  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lightb']
+Hours 6 to 18  1342  1342  121.87  0.79  1342  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lightc']
+Hours 6 to 18  1344  1344  114.4  0.73  1344  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lightd']
+Hours 6 to 18  1234  1234  64.9  0.6  1234  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1483  1483  43.18  0.28  1483  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lighta']
+Hours 6 to 18  1278  1278  106.03  0.74  1278  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lightb']
+Hours 6 to 18  1278  1278  114.22  0.77  1278  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lightc']
+Hours 6 to 18  1283  1283  103.27  0.62  1283  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lightd']
+Hours 6 to 18  1204  1204  69.26  0.39  1204  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lighta']
+Hours 6 to 18  1291  1291  49.51  0.33  1291  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lightb']
+Hours 6 to 18  1291  1291  50.7  0.34  1291  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lightc']
+Hours 6 to 18  1291  1291  48.14  0.32  1291  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lightd']
+Hours 6 to 18  1201  1201  47.97  0.3  1201  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lighta', 'lightb']
+Hours 6 to 18  1342  1342  113.81  0.75  1342  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lighta', 'lightc']
+Hours 6 to 18  1344  1344  109.27  0.7  1344  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lighta', 'lightd']
+Hours 6 to 18  1234  1234  66.14  0.6  1234  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lightb', 'lightc']
+Hours 6 to 18  1342  1342  112.39  0.72  1342  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lightb', 'lightd']
+Hours 6 to 18  1234  1234  66.5  0.6  1234  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lightc', 'lightd']
+Hours 6 to 18  1236  1236  64.49  0.6  1236  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta']
+Hours 6 to 18  1222  1222  44.54  0.27  1222  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb']
+Hours 6 to 18  1227  1227  48.07  0.28  1227  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightc']
+Hours 6 to 18  1222  1222  45.37  0.33  1222  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightd']
+Hours 6 to 18  1134  1134  48.04  0.46  1134  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb']
+Hours 6 to 18  1278  1278  109.85  0.75  1278  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightc']
+Hours 6 to 18  1283  1283  105.67  0.63  1283  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightd']
+Hours 6 to 18  1170  1170  61.2  0.43  1170  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightc']
+Hours 6 to 18  1278  1278  106.59  0.63  1278  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightd']
+Hours 6 to 18  1170  1170  61.39  0.43  1170  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lightc', 'lightd']
+Hours 6 to 18  1177  1177  59.02  0.39  1177  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb']
+Hours 6 to 18  1291  1291  50.72  0.34  1291  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightc']
+Hours 6 to 18  1291  1291  45.8  0.31  1291  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightd']
+Hours 6 to 18  1201  1201  44.73  0.28  1201  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightc']
+Hours 6 to 18  1291  1291  47.89  0.32  1291  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightd']
+Hours 6 to 18  1201  1201  50.1  0.3  1201  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lightc', 'lightd']
+Hours 6 to 18  1201  1201  47.93  0.3  1201  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1342  1342  110.79  0.72  1342  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1234  1234  66.32  0.6  1234  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1236  1236  63.22  0.59  1236  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1234  1234  64.87  0.6  1234  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb']
+Hours 6 to 18  1227  1227  48.48  0.29  1227  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightc']
+Hours 6 to 18  1232  1232  43.7  0.28  1232  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightd']
+Hours 6 to 18  1137  1137  47.02  0.44  1137  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightc']
+Hours 6 to 18  1227  1227  45.15  0.28  1227  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightd']
+Hours 6 to 18  1137  1137  47.11  0.44  1137  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightc', 'lightd']
+Hours 6 to 18  1144  1144  49.86  0.5  1144  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1278  1278  106.74  0.63  1278  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1170  1170  61.3  0.43  1170  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1177  1177  60.2  0.43  1177  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1170  1170  61.46  0.44  1170  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1291  1291  46.77  0.31  1291  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1201  1201  49.78  0.3  1201  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1203  1203  48.53  0.3  1203  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1201  1201  44.55  0.28  1201  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1234  1234  64.48  0.6  1234  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1227  1227  44.97  0.28  1227  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1137  1137  47.06  0.44  1137  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1144  1144  44.83  0.43  1144  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1137  1137  45.66  0.44  1137  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1170  1170  61.14  0.44  1170  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1201  1201  43.22  0.27  1201  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1137  1137  45.07  0.43  1137  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8']
+Hours 6 to 18  672  672  140.29  0.31  672  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  647  647  167.04  0.37  647  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  631  631  173.66  0.3  631  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lighta']
+Hours 6 to 18  403  403  156.6  0.28  403  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lightb']
+Hours 6 to 18  403  403  145.31  0.27  403  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lightc']
+Hours 6 to 18  403  403  152.66  0.28  403  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lightd']
+Hours 6 to 18  301  301  155.26  0.3  301  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  607  607  175.86  0.28  607  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lighta']
+Hours 6 to 18  389  389  162.79  0.27  389  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lightb']
+Hours 6 to 18  389  389  154.31  0.26  389  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lightc']
+Hours 6 to 18  391  391  153.97  0.26  391  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lightd']
+Hours 6 to 18  287  287  147.51  0.27  287  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lighta']
+Hours 6 to 18  373  373  169.71  0.27  373  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lightb']
+Hours 6 to 18  373  373  167.13  0.27  373  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lightc']
+Hours 6 to 18  373  373  168.5  0.27  373  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lightd']
+Hours 6 to 18  289  289  157.52  0.26  289  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lighta', 'lightb']
+Hours 6 to 18  403  403  150.26  0.28  403  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lighta', 'lightc']
+Hours 6 to 18  403  403  152.85  0.28  403  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lighta', 'lightd']
+Hours 6 to 18  301  301  152.15  0.3  301  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lightb', 'lightc']
+Hours 6 to 18  403  403  151.81  0.28  403  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lightb', 'lightd']
+Hours 6 to 18  301  301  152.15  0.3  301  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lightc', 'lightd']
+Hours 6 to 18  301  301  155.56  0.3  301  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta']
+Hours 6 to 18  357  357  169.47  0.27  357  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb']
+Hours 6 to 18  359  359  166.48  0.26  359  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightc']
+Hours 6 to 18  357  357  166.64  0.26  357  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightd']
+Hours 6 to 18  275  275  159.83  0.25  275  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb']
+Hours 6 to 18  389  389  158.17  0.26  389  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightc']
+Hours 6 to 18  391  391  153.27  0.26  391  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightd']
+Hours 6 to 18  287  287  150.03  0.29  287  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightc']
+Hours 6 to 18  389  389  152.97  0.26  389  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightd']
+Hours 6 to 18  287  287  150.03  0.29  287  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lightc', 'lightd']
+Hours 6 to 18  291  291  152.97  0.28  291  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb']
+Hours 6 to 18  373  373  168.4  0.27  373  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightc']
+Hours 6 to 18  373  373  169.11  0.27  373  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightd']
+Hours 6 to 18  289  289  157.13  0.26  289  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightc']
+Hours 6 to 18  373  373  164.04  0.27  373  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightd']
+Hours 6 to 18  289  289  157.37  0.26  289  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lightc', 'lightd']
+Hours 6 to 18  289  289  158.37  0.26  289  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  403  403  152.55  0.28  403  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  301  301  152.15  0.3  301  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  301  301  152.56  0.29  301  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  301  301  153.94  0.3  301  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb']
+Hours 6 to 18  359  359  167.56  0.26  359  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightc']
+Hours 6 to 18  361  361  164.08  0.26  361  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightd']
+Hours 6 to 18  275  275  155.33  0.24  275  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightc']
+Hours 6 to 18  359  359  166.08  0.26  359  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightd']
+Hours 6 to 18  275  275  155.33  0.24  275  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightc', 'lightd']
+Hours 6 to 18  279  279  159.53  0.25  279  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  389  389  153.52  0.26  389  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  287  287  150.62  0.29  287  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  291  291  146.08  0.28  291  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  287  287  147.99  0.29  287  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  373  373  164.43  0.27  373  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  289  289  157.37  0.26  289  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  289  289  154.9  0.26  289  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  289  289  154.18  0.26  289  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  301  301  153.94  0.3  301  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  359  359  166.93  0.26  359  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  275  275  155.33  0.24  275  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  279  279  153.08  0.24  279  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  275  275  155.97  0.24  275  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  287  287  147.99  0.29  287  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  289  289  154.18  0.26  289  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 13 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  275  275  155.97  0.24  275  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8']
+Hours 6 to 18  1629  1629  105.22  1.08  1629  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1548  1548  99.96  0.77  1548  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1566  1566  126.1  1.08  1566  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lighta']
+Hours 6 to 18  1347  1347  124.18  1.01  1347  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lightb']
+Hours 6 to 18  1347  1347  120.84  1.0  1347  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lightc']
+Hours 6 to 18  1347  1347  121.65  1.0  1347  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lightd']
+Hours 6 to 18  1243  1243  134.22  1.08  1243  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1486  1486  124.4  1.1  1486  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lighta']
+Hours 6 to 18  1276  1276  118.24  1.02  1276  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lightb']
+Hours 6 to 18  1276  1276  114.83  1.02  1276  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lightc']
+Hours 6 to 18  1276  1276  124.49  1.15  1276  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lightd']
+Hours 6 to 18  1174  1174  133.17  1.18  1174  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lighta']
+Hours 6 to 18  1294  1294  134.48  1.0  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lightb']
+Hours 6 to 18  1294  1294  133.43  1.0  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lightc']
+Hours 6 to 18  1294  1294  127.93  1.01  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lightd']
+Hours 6 to 18  1208  1208  135.0  1.21  1208  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lighta', 'lightb']
+Hours 6 to 18  1347  1347  122.38  1.0  1347  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lighta', 'lightc']
+Hours 6 to 18  1347  1347  122.77  1.0  1347  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lighta', 'lightd']
+Hours 6 to 18  1243  1243  132.46  1.08  1243  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lightb', 'lightc']
+Hours 6 to 18  1347  1347  123.37  1.0  1347  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lightb', 'lightd']
+Hours 6 to 18  1243  1243  132.16  1.08  1243  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lightc', 'lightd']
+Hours 6 to 18  1243  1243  128.71  1.06  1243  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta']
+Hours 6 to 18  1223  1223  132.84  1.11  1223  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb']
+Hours 6 to 18  1223  1223  131.36  1.11  1223  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightc']
+Hours 6 to 18  1223  1223  125.89  1.16  1223  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightd']
+Hours 6 to 18  1139  1139  133.79  1.38  1139  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb']
+Hours 6 to 18  1276  1276  116.73  1.02  1276  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightc']
+Hours 6 to 18  1276  1276  124.15  1.14  1276  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightd']
+Hours 6 to 18  1174  1174  137.23  1.25  1174  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightc']
+Hours 6 to 18  1276  1276  124.39  1.14  1276  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightd']
+Hours 6 to 18  1174  1174  136.69  1.24  1174  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lightc', 'lightd']
+Hours 6 to 18  1174  1174  133.09  1.23  1174  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb']
+Hours 6 to 18  1294  1294  134.36  1.0  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightc']
+Hours 6 to 18  1294  1294  129.0  1.01  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightd']
+Hours 6 to 18  1208  1208  132.63  1.21  1208  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightc']
+Hours 6 to 18  1294  1294  129.59  1.01  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightd']
+Hours 6 to 18  1208  1208  132.42  1.21  1208  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lightc', 'lightd']
+Hours 6 to 18  1208  1208  129.73  1.19  1208  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1347  1347  123.46  1.0  1347  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1243  1243  132.7  1.08  1243  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1243  1243  130.35  1.06  1243  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1243  1243  130.67  1.06  1243  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb']
+Hours 6 to 18  1228  1228  164.6  1.33  1228  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightc']
+Hours 6 to 18  1233  1233  157.65  1.35  1233  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightd']
+Hours 6 to 18  1142  1142  168.5  1.67  1142  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightc']
+Hours 6 to 18  1228  1228  156.71  1.35  1228  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightd']
+Hours 6 to 18  1142  1142  167.9  1.67  1142  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightc', 'lightd']
+Hours 6 to 18  1149  1149  165.5  1.68  1149  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1281  1281  149.57  1.31  1281  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1177  1177  165.2  1.48  1177  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1184  1184  164.68  1.46  1184  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1177  1177  163.04  1.46  1177  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1294  1294  128.68  1.02  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1208  1208  137.28  1.21  1208  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1210  1210  132.24  1.2  1210  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1208  1208  131.71  1.2  1208  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1243  1243  131.28  1.08  1243  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1228  1228  156.8  1.35  1228  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1142  1142  168.45  1.67  1142  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1149  1149  167.73  1.65  1149  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1142  1142  166.15  1.67  1142  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1177  1177  162.8  1.46  1177  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1208  1208  131.3  1.21  1208  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1142  1142  166.46  1.67  1142  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8']
+Hours 6 to 18  1637  1637  125.07  0.74  1637  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1627  1627  123.91  1.45  1627  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1573  1573  11.42  0.15  1573  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lighta']
+Hours 6 to 18  1360  1360  76.24  0.52  1360  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lightb']
+Hours 6 to 18  1360  1360  87.0  0.56  1360  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lightc']
+Hours 6 to 18  1362  1362  77.69  0.5  1362  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lightd']
+Hours 6 to 18  1252  1252  32.62  0.47  1252  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1493  1493  15.25  0.14  1493  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lighta']
+Hours 6 to 18  1294  1294  72.22  0.49  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lightb']
+Hours 6 to 18  1294  1294  79.26  0.52  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lightc']
+Hours 6 to 18  1299  1299  71.21  0.38  1299  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lightd']
+Hours 6 to 18  1245  1245  28.44  0.35  1245  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lighta']
+Hours 6 to 18  1307  1307  13.23  0.16  1307  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lightb']
+Hours 6 to 18  1307  1307  12.97  0.16  1307  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lightc']
+Hours 6 to 18  1307  1307  11.61  0.15  1307  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lightd']
+Hours 6 to 18  1217  1217  14.54  0.22  1217  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lighta', 'lightb']
+Hours 6 to 18  1360  1360  79.17  0.53  1360  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lighta', 'lightc']
+Hours 6 to 18  1362  1362  73.87  0.48  1362  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lighta', 'lightd']
+Hours 6 to 18  1252  1252  32.06  0.46  1252  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lightb', 'lightc']
+Hours 6 to 18  1360  1360  76.13  0.5  1360  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lightb', 'lightd']
+Hours 6 to 18  1252  1252  32.39  0.46  1252  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lightc', 'lightd']
+Hours 6 to 18  1254  1254  32.4  0.46  1254  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta']
+Hours 6 to 18  1236  1236  12.45  0.07  1236  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb']
+Hours 6 to 18  1241  1241  11.29  0.06  1241  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightc']
+Hours 6 to 18  1236  1236  15.4  0.12  1236  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightd']
+Hours 6 to 18  1148  1148  15.5  0.12  1148  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb']
+Hours 6 to 18  1294  1294  74.48  0.5  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightc']
+Hours 6 to 18  1299  1299  71.93  0.38  1299  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightd']
+Hours 6 to 18  1186  1186  33.11  0.47  1186  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightc']
+Hours 6 to 18  1294  1294  69.45  0.36  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightd']
+Hours 6 to 18  1186  1186  33.51  0.47  1186  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lightc', 'lightd']
+Hours 6 to 18  1193  1193  28.65  0.39  1193  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb']
+Hours 6 to 18  1307  1307  12.56  0.16  1307  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightc']
+Hours 6 to 18  1307  1307  14.66  0.16  1307  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightd']
+Hours 6 to 18  1217  1217  15.43  0.21  1217  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightc']
+Hours 6 to 18  1307  1307  13.84  0.16  1307  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightd']
+Hours 6 to 18  1217  1217  15.99  0.21  1217  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lightc', 'lightd']
+Hours 6 to 18  1217  1217  14.47  0.22  1217  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1360  1360  75.57  0.49  1360  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1252  1252  32.2  0.46  1252  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1254  1254  32.4  0.46  1254  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1252  1252  33.87  0.47  1252  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb']
+Hours 6 to 18  1241  1241  11.33  0.06  1241  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightc']
+Hours 6 to 18  1246  1246  14.13  0.07  1246  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightd']
+Hours 6 to 18  1151  1151  10.86  0.06  1151  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightc']
+Hours 6 to 18  1241  1241  12.3  0.07  1241  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightd']
+Hours 6 to 18  1151  1151  11.26  0.06  1151  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightc', 'lightd']
+Hours 6 to 18  1158  1158  14.52  0.1  1158  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1294  1294  68.96  0.36  1294  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1186  1186  32.82  0.47  1186  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1193  1193  33.62  0.47  1193  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1186  1186  32.38  0.48  1186  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1307  1307  14.16  0.16  1307  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1217  1217  15.6  0.21  1217  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1219  1219  14.61  0.21  1219  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1217  1217  16.22  0.21  1217  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1252  1252  33.09  0.47  1252  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1241  1241  12.64  0.07  1241  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1151  1151  11.02  0.06  1151  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1158  1158  11.16  0.06  1158  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1151  1151  12.66  0.07  1151  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1186  1186  32.06  0.48  1186  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1217  1217  15.99  0.21  1217  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1151  1151  12.07  0.07  1151  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8']
+Hours 6 to 18  1614  1614  97.96  0.35  1614  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1535  1535  94.38  0.24  1535  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1551  1551  95.49  0.31  1551  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lighta']
+Hours 6 to 18  1365  1365  101.88  0.35  1365  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lightb']
+Hours 6 to 18  1365  1365  104.71  0.37  1365  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lightc']
+Hours 6 to 18  1367  1367  107.29  0.37  1367  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lightd']
+Hours 6 to 18  1257  1257  89.47  0.35  1257  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1473  1473  93.16  0.27  1473  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lighta']
+Hours 6 to 18  1293  1293  98.87  0.27  1293  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lightb']
+Hours 6 to 18  1298  1298  98.78  0.27  1298  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lightc']
+Hours 6 to 18  1303  1303  103.59  0.33  1303  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lightd']
+Hours 6 to 18  1187  1187  90.04  0.36  1187  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lighta']
+Hours 6 to 18  1313  1313  96.66  0.31  1313  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lightb']
+Hours 6 to 18  1313  1313  96.81  0.31  1313  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lightc']
+Hours 6 to 18  1313  1313  97.53  0.33  1313  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lightd']
+Hours 6 to 18  1223  1223  85.86  0.26  1223  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lighta', 'lightb']
+Hours 6 to 18  1365  1365  103.05  0.36  1365  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lighta', 'lightc']
+Hours 6 to 18  1367  1367  106.51  0.36  1367  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lighta', 'lightd']
+Hours 6 to 18  1257  1257  89.43  0.35  1257  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lightb', 'lightc']
+Hours 6 to 18  1365  1365  107.38  0.36  1365  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lightb', 'lightd']
+Hours 6 to 18  1257  1257  89.27  0.35  1257  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lightc', 'lightd']
+Hours 6 to 18  1259  1259  90.13  0.35  1259  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta']
+Hours 6 to 18  1241  1241  94.85  0.34  1241  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb']
+Hours 6 to 18  1246  1246  91.37  0.3  1246  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightc']
+Hours 6 to 18  1241  1241  97.45  0.35  1241  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightd']
+Hours 6 to 18  1153  1153  82.43  0.24  1153  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb']
+Hours 6 to 18  1298  1298  97.1  0.26  1298  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightc']
+Hours 6 to 18  1303  1303  102.36  0.32  1303  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightd']
+Hours 6 to 18  1187  1187  91.08  0.4  1187  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightc']
+Hours 6 to 18  1298  1298  103.73  0.33  1298  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightd']
+Hours 6 to 18  1190  1190  84.45  0.37  1190  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lightc', 'lightd']
+Hours 6 to 18  1197  1197  86.13  0.35  1197  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb']
+Hours 6 to 18  1313  1313  96.72  0.31  1313  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightc']
+Hours 6 to 18  1313  1313  97.65  0.33  1313  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightd']
+Hours 6 to 18  1223  1223  86.44  0.26  1223  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightc']
+Hours 6 to 18  1313  1313  97.11  0.33  1313  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightd']
+Hours 6 to 18  1223  1223  86.28  0.25  1223  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lightc', 'lightd']
+Hours 6 to 18  1223  1223  87.32  0.25  1223  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1365  1365  107.68  0.36  1365  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1257  1257  89.36  0.35  1257  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1259  1259  88.67  0.34  1259  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1257  1257  90.82  0.34  1257  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb']
+Hours 6 to 18  1246  1246  91.23  0.3  1246  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightc']
+Hours 6 to 18  1251  1251  92.48  0.31  1251  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightd']
+Hours 6 to 18  1156  1156  80.47  0.24  1156  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightc']
+Hours 6 to 18  1246  1246  93.7  0.31  1246  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightd']
+Hours 6 to 18  1156  1156  80.29  0.24  1156  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightc', 'lightd']
+Hours 6 to 18  1163  1163  80.64  0.23  1163  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1298  1298  103.83  0.32  1298  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1190  1190  84.5  0.37  1190  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1197  1197  84.86  0.35  1197  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1190  1190  85.55  0.35  1190  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1313  1313  97.14  0.32  1313  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1223  1223  86.35  0.26  1223  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1225  1225  86.43  0.25  1225  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1223  1223  86.83  0.25  1223  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1257  1257  90.77  0.34  1257  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightc']
+Hours 6 to 18  1246  1246  93.66  0.31  1246  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightd']
+Hours 6 to 18  1156  1156  80.37  0.24  1156  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightc', 'lightd']
+Hours 6 to 18  1163  1163  80.1  0.24  1163  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1156  1156  80.46  0.24  1156  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1190  1190  85.54  0.35  1190  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1223  1223  86.79  0.25  1223  0  0
+
+
+ From Fri, 08 Jun 2012 00:00:00 to Wed, 20 Jun 2012 00:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4', 'lighta', 'lightb', 'lightc', 'lightd']
+Hours 6 to 18  1156  1156  80.4  0.24  1156  0  0
+
+/////COMPLETED COMPARE REGRESSION/////
