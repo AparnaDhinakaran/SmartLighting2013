@@ -1,0 +1,36 @@
+
+RMS value error is 46.634616098 and RMS percent error is 2.0909436748 for nasalight2 using noaltitude and ['nasalight8', 'nasalight4', 'nasalight1']
+
+RMS value error is 22.2153587736 and RMS percent error is 0.872164119402 for nasalight2 using noaltitude and ['nasalight8', 'nasalight4', 'nasalight1']
+
+RMS value error is 17.7144909624 and RMS percent error is 2.01528372784 for nasalight3 using noaltitude and ['nasalight8', 'nasalight4', 'nasalight1']
+
+RMS value error is 77.4542839173 and RMS percent error is 1.42936172727 for nasalight2 using noaltitude and ['nasalight8']
+
+RMS value error is 49.8944904416 and RMS percent error is 3.92617019979 for nasalight3 using noaltitude and ['nasalight8']
+
+RMS value error is nan and RMS percent error is nan for nasalight2 using noaltitude and ['nasalight8', 'lighta']
+
+RMS value error is nan and RMS percent error is nan for nasalight2 using noaltitude and ['nasalight8', 'lighta']
+
+RMS value error is 22.2153587736 and RMS percent error is 0.872164119402 for nasalight2 using noaltitude and ['nasalight8', 'nasalight4', 'nasalight1']
+
+RMS value error is 49.8944904416 and RMS percent error is 3.92617019979 for nasalight3 using noaltitude and ['nasalight8']
+
+RMS value error is 22.2153587736 and RMS percent error is 0.872164119402 for nasalight2 using noaltitude and ['nasalight8', 'nasalight4', 'nasalight1']
+
+RMS value error is 22.2153587736 and RMS percent error is 0.872164119402 for nasalight2 using noaltitude and ['nasalight8', 'nasalight4', 'nasalight1']
+
+RMS value error is 22.2153587736 and RMS percent error is 0.872164119402 for nasalight2 using noaltitude and ['nasalight8', 'nasalight4', 'nasalight1']
+
+RMS value error is 49.8944904416 and RMS percent error is 3.92617019979 for nasalight3 using noaltitude and ['nasalight8']
+
+RMS value error is 22.2153587736 and RMS percent error is 0.872164119402 for nasalight2 using noaltitude and ['nasalight8', 'nasalight1', 'nasalight4']
+
+RMS value error is 49.8944904416 and RMS percent error is 3.92617019979 for nasalight3 using noaltitude and ['nasalight8']
+
+RMS value error is 36.4382265506 and RMS percent error is 0.619780417071 for nasalight5 using noaltitude and ['nasalight8', 'nasalight1']
+
+RMS value error is 13.9881505808 and RMS percent error is 0.890834694324 for nasalight6 using noaltitude and ['nasalight8', 'nasalight1', 'nasalight4']
+
+RMS value error is 37.4224906233 and RMS percent error is 7.03110316953 for nasalight7 using noaltitude and ['nasalight8', 'nasalight1']

@@ -1,0 +1,15 @@
+Best regressors for dependent, newnasalight2: ['newnasalight1']
+RMS value error = 204.3 and RMS percent error = 0.51
+
+Best regressors for dependent, newnasalight4: ['newnasalight1', 'newnasalight3']
+RMS value error = 46.67 and RMS percent error = 4.42
+
+Best regressors for dependent, newnasalight5: ['newnasalight1', 'newnasalight3']
+RMS value error = 72.54 and RMS percent error = 0.28
+
+Best regressors for dependent, newnasalight6: ['newnasalight1', 'newnasalight3']
+RMS value error = 182.19 and RMS percent error = 0.4
+
+Best regressors for dependent, newnasalight7: ['newnasalight1', 'newnasalight3']
+RMS value error = 26.35 and RMS percent error = 4.86
+

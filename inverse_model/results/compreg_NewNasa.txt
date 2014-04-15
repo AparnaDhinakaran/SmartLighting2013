@@ -1,0 +1,1847 @@
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1259  1259  145.46  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1259  1259  164.4  0.45  1163  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  153.93  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1257  1257  158.77  0.44  1161  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1310  1310  906.31  4.73  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1310  1310  982.83  5.06  1213  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1308  1308  33.9  0.24  1211  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1312  1312  162.23  1.48  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1312  1312  167.15  1.49  1214  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1310  1310  55.99  0.55  1212  0.0098  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1287  1287  169.37  0.77  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1287  1287  193.08  0.84  1190  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  208.86  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1285  1285  213.13  0.45  1188  0.0097  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1304  1304  616.83  3.94  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1304  1304  647.08  4.12  1208  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  20.26  0.13  1206  0.0096  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1302  1302  16.56  0.12  1206  0.0096  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1545  1545  129.32  0.42  1425  0.012  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1545  1545  129.32  0.42  1425  0.012  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1543  1543  137.32  0.42  1423  0.012  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1543  1543  137.32  0.42  1423  0.012  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1598  1598  1021.14  5.61  1477  0.0121  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1598  1598  1021.14  5.61  1477  0.0121  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1596  1596  52.24  0.23  1475  0.0121  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1596  1596  48.19  0.22  1475  0.0121  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1600  1600  200.56  2.33  1478  0.0122  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1600  1600  186.37  2.26  1478  0.0122  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1598  1598  63.06  1.64  1476  0.0122  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1598  1598  67.81  1.64  1476  0.0122  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1575  1575  191.94  3.15  1454  0.0121  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1575  1575  195.94  3.16  1454  0.0121  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1573  1573  227.88  2.68  1452  0.0121  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1573  1573  227.88  2.68  1452  0.0121  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1591  1591  681.83  4.49  1471  0.012  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1591  1591  681.83  4.49  1471  0.012  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1589  1589  32.06  0.17  1469  0.012  0
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1589  1589  32.06  0.17  1469  0.012  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+Hours 6 to 18  1705  1705  204.3  0.51  1576  0.0129  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1705  1705  204.3  0.51  1576  0.0129  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1705  1705  213.52  0.52  1576  0.0129  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1705  1705  213.52  0.52  1576  0.0129  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+Hours 6 to 18  1712  1712  1153.17  6.66  1576  0.0136  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1712  1712  1153.17  6.66  1576  0.0136  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1712  1712  46.67  4.42  1576  0.0136  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1712  1712  43.18  4.43  1576  0.0136  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+Hours 6 to 18  1710  1710  218.98  0.89  1574  0.0136  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1710  1710  203.16  0.83  1574  0.0136  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1710  1710  72.54  0.28  1574  0.0136  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1710  1710  78.03  0.3  1574  0.0136  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+Hours 6 to 18  1682  1682  274.98  1.04  1551  0.0131  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1682  1682  280.04  1.06  1551  0.0131  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1682  1682  182.19  0.4  1551  0.0131  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1682  1682  182.19  0.4  1551  0.0131  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+Hours 6 to 18  1669  1669  772.23  6.37  1533  0.0136  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+Hours 6 to 18  1669  1669  772.23  6.37  1533  0.0136  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+Hours 6 to 18  1669  1669  26.35  4.86  1533  0.0136  0
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+Hours 6 to 18  1669  1669  26.35  4.86  1533  0.0136  0
+
+/////COMPLETED COMPARE REGRESSION/////

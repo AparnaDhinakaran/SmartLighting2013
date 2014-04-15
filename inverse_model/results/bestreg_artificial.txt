@@ -1,0 +1,15 @@
+Best regressors for dependent, nasalight2: ['nasalight8', 'nasalight1', 'nasalight4']
+RMS value error = 10.43 and RMS percent error = 0.07
+
+Best regressors for dependent, nasalight3: ['nasalight8', 'nasalight4']
+RMS value error = 29.5 and RMS percent error = 0.06
+
+Best regressors for dependent, nasalight5: ['nasalight8', 'nasalight4', 'lightb']
+RMS value error = 41.01 and RMS percent error = 0.12
+
+Best regressors for dependent, nasalight6: ['nasalight8', 'nasalight4']
+RMS value error = 15.12 and RMS percent error = 0.08
+
+Best regressors for dependent, nasalight7: ['nasalight8', 'nasalight1', 'lightd']
+RMS value error = 56.86 and RMS percent error = 0.13
+

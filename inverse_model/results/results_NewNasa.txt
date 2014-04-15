@@ -1,0 +1,2368 @@
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+RMS value error is 6568725553.1 and RMS percent error is 39099402.7831 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 6585526093.98 and RMS percent error is 27255345.8424 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 6584539829.14 and RMS percent error is 33841623.0242 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 6558736682.94 and RMS percent error is 21869469.3241 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 6585191616.06 and RMS percent error is 35570173.5883 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 6568725553.1 and RMS percent error is 39099402.7831 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 6585526093.98 and RMS percent error is 27255345.8424 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 145.457169339 and RMS percent error is 0.445819676914 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 164.403995026 and RMS percent error is 0.450240553604 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 158.766861192 and RMS percent error is 0.440666054011 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 906.313868367 and RMS percent error is 4.72583478859 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 982.827008058 and RMS percent error is 5.0631939664 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 162.228744066 and RMS percent error is 1.47901524939 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 167.146894145 and RMS percent error is 1.49223345902 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 55.9922176862 and RMS percent error is 0.552780747985 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 169.37309696 and RMS percent error is 0.767727479573 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 193.082165535 and RMS percent error is 0.842684633341 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 208.862042706 and RMS percent error is 0.445320871904 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.126145751 and RMS percent error is 0.454717197951 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 616.825066418 and RMS percent error is 3.94315386118 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 647.076277665 and RMS percent error is 4.11828816608 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.2640141742 and RMS percent error is 0.125108766378 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Thu, 12 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 16.5573125312 and RMS percent error is 0.117853135128 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 33.8995082103 and RMS percent error is 0.238170708854 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 153.928573006 and RMS percent error is 0.436608365911 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 137.324394897 and RMS percent error is 0.41650343571 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 52.2407920635 and RMS percent error is 0.226201737784 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+/////START COMPARE REGRESSION/////
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 129.315362273 and RMS percent error is 0.419373314408 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 129.315362273 and RMS percent error is 0.419373314408 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 137.324394897 and RMS percent error is 0.41650343571 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 137.324394897 and RMS percent error is 0.41650343571 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 1021.13557629 and RMS percent error is 5.61031772806 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 1021.13557629 and RMS percent error is 5.61031772806 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 52.2407920635 and RMS percent error is 0.226201737784 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 48.1862663681 and RMS percent error is 0.223030964716 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 200.559458223 and RMS percent error is 2.33010866948 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 186.372779808 and RMS percent error is 2.25913401225 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 63.0631961624 and RMS percent error is 1.63876945462 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 67.8133948463 and RMS percent error is 1.63861037298 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 191.941285171 and RMS percent error is 3.15354207051 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 195.939015437 and RMS percent error is 3.16130714237 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 227.884476025 and RMS percent error is 2.67792028095 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 227.884476025 and RMS percent error is 2.67792028095 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 681.829150154 and RMS percent error is 4.4920388524 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 681.829150154 and RMS percent error is 4.4920388524 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 32.0617317525 and RMS percent error is 0.165790561099 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Mon, 02 Dec 2013 17:19:00 to Sat, 14 Dec 2013 17:19:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 32.0617317525 and RMS percent error is 0.165790561099 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+RMS value error is 137.324394897 and RMS percent error is 0.41650343571 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 52.2407920635 and RMS percent error is 0.226201737784 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 63.0631961624 and RMS percent error is 1.63876945462 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 227.884476025 and RMS percent error is 2.67792028095 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 32.0617317525 and RMS percent error is 0.165790561099 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 137.324394897 and RMS percent error is 0.41650343571 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 52.2407920635 and RMS percent error is 0.226201737784 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 63.0631961624 and RMS percent error is 1.63876945462 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 227.884476025 and RMS percent error is 2.67792028095 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 32.0617317525 and RMS percent error is 0.165790561099 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 53.6679621326 and RMS percent error is 4.62294821566 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 53.6679621326 and RMS percent error is 4.62294821566 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 157.995719321 and RMS percent error is 0.750139964101 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 53.6679621326 and RMS percent error is 4.62294821566 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 62.0123151479 and RMS percent error is 0.270645188032 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 246.021755884 and RMS percent error is 0.547489188874 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 20.9896005365 and RMS percent error is 4.77111178628 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1']
+
+RMS value error is 204.296483393 and RMS percent error is 0.513352253264 for newnasalight2 using noaltitude and ['newnasalight1']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 204.296483393 and RMS percent error is 0.513352253264 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 213.524706172 and RMS percent error is 0.515575254742 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight2 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 213.524706172 and RMS percent error is 0.515575254742 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1']
+
+RMS value error is 1153.16990713 and RMS percent error is 6.65959763644 for newnasalight4 using noaltitude and ['newnasalight1']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 1153.16990713 and RMS percent error is 6.65959763644 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 46.6745649072 and RMS percent error is 4.42302102535 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight4 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 43.1772289311 and RMS percent error is 4.42619670063 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1']
+
+RMS value error is 218.979965899 and RMS percent error is 0.887032279792 for newnasalight5 using noaltitude and ['newnasalight1']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 203.161568839 and RMS percent error is 0.8258775425 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 72.5416761772 and RMS percent error is 0.276344532901 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight5 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 78.0316199915 and RMS percent error is 0.296682077987 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1']
+
+RMS value error is 274.976918994 and RMS percent error is 1.04472829732 for newnasalight6 using noaltitude and ['newnasalight1']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 280.040077366 and RMS percent error is 1.06029245747 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 182.192764973 and RMS percent error is 0.402189539987 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight6 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 182.192764973 and RMS percent error is 0.402189539987 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1']
+
+RMS value error is 772.228211222 and RMS percent error is 6.3683111089 for newnasalight7 using noaltitude and ['newnasalight1']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1']
+
+RMS value error is 772.228211222 and RMS percent error is 6.3683111089 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight3']
+
+RMS value error is 26.3523286987 and RMS percent error is 4.86054619074 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+
+ From Sat, 28 Dec 2013 16:00:00 to Thu, 09 Jan 2014 16:00:00
+ Testbed: NewNasa Dependents: newnasalight7 Regressors: ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+RMS value error is 26.3523286987 and RMS percent error is 4.86054619074 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight1', 'newnasalight3']
+
+/////COMPLETED COMPARE REGRESSION/////
+
+RMS value error is 213.524706172 and RMS percent error is 0.515575254742 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 46.6745649072 and RMS percent error is 4.42302102535 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 72.5416761772 and RMS percent error is 0.276344532901 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 182.192764973 and RMS percent error is 0.402189539987 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 26.3523286987 and RMS percent error is 4.86054619074 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 213.524706172 and RMS percent error is 0.515575254742 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 46.6745649072 and RMS percent error is 4.42302102535 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 72.5416761772 and RMS percent error is 0.276344532901 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 182.192764973 and RMS percent error is 0.402189539987 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 26.3523286987 and RMS percent error is 4.86054619074 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is nan and RMS percent error is nan for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']

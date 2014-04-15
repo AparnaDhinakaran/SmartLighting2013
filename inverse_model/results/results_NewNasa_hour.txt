@@ -1,0 +1,168 @@
+
+RMS value error is 3.91754630486 and RMS percent error is 1.96919903962 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 10.2140603932 and RMS percent error is 1.51309792626 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.48230117567 and RMS percent error is 0.735471231095 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 7.55500158994 and RMS percent error is 0.319027693888 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 5.35482441344 and RMS percent error is 1.90549557491 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.91754630486 and RMS percent error is 1.96919903962 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 10.2140603932 and RMS percent error is 1.51309792626 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.91754630486 and RMS percent error is 1.96919903962 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.91754630486 and RMS percent error is 1.96919903962 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 10.2140603932 and RMS percent error is 1.51309792626 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.91754630486 and RMS percent error is 1.96919903962 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.91754630486 and RMS percent error is 1.96919903962 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.91754630486 and RMS percent error is 1.96919903962 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.91754630486 and RMS percent error is 1.96919903962 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.91754630486 and RMS percent error is 1.96919903962 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.91754630486 and RMS percent error is 1.96919903962 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.91754630486 and RMS percent error is 1.96919903962 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 4.05875688869 and RMS percent error is 2.11889448055 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 5.4645265077 and RMS percent error is 0.658822725528 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 4.05875688869 and RMS percent error is 2.11889448055 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 5.4645265077 and RMS percent error is 0.658822725528 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 2.27955828159 and RMS percent error is 0.638725875317 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.81998604439 and RMS percent error is 0.862104962351 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 4.08222388124 and RMS percent error is 1.06067787447 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 4.05875688869 and RMS percent error is 2.11889448055 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 5.4645265077 and RMS percent error is 0.658822725528 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 2.27955828159 and RMS percent error is 0.638725875317 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.81998604439 and RMS percent error is 0.862104962351 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 4.08222388124 and RMS percent error is 1.06067787447 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 18.2305402015 and RMS percent error is 0.490696416652 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 18.2305402015 and RMS percent error is 0.490696416652 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 1.89077915923 and RMS percent error is 0.20696444659 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 18.2305402015 and RMS percent error is 0.490696416652 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 3.59383835257 and RMS percent error is 0.31586621194 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 7.43942417123 and RMS percent error is 0.500666825108 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 5.63026074594 and RMS percent error is 0.596390006524 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 14.9413782913 and RMS percent error is 1.64999242146 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 50.3418912617 and RMS percent error is 16.6126130101 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 25.158160817 and RMS percent error is 11.6510171995 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 88.2636299977 and RMS percent error is 15.1109228708 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 36.8209876563 and RMS percent error is 23.5047075681 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 14.9413782913 and RMS percent error is 1.64999242146 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 50.3418912617 and RMS percent error is 16.6126130101 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 25.158160817 and RMS percent error is 11.6510171995 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 88.2636299977 and RMS percent error is 15.1109228708 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 36.8209876563 and RMS percent error is 23.5047075681 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 14.9413782913 and RMS percent error is 1.64999242146 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 14.9413782913 and RMS percent error is 1.64999242146 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 14.9413782913 and RMS percent error is 1.64999242146 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 14.9413782913 and RMS percent error is 1.64999242146 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 14.9413782913 and RMS percent error is 1.64999242146 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 14.9413782913 and RMS percent error is 1.64999242146 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 50.3418912617 and RMS percent error is 16.6126130101 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 25.158160817 and RMS percent error is 11.6510171995 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 88.2636299977 and RMS percent error is 15.1109228708 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 36.8209876563 and RMS percent error is 23.5047075681 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 14.9413782913 and RMS percent error is 1.64999242146 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 50.3418912617 and RMS percent error is 16.6126130101 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 25.158160817 and RMS percent error is 11.6510171995 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 88.2636299977 and RMS percent error is 15.1109228708 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 36.8209876563 and RMS percent error is 23.5047075681 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 14.9413782913 and RMS percent error is 1.64999242146 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 50.3418912617 and RMS percent error is 16.6126130101 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 25.158160817 and RMS percent error is 11.6510171995 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 88.2636299977 and RMS percent error is 15.1109228708 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 36.8209876563 and RMS percent error is 23.5047075681 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 14.9413782913 and RMS percent error is 1.64999242146 for newnasalight2 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 50.3418912617 and RMS percent error is 16.6126130101 for newnasalight4 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 25.158160817 and RMS percent error is 11.6510171995 for newnasalight5 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 88.2636299977 and RMS percent error is 15.1109228708 for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+RMS value error is 36.8209876563 and RMS percent error is 23.5047075681 for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']

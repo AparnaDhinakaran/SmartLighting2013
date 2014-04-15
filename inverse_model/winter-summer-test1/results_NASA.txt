@@ -1,0 +1,51 @@
+/////START COMPARE REGRESSION/////
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Fri, 10 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+
+RMS value error is 153.394055967 and RMS percent error is 5.83443327738 for nasalight2 using noaltitude and ['nasalight8']
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Fri, 10 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4']
+
+RMS value error is 37.2288639832 and RMS percent error is 6.22978677437 for nasalight2 using noaltitude and ['nasalight8', 'nasalight4']
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Fri, 10 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+
+RMS value error is 198.946702796 and RMS percent error is 14.6573837649 for nasalight2 using noaltitude and ['nasalight8', 'nasalight1']
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Fri, 10 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4', 'nasalight1']
+
+RMS value error is 41.3723042815 and RMS percent error is 1.77122672255 for nasalight2 using noaltitude and ['nasalight8', 'nasalight4', 'nasalight1']
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Fri, 10 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8']
+
+RMS value error is 203.926692677 and RMS percent error is 0.968773920802 for nasalight3 using noaltitude and ['nasalight8']
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Fri, 10 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4']
+
+RMS value error is 158.918223346 and RMS percent error is 0.8788952511 for nasalight3 using noaltitude and ['nasalight8', 'nasalight4']
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Fri, 10 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1']
+
+RMS value error is 163.115720315 and RMS percent error is 0.797105291673 for nasalight3 using noaltitude and ['nasalight8', 'nasalight1']
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Fri, 10 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4', 'nasalight1']
+
+RMS value error is 151.493546855 and RMS percent error is 0.728317641205 for nasalight3 using noaltitude and ['nasalight8', 'nasalight4', 'nasalight1']
+
+/////COMPLETED COMPARE REGRESSION/////
