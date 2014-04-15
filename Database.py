@@ -792,6 +792,7 @@ def createLightData():
     #print "Soft-Clustering NewNasa"
     #soft_cluster('NewNasa')
 
+    """
     Note: This part of the code has been commented out because it takes a long time.
     To fill these columns in the database, remove the red hashtags. 
     """
