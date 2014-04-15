@@ -24,6 +24,7 @@ def process(dataDict,option='light',intervalSize=300000):
     for ind in range(len(dataDict[key])):
         unixtime=dataDict[key][ind][1]
         unixtimes.append(unixtime)
+    #print unixtimes
 
     #match unixtimes to that of first mote
     i = 0
@@ -56,6 +57,8 @@ def process(dataDict,option='light',intervalSize=300000):
                 if option=='light':                
                     timepointData[moteNum].append(datum[0])
                 elif option=='all':
+                    #print "appending"
+                    #print "datum: ", datum
                     timepointData[moteNum].append([d for d in datum])
 
         #check matches        
@@ -67,5 +70,7 @@ def process(dataDict,option='light',intervalSize=300000):
                     finaldataDict[moteNum].append(timepointData[moteNum][ind])
 
     #result
-    if len(finaldataDict)==0: print 'FAILURE: no matching datapoints'
+    if len(finaldataDict)==0: 
+        print 'FAILURE: no matching datapoints'
+    #print "finaldataDict: ", finaldataDict
     return finaldataDict

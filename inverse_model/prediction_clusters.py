@@ -24,6 +24,7 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
     all_light = dict()
     for mote in allmotes:
         all_light[mote] = []
+        # winter_summer: our case is 'all'
         if cluster == 'all':
             cursor.execute('SELECT average,unixtime,cluster,altitude FROM %s WHERE unixtime>=%f AND unixtime<=%f AND cluster>=0' %(mote, traintimes[0],traintimes[1]))
         elif type(cluster) == int:
@@ -34,6 +35,7 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
         for j in temp:
             all_light[mote].append(j)
     alldata = dP.process(all_light,'all')
+    print alldata.keys()
     
     #win_reg data depending on testbed
     if testbed == 'Hesse':
@@ -42,6 +44,8 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
         win_reg = 'nasalight8'
     elif testbed == 'NewCitris':
         win_reg = 'light8'
+    elif testbed == 'NewNasa':
+        win_reg = 'newnasalight1'
     data = alldata[win_reg]
 
     #initialize
@@ -82,6 +86,8 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
             openfile=open('inverse_model_coefficients_Hesse.txt')
         elif testbed == 'NewCitris':
             openfile=open('inverse_model_coefficients_NewCitris.txt')
+        elif testbed == 'NewNasa':
+            openfile=open('inverse_model_coefficients_NewNasa.txt')
         getdata=openfile.readlines()
 
         #option
@@ -213,6 +219,7 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
 
     #errors
     for count in range(len(actual)):
+        #print "actual[count], predicted[count]:", actual[count], ", ", predicted[count]
         e=actual[count]-predicted[count]
         eper=e/actual[count]
         error.append(e)
@@ -229,6 +236,9 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
         text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
     elif testbed == 'NewCitris':
         savefile=open('results_NewCitris.txt','a')
+        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
+    elif testbed == 'NewNasa':
+        savefile=open('results_NewNasa.txt','a')
         text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
     savefile.write(text)
     savefile.close()
@@ -267,6 +277,8 @@ def prediction_hour(traintimes,testbed,dependent,regressors,option='noaltitude')
         win_reg = 'nasalight8' 
     elif testbed == 'NewCitris':
         win_reg = 'light8' 
+    elif testbed == 'NewNasa':
+        win_reg = 'newnasalight1' 
     data = alldata[win_reg]
 
     #initialize
@@ -306,6 +318,8 @@ def prediction_hour(traintimes,testbed,dependent,regressors,option='noaltitude')
             openfile=open('inverse_model_coefficients_Hesse_hour.txt')
         elif testbed == 'NewCitris':
             openfile=open('inverse_model_coefficients_NewCitris_hour.txt')
+        elif testbed == 'NewNasa':
+            openfile=open('inverse_model_coefficients_NewNasa_hour.txt')
         getdata=openfile.readlines()
 
         #option
@@ -432,6 +446,9 @@ def prediction_hour(traintimes,testbed,dependent,regressors,option='noaltitude')
         text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
     elif testbed == 'NewCitris':
         savefile=open('results_NewCitris_hour.txt','a')
+        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
+    elif testbed == 'NewNasa':
+        savefile=open('results_NewNasa_hour.txt','a')
         text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
     savefile.write(text)
     savefile.close()

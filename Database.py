@@ -1,5 +1,3 @@
-#import os
-
 ### DATABASE ###
 
 """
@@ -59,27 +57,29 @@ Values in the Artificial Light Tables you can Request:
 
 """
 
-import urllib2
 import datetime
-import numpy as np
-import sqlite3
-from numpy import vstack
-import scipy as sp
-from scipy import stats
-from datetime import datetime,date
-import time
-from time import mktime, localtime, gmtime, strftime
-import statsmodels as sm
-import matplotlib as mpl
-from matplotlib import pyplot as plt
-import pytz
-from pytz import timezone
+import dateTimeUtil as dtu
+import json
 import math
+import matplotlib as mpl
+import numpy as np
 import pdb
-
+import pytz
+import scipy as sp
 import sqlite3
-from sqlite3 import dbapi2 as sqlite3
+import statsmodels as sm
+import time
+import urllib2
+
+from datetime import datetime,date
+from matplotlib import pyplot as plt
+from numpy import vstack
+from pytz import timezone
+from scipy import stats
 from scipy.cluster.vq import *
+from sqlite3 import dbapi2 as sqlite3
+from time import mktime, localtime, gmtime, strftime
+
 
 
 ##########################
@@ -100,8 +100,11 @@ def drop_tables(*args):
 
 def drop_light():
     """This shortcut code allows only the light tables to be dropped."""
-    drop_tables('light1', 'light2', 'light3', 'light4', 'light5', 'light6', 'light7', 'light8', 'light9', 'light10','nasalight1', 'nasalight2', 'nasalight3', 'nasalight4', 'nasalight5', 'nasalight6', 'nasalight7', 'nasalight8', 'nasalight9', 'newnasalight1', 'newnasalight2', 'newnasalight3', 'newnasalight4', 'newnasalight5', 'newnasalight6', 'newnasalight7')
-
+    drop_tables('light1', 'light2', 'light3', 'light4', 'light5', 'light6', \
+            'light7', 'light8', 'light9', 'light10','nasalight1', 'nasalight2',\
+            'nasalight3', 'nasalight4', 'nasalight5', 'nasalight6', 'nasalight7',\
+            'nasalight8', 'nasalight9', 'newnasalight1', 'newnasalight2', 'newnasalight3',\
+            'newnasalight4', 'newnasalight5', 'newnasalight6', 'newnasalight7')
 
 def create_tables(table = all):
     """This command creates tables in the database if they do not
@@ -117,485 +120,68 @@ def create_tables(table = all):
     cursor = connection.cursor()
 
     if table == all:
-        
-        #Create one table for cloud measurement data
-
-        cursor.execute('''CREATE TABLE cloud (timezone TEXT, year INTEGER, month
-                        INTEGER, day INTEGER, hour INTEGER, minute INTEGER, seconds
-                        INTEGER, unixtime REAL, cloudiness TEXT, cloudvalue REAL, daycloudvalue REAL,PRIMARY KEY
-                        (year, month, day, hour, minute, seconds))''')
-
-        #Create one table per artificial light level
-        cursor.execute('''CREATE TABLE lighta (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, x REAL, y REAL, average REAL, cluster INTEGER,
-                        PRIMARY KEY (unixtime))''')
-        cursor.execute('''CREATE TABLE lightb (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, x REAL, y REAL, average REAL, cluster INTEGER,
-                        PRIMARY KEY (unixtime))''')
-        cursor.execute('''CREATE TABLE lightc (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, x REAL, y REAL, average REAL, cluster INTEGER,
-                        PRIMARY KEY (unixtime))''')
-        cursor.execute('''CREATE TABLE lightd (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, x REAL, y REAL, average REAL, cluster INTEGER,
-                        PRIMARY KEY (unixtime))''')
-        
-
-        #Create one table per sensor for light measurement data
-        cursor.execute('''CREATE TABLE light1 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light2 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-                PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light3 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light4 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                PRIMARY KEY (unixtime))''')
-        
-        # Light Tables for New Citrus Data (Collected Fall 2013)
-        
-        cursor.execute('''CREATE TABLE light5 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-        
-        cursor.execute('''CREATE TABLE light6 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-        
-        cursor.execute('''CREATE TABLE light7 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-        
-        cursor.execute('''CREATE TABLE light8 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-        
-        cursor.execute('''CREATE TABLE light9 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-        
-        cursor.execute('''CREATE TABLE light10 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        #Light tables for NASA
-
-        cursor.execute('''CREATE TABLE nasalight1 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight2 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight3 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight4 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight5 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight6 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight7 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight8 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight9 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        # New tables for NASA light sensors (Spring 2014)
-
-        cursor.execute('''CREATE TABLE newnasalight1 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE newnasalight2 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE newnasalight3 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE newnasalight4 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE newnasalight5 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE newnasalight6 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE newnasalight7 (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-                        average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-                        soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-                        mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
-                        PRIMARY KEY (unixtime))''')
+        create_tables('cloud')
+        create_tables('alllight')
 
     elif table == 'alllight':
-
+        create_tables('artificial')
         #Create one table per sensor for light measurement data
-        cursor.execute('''CREATE TABLE light1 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light2 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light3 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light4 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light5 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light6 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light7 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light8 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light9 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE light10 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
+        #Also create Light Tables for New CITRIS Data (Collected Fall 2013)
+        hesse_and_newCitris = ['1','2','3','4','5','6','7','8','9','10']
+        for num in hesse_and_newCitris:
+            cursor.execute('''CREATE TABLE light%s (unixtime REAL, weekday TEXT,
+                            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
+                            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
+                            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
+                            average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
+                            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
+                            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
+                            PRIMARY KEY (unixtime))''' % num)
 
         #Light tables for NASA
+        nasa = ['1','2','3','4','5','6','7','8','9']
+        for num in nasa:
+            cursor.execute('''CREATE TABLE nasalight%s (unixtime REAL, weekday TEXT,
+                            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
+                            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
+                            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
+                            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
+                            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
+                            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
+                            PRIMARY KEY (unixtime))''' % num)
 
-        cursor.execute('''CREATE TABLE nasalight1 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight2 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight3 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight4 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight5 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight6 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight7 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight8 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL, cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
-        cursor.execute('''CREATE TABLE nasalight9 (unixtime REAL, weekday TEXT,
-            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
-            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
-            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
-            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
-            PRIMARY KEY (unixtime))''')
-
+        # New tables for New NASA light sensors (Spring 2014)
+        newNasa = ['1','2','3','4','5','6','7']
+        for num in newNasa:
+            cursor.execute('''CREATE TABLE newnasalight%s (unixtime REAL, weekday TEXT,
+                            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
+                            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
+                            azimuth REAL, cloudiness TEXT, x REAL, y REAL, exponential REAL,
+                            average REAL, daylight REAL,maxlight REAL,cluster INTEGER,
+                            soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
+                            mem2 REAL, mem3 REAL, movingavg REAL, processed REAL, 
+                            PRIMARY KEY (unixtime))''' % num)
 
     #Creates cloud table
     elif table == 'cloud':
+        #Create one table for cloud measurement data
         cursor.execute('''CREATE TABLE cloud (timezone TEXT, year INTEGER, month
                         INTEGER, day INTEGER, hour INTEGER, minute INTEGER, seconds
-                        INTEGER, unixtime REAL, cloudiness TEXT, cloudvalue REAL, daycloudvalue REAL,
-                        PRIMARY KEY(year, month, day, hour, minute, seconds))''')
+                        INTEGER, unixtime REAL, cloudiness TEXT, humidity INTEGER, temp_f REAL,
+                        cloudvalue REAL, daycloudvalue REAL, PRIMARY KEY
+                        (year, month, day, hour, minute, seconds))''')
 
     # Creates artificial light tables
     elif table == 'artificial':
         
-        cursor.execute('''CREATE TABLE lighta (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, x REAL, y REAL, average REAL, cluster INTEGER,
-                        PRIMARY KEY (unixtime))''')
-        cursor.execute('''CREATE TABLE lightb (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, x REAL, y REAL, average REAL,cluster INTEGER,
-                        PRIMARY KEY (unixtime))''')
-        cursor.execute('''CREATE TABLE lightc (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, x REAL, y REAL, average REAL, cluster INTEGER,
-                        PRIMARY KEY (unixtime))''')
-        cursor.execute('''CREATE TABLE lightd (unixtime REAL, weekday TEXT,
-                        day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
-                        minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
-                        azimuth REAL, x REAL, y REAL, average REAL, cluster INTEGER,
-                        PRIMARY KEY (unixtime))''')
+        #Create one table per artificial light level
+        artificial_light = ['a','b','c','d']
+        for letter in artificial_light:
+            cursor.execute('''CREATE TABLE light%s (unixtime REAL, weekday TEXT,
+                            day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
+                            minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
+                            azimuth REAL, x REAL, y REAL, average REAL, cluster INTEGER,
+                            PRIMARY KEY (unixtime))''' % letter)
 
     #This will create any arbitrary light table
     else:
@@ -607,7 +193,6 @@ def create_tables(table = all):
                         soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,
                         mem2 REAL, mem3 REAL, movingavg REAL, processed REAL,
                         PRIMARY KEY (unixtime))''')
-        
 
     #Save your changes
     connection.commit()
@@ -616,142 +201,10 @@ def create_tables(table = all):
 ### CLOUD DATA ###
 ##################
 
-cloudiness=['Clear','Partly','Scattered','Light','Mostly','Rain','Overcast','Heavy','Fog','Haze']
-values=[0,2,4,4,7,7,8,8,4,4]
+cloudiness=['Clear', 'Partly','Scattered','Light','Mostly','Rain','Overcast','Heavy','Fog','Haze']
+values=[0, 2, 4, 4, 7, 7, 8, 8, 4, 4]
 clouddict = {'Clear': 0, 'Partly Cloudy':2, 'Scattered Clouds':4, 'Light Rain':4, 'Mostly Cloudy':7, 'Rain':7, 'Overcast':8, 'Heavy Rain':8, 'Fog':4, 'Haze':4}
-
-
-def cloud_make_unix_timestamp(date_string, time_string):
-    """This command converts string format of date into unix timstamps."""
-    format = '%Y %m %d %H %M %S'
-    return time.mktime(time.strptime(date_string + " " + time_string, format))
-                       
-    
-def isLeapYear( year):
-    """This command checks if a year is a leap year."""
-    if (year % 400 == 0) :
-        return True
-    if (year % 100 == 0) :
-        return False
-    if (year % 4 == 0):
-        return True
-    else:
-        return False              
-  
-
-def daysInMonth(month,year):
-    """This command determines the number of days in a month"""
-    if (month == 2):
-      if (isLeapYear(year)):
-          return 29;
-      else:
-          return 28
-    elif (month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12):
-      return 31
-    else :
-      return 30
- 
-def dayInYear(month, day, year):
-    """This command determines what day of the year that particular day is."""
-    current = 1
-    numberOfDays = day
-    while (current < month):
-        numberOfDays = numberOfDays + daysInMonth(current, year)
-        current = current + 1
-    return numberOfDays
-
-def difference(month1, day1, year1, month2, day2, year2):
-    """This code determines the difference in the number of days between the two days.
-        Month1, day1, and year1 are later days than month2, day2, and year2"""
-    daycounter = 0;  
-    if (year1 == year2):
-        return (dayInYear(month1, day1, year1) - dayInYear(month2, day2,year2))
-    elif (isLeapYear(year2)):
-        daycounter = daycounter + (366 - dayInYear(month2, day2, year2))
-    else:
-        daycounter = daycounter + (365 - dayInYear(month2, day2, year2))
-    daycounter = daycounter + dayInYear(month1, day1, year1)
-    current = year2 + 1
-    while (current < year1):
-        if (isLeapYear(current)):
-            daycounter = daycounter + 366
-            current = current + 1
-        else:
-            daycounter = daycounter + 365
-            current = current + 1
-    return daycounter
-
-
-def arrayofdaysmonthsyears(month1,day1,year1,month2,day2,year2):
-    """This code returns the days and months and years in between 2
-        different days. It returns them in three different arrays so
-        that printing all the days in between 2 days is possible. """
-    daysleftinmonth2 = daysInMonth(month2, year2) - day2 + 1
-    if year1 == year2:
-            if month1 == month2:
-                monthsinbetween = 0
-            else:
-              monthsinbetween= month1 - month2 - 1
-    else:
-        monthsleftinyear2 = 12 - month2 - 1
-        monthsinbetween = monthsleftinyear2 + (12 *(year1 - (year2+1))) + month1
-    dayarray = []
-    montharray = []
-    yeararray= []
-    if year1 == year2:
-        if month2 == month1:
-          currentdays = day1 - day2 + 1
-        else:
-            currentdays = daysleftinmonth2
-    else:
-        currentdays = daysleftinmonth2        
-    currentday = day2
-    currentmonth = month2
-    currentyear = year2
-    while currentdays > 0:
-        dayarray.append(currentday)
-        montharray.append(currentmonth)
-        yeararray.append(currentyear)
-        currentdays = currentdays - 1
-        currentday = currentday + 1
-    fullmonths = monthsinbetween
-    currentmonth = month2 + 1
-    while fullmonths > 0:
-        if currentmonth > 12:
-              currentmonth = 1
-              currentyear = currentyear + 1
-        daystoadd = daysInMonth(currentmonth, currentyear)
-        currentdaytoadd = 1
-        while daystoadd > 0:
-            dayarray.append(currentdaytoadd)
-            montharray.append(currentmonth)
-            yeararray.append(currentyear)
-            currentdaytoadd = currentdaytoadd + 1
-            daystoadd = daystoadd - 1
-        currentmonth = currentmonth + 1
-        fullmonths = fullmonths - 1
-    daysinday1 = day1
-    finaldaytoadd = 1
-    if month2 != month1 or year1 != year2:
-          while daysinday1 > 0:
-              dayarray.append(finaldaytoadd)
-              montharray.append(month1)
-              yeararray.append(year1)
-              finaldaytoadd = finaldaytoadd + 1
-              daysinday1 = daysinday1 - 1
-    return [dayarray, montharray, yeararray]
-
-def arrayofdays(month1,day1,year1,month2,day2,year2):
-    """This code returns just the days between two different dates"""
-    return (arrayofdaysmonthsyears(month1,day1,year1,month2,day2,year2))[0]
-
-def arrayofmonths(month1,day1,year1,month2,day2,year2):
-    """This code returns just the months between two different dates"""
-    return (arrayofdaysmonthsyears(month1,day1,year1,month2,day2,year2))[1]
-
-def arrayofyears(month1,day1,year1,month2,day2,year2):
-    """This code returns just the years between two different dates"""
-    return (arrayofdaysmonthsyears(month1,day1,year1,month2,day2,year2))[2]
+tzname = 'America/Los_Angeles'
 
 def day_cloudiness():
     """This code determines what the average cloudiness of a day is
@@ -803,9 +256,9 @@ def createCloudData(end = strftime('%Y %m %d', time.localtime()), start = "2012 
     startday = int(start_split[2])
     endday = int(end_split[2])
 
-    DD = arrayofdays(endmonth,endday,endyear,startmonth,startday,startyear)
-    MM = arrayofmonths(endmonth,endday,endyear,startmonth,startday,startyear)
-    YYYY = arrayofyears(endmonth,endday,endyear,startmonth,startday,startyear)
+    DD = dtu.arrayofdays(endmonth,endday,endyear,startmonth,startday,startyear)
+    MM = dtu.arrayofmonths(endmonth,endday,endyear,startmonth,startday,startyear)
+    YYYY = dtu.arrayofyears(endmonth,endday,endyear,startmonth,startday,startyear)
     
     for i in range(len(DD)):
         month = str(MM[i])
@@ -819,32 +272,34 @@ def createCloudData(end = strftime('%Y %m %d', time.localtime()), start = "2012 
         url="http://api.wunderground.com/api/46c535271ddf6901/"+features+"/q/"+station+".json"
         print(url)
         data=urllib2.urlopen(url).read()
-        getdata=data.split(",")
-        for count in range(len(getdata)):
-            if '"tzname":' in getdata[count]:
-                if '"tzname": "UTC"' not in getdata[count]:
-                    minute = getdata[count-1].split(":")
-                    y2 = minute[1].strip().replace("\"","")
-                    if (y2 == "53"):
-                        timezone = getdata[count].split(":")
-                        x = timezone[1].replace("\"","").replace("}","").strip()
-                        hour = getdata[count-2].split(":")
-                        y1 = hour[1].strip().replace("\"","")
-                        clouds = getdata[count+30].split(":")
-                        cloudiness = clouds[1].replace("\"","")
-                        if cloudiness in clouddict.keys(): 
-                            cloudvalue = clouddict[cloudiness]
-                        else:
-                            cloudvalue = float('nan')
-                        unixtime = cloud_make_unix_timestamp(str(YYYY[i]) + " " + month + " " + day, y1 + " " + y2 + " " + "00")
-                        to_db = [x, YYYY[i], MM[i], DD[i], int(y1), int(y2), 0, unixtime, cloudiness,cloudvalue, float('nan')]
-                        cursor.execute('INSERT OR IGNORE INTO cloud VALUES (?,?,?,?,?,?,?,?,?,?,?)',
-                               to_db)
-        
-    #Save your changes
+        jsonData = json.loads(data)
+        observations = jsonData['history']['observations']
+        total = 0        
+        count = 0
+        for entry in observations:
+            timezone = entry['date']['tzname']
+            hour = entry['date']['hour']
+            minute = entry['date']['min']
+            cloudiness = entry['conds']
+            hum = entry['hum']
+            temp_f = entry['tempi']
+            if cloudiness in clouddict.keys(): 
+                cloudvalue = clouddict[cloudiness]
+                total += cloudvalue
+                count += 1
+            else:
+                cloudvalue = float('nan')
+            unixtime = dtu.make_unix_timestamp(str(YYYY[i]) + " " + month + " " + day, hour + " " + minute + " " + "00")
+            to_db = [timezone, YYYY[i], MM[i], DD[i], int(hour), int(minute), 0, unixtime, cloudiness, hum, temp_f, cloudvalue, float('nan')]
+            #print to_db
+            cursor.execute('INSERT OR IGNORE INTO cloud VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)',
+                   to_db)
+            connection.commit()
+        if count > 0:
+            average = float(total)/count
+        cursor.execute('UPDATE cloud SET daycloudvalue = ? WHERE month = ? AND day = ? AND YEAR = ?',
+                (average, MM[i], DD[i], YYYY[i]))
     connection.commit()
-    day_cloudiness()
-    
 
 def updateCloudData():
     """This command updates the cloud value in the database"""
@@ -1129,7 +584,6 @@ def createNewCitris(lat, lon, timezon):
     cursor = connection.cursor()
     lines = []
     with open("./COMPILED_test_data_8_30_to_10_23.txt") as file:
-    #with open("./newdata.txt") as file:
         for line in file:
             # The rstrip method gets rid of the "\n" at the end of each line
             lines.append(line.rstrip().split(","))
@@ -1137,23 +591,18 @@ def createNewCitris(lat, lon, timezon):
     lists = []
     for line in lines:
         lists.append([line[0].split()])
-
     date,time,lux,sensor = "","","",""
-
-
     for elem in lists:
         if len(elem[0]) == 12:
             date = (str(elem[0][0])).split("-")
             tim = str(elem[0][1]).split(":")
             date_string = date[0] + " " + date[1] + " " + date[2]
             time_string = (str(tim[0]) + " " + str(tim[1]) + " " + "00")
-            unix = int(cloud_make_unix_timestamp(date_string, time_string)) * 1000
+            unix = int(dtu.make_unix_timestamp(date_string, time_string)) * 1000
             lux = str(elem[0][7])
-            sensor = str(int(elem[0][9]))
+            sensor = str(int(elem[0][9]) + 4)
             print "sensor num: ", sensor
             table = 'light' + sensor
-            #table = 'nasalight' + sensor
-            #sunpos = getSunpos(lat, lon, timezon, date[0], date[1], date[2], tim[0], tim[1], 0)
             sunpos = getSunpos(lat, lon, timezon, date[0], date[1], date[2], tim[0], tim[1], 0)
             to_db = [unix, "Unknown", date[2], date[1], date[0],
                          tim[0], tim[1],0, lux, sunpos[0],
@@ -1167,12 +616,11 @@ def createNewCitris(lat, lon, timezon):
                            to_db)
     connection.commit()
 
-def createNewNasa(lat, lon, timezon):
+def createNewNasa(fileName, lat, lon, timezon):
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
     lines = []
-    #with open("./COMPILED_test_data_8_30_to_10_23.txt") as file:
-    with open("./newnasadata.txt") as file:
+    with open("./" + fileName) as file:
         for line in file:
             # The rstrip method gets rid of the "\n" at the end of each line
             lines.append(line.rstrip().split(","))
@@ -1180,23 +628,18 @@ def createNewNasa(lat, lon, timezon):
     lists = []
     for line in lines:
         lists.append([line[0].split()])
-
     date,time,lux,sensor = "","","",""
-
-
     for elem in lists:
         if len(elem[0]) == 12:
             date = (str(elem[0][0])).split("-")
             tim = str(elem[0][1]).split(":")
             date_string = date[0] + " " + date[1] + " " + date[2]
             time_string = (str(tim[0]) + " " + str(tim[1]) + " " + "00")
-            unix = int(cloud_make_unix_timestamp(date_string, time_string)) * 1000
+            unix = int(dtu.make_unix_timestamp(date_string, time_string)) * 1000
             lux = str(elem[0][7])
             sensor = str(int(elem[0][9]))# + 4)
             print "sensor num: ", sensor
-            #table = 'light' + sensor
             table = 'newnasalight' + sensor
-            #sunpos = getSunpos(lat, lon, timezon, date[0], date[1], date[2], tim[0], tim[1], 0)
             sunpos = getSunpos(lat, lon, timezon, date[0], date[1], date[2], tim[0], tim[1], 0)
             to_db = [unix, "Unknown", date[2], date[1], date[0],
                          tim[0], tim[1],0, lux, sunpos[0],
@@ -1209,6 +652,7 @@ def createNewNasa(lat, lon, timezon):
                            ' VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
                            to_db)
     connection.commit()
+    updateOldNasa()
     
 def createRawLightData():
     """Adds all the data starting from the beginning of data collection
@@ -1253,7 +697,8 @@ def createRawLightData():
     
     #Recent New Data
     createNewCitris(best_lat, best_lon, best_timezone)
-    createNewNasa(nasa_lat, nasa_lon,nasa_timezone)
+    createNewNasa("newnasadata.txt", nasa_lat, nasa_lon, nasa_timezone)
+    createNewNasa("newdata_0407.txt", nasa_lat, nasa_lon, nasa_timezone)
     connection.commit()
     
 
@@ -1265,8 +710,13 @@ def createLightData():
         greater than 12000 as they are outliers. Then it clusters
         the data within light1 and light8 and places those values
         into the other corresponding sensor tables. """
+
     print "Fetching Raw Light Data"
     createRawLightData()
+
+    # Add Dec 2013 - February 2014 data to nasalight tables
+    updateOldNasa()
+
     print "Deleting Extreme Lights"
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
@@ -1297,33 +747,51 @@ def createLightData():
     cursor.execute('DELETE FROM newnasalight6 WHERE light > 12000')
     cursor.execute('DELETE FROM newnasalight7 WHERE light > 12000')
     connection.commit()
+
     print "Processing Light Tables"
     insert_movingavg()
     insert_processed_light()
-    print 'Smoothing Light Tables'
+
+    print "Smoothing Light Tables"
     smoothingtables()
-    # TODO: need to cluster new nasa light tables --> need the window sensor!
-    print " Hard Clustering Light Tables"
-    light1 = cluster('light1', 1354348800000, 1364799600000)
-    nasalight8 = cluster('nasalight8', 1335859200000, 1358357465000)
-    light8 = cluster('light8', 1377887460000, 1382563860000)
-    create_cluster('light1', 1354348800000, 1364799600000, light1)
-    create_cluster('nasalight8', 1335859200000, 1358357465000, nasalight8)
-    create_cluster('light8', 1377887460000, 1382563860000, light8)
+
+    print "Hard Clustering Light Tables"
+    #light1 = cluster('light1', 1354348800000, 1364799600000)
+    #nasalight8 = cluster('nasalight8', 1335859200000, 1358357465000)
+    #nasalight8_summer = cluster('nasalight8', 1335859200000, 1358357465000) # Clustering more than needed
+    #nasalight8_winter = cluster('nasalight8', 1388534400000, 1389398400000) # Jan 1, 2014 to Jan 11, 2014
+    #nasalight8_winter = cluster('nasalight8', 1390176000000, 1391040000000) # Jan 20, 2014 to Jan 30, 2014
+    #light8 = cluster('light8', 1377887460000, 1382563860000)
+    #newnasalight1 = cluster('newnasalight1', 1386033540000, 1391559480000)
+    #newnasalight1 = cluster('newnasalight1', 1386033540000, 1387070340000)
+
+    #create_cluster('light1', 1354348800000, 1364799600000, light1)
+    #create_cluster('light8', 1377887460000, 1382563860000, light8)
+    # Original nasalight clustering
+    #create_cluster('nasalight8', 1335859200000, 1358357465000, nasalight8)
+
+    # nasalight clustering for summer traintimes, winter validation
+    #create_cluster('nasalight8', 1335859200000, 1358357465000, nasalight8_summer)
+    #create_cluster('nasalight8', 1388534400000, 1389398400000, nasalight8_winter)
+    #create_cluster('nasalight8', 1390176000000, 1391040000000, nasalight8_winter)
+    #create_cluster('newnasalight1', 1386033540000, 1391559480000, newnasalight1)
+    #create_cluster('newnasalight1', 1386033540000, 1387070340000, newnasalight1)
+
     print "Updating Other Clusters"
-    update_clusters('light1')
-    update_clusters('nasalight8')
-    update_clusters('light8')
-#    print "Soft-Clustering NASA"
-#    soft_cluster('NASA')
-#    print "Soft-Clustering Hesse"
-#    soft_cluster('Hesse')
-#    print "Soft-Clustering NewCitris"
-#    soft_cluster('NewCitris')
-#    print "Soft-Clustering NewNasa"
-#    soft_cluster('NewNasa')
-#    
-"""
+    #update_clusters('light1')
+    #update_clusters('nasalight8')
+    #update_clusters('light8')
+    #update_clusters('newnasalight1')
+
+    #print "Soft-Clustering NASA"
+    #soft_cluster('NASA')
+    #print "Soft-Clustering Hesse"
+    #soft_cluster('Hesse')
+    #print "Soft-Clustering NewCitris"
+    #soft_cluster('NewCitris')
+    #print "Soft-Clustering NewNasa"
+    #soft_cluster('NewNasa')
+
     Note: This part of the code has been commented out because it takes a long time.
     To fill these columns in the database, remove the red hashtags. 
     """
@@ -1341,6 +809,21 @@ def createLightData():
     #average_light(3, False)
     #print("Averaging light4")
     #average_light(4, False)
+
+def updateOldNasa():
+    connection = sqlite3.connect('data.db')
+    cursor = connection.cursor()
+    mapping = {'nasalight1': 'newnasalight5','nasalight2': 'newnasalight7', 'nasalight3':'newnasalight6', 'nasalight4': 'newnasalight3', 'nasalight8':'newnasalight1', 'nasalight9': 'newnasalight2'}
+    for key in mapping.keys():
+        other_table = mapping[key]
+        cursor.execute('SELECT * FROM ' + str(other_table))
+        alldata = cursor.fetchall()
+        for unix in alldata:
+            to_db = list(unix)
+            cursor.execute('INSERT OR IGNORE INTO ' + key +
+                          ' VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+                          to_db)
+    connection.commit()
 
 
 # Include Maximum Light Level in Database
@@ -1452,9 +935,9 @@ def updateData(sens_no, old, nasa, lat, lon, timezon):
 def movavg(testbed = 'all',mote = 'all',movavg_len=6):
     
     #determine options
-    allmotes = [ ['nasalight1','nasalight2','nasalight3','nasalight4','nasalight5','nasalight6','nasalight7','nasalight8','nasalight9'],['light1','light2','light3','light4','light5', 'light6', 'light7', 'light8', 'light9', 'light10'], ['newnasalight1', 'newnasalight2', 'newnasalight3', 'newnasalight4', 'newnasalight5', 'newnasalight6', 'newnasalight7'] ]
+    allmotes = [['nasalight1','nasalight2','nasalight3','nasalight4','nasalight5','nasalight6','nasalight7','nasalight8','nasalight9'], ['light1','light2','light3','light4'], ['light5', 'light6', 'light7', 'light8', 'light9', 'light10'], ['newnasalight1', 'newnasalight2', 'newnasalight3', 'newnasalight4', 'newnasalight5', 'newnasalight6', 'newnasalight7']]
     if testbed == 'all' and mote == 'all':
-        tb = ['NASA','Hesse', 'NewNasa']
+        tb = ['NASA','Hesse','NewCitris','NewNasa']
         motes = allmotes
     elif testbed != 'all':
         tb = [testbed]
@@ -1462,8 +945,10 @@ def movavg(testbed = 'all',mote = 'all',movavg_len=6):
             motes = [ allmotes[0] ]
         elif testbed == 'Hesse' and mote == 'all':
             motes = [ allmotes[1] ]
-        elif testbed == 'NewNasa' and mote == 'all':
+        elif testbed == 'NewCitris' and mote == 'all':
             motes = [ allmotes[2] ]
+        elif testbed == 'NewNasa' and mote == 'all':
+            motes = [ allmotes[3] ]
         else:
             motes = [ [mote] ]
     else:
@@ -1505,7 +990,11 @@ def insert_movingavg():
     connection=sqlite3.connect('data.db')
     cursor=connection.cursor()
     moving_avg = movavg()  
-    light_tables = ['light1', 'light2', 'light3', 'light4','light5', 'light6', 'light7', 'light8', 'light9', 'light10','nasalight1', 'nasalight2', 'nasalight3','nasalight4', 'nasalight5', 'nasalight6', 'nasalight7', 'nasalight8', 'nasalight9', 'newnasalight1', 'newnasalight2', 'newnasalight3', 'newnasalight4', 'newnasalight5', 'newnasalight6', 'newnasalight7']
+    light_tables = ['light1', 'light2', 'light3', 'light4', 'light5', 'light6', 'light7', \
+            'light8', 'light9', 'light10', 'nasalight1', 'nasalight2', 'nasalight3','nasalight4',\
+            'nasalight5', 'nasalight6', 'nasalight7', 'nasalight8', 'nasalight9', 'newnasalight1',\
+            'newnasalight2', 'newnasalight3', 'newnasalight4', 'newnasalight5', 'newnasalight6',\
+            'newnasalight7']
     for table in light_tables:
         data = moving_avg[table]
         for elem in data:
@@ -1517,13 +1006,14 @@ def insert_movingavg():
 def insert_processed_light(avg_len=3):
     connection=sqlite3.connect('data.db')
     cursor=connection.cursor()
-    light_tables = ['light1', 'light2', 'light3', 'light4','light5', 'light6', 'light7', 'light8', 'light9', 'light10','nasalight1', 'nasalight2', 'nasalight3','nasalight4', 'nasalight5', 'nasalight6', 'nasalight7', 'nasalight8', 'nasalight9', 'newnasalight1', 'newnasalight2', 'newnasalight3', 'newnasalight4', 'newnasalight5', 'newnasalight6', 'newnasalight7']
+    light_tables = ['light1', 'light2', 'light3', 'light4','light5', 'light6', 'light7', 'light8', \
+            'light9', 'light10','nasalight1', 'nasalight2', 'nasalight3','nasalight4', 'nasalight5', \
+            'nasalight6', 'nasalight7', 'nasalight8', 'nasalight9', 'newnasalight1', 'newnasalight2', \
+            'newnasalight3', 'newnasalight4', 'newnasalight5', 'newnasalight6', 'newnasalight7']
     for table in light_tables:
-
         #get threshold time
         cursor.execute('SELECT MIN(unixtime) FROM '+str(table))
         threshold = cursor.fetchall()[0][0]
-
         #processing
         print 'processing '+str(table)
         cursor.execute('SELECT light, movingavg, unixtime, cluster FROM ' + str(table))
@@ -1543,7 +1033,6 @@ def insert_processed_light(avg_len=3):
             value = abs(current_light - previous_light)
             other = abs(data[i][1] - previous_light) * 2.0
             if value > other:
-
                 #retrieve closest avg_len number of data to current
                 clust = data[i][3]
                 unix = data[i][2]
@@ -1563,10 +1052,8 @@ def insert_processed_light(avg_len=3):
                         retrieved = 'done'
                     if len(replace) == avg_len:
                         retrieved = 'done'
-
                 #average
                 replace = sum(replace)/avg_len
-                
                 cursor.execute('UPDATE ' + str(table) + ' SET processed = ' + str(replace) + ' WHERE unixtime = ' + str(data[i][2]))
                 i+=1
             else:
@@ -1705,7 +1192,7 @@ def smoothingtables():
     cursor = connection.cursor()
     hesse_tables = [1,2,3,4]
     types = ['exponential', 'average']
-    for elem in tables:
+    for elem in hesse_tables:
         table = 'light' + str(elem)
         print table
         for element in types:
@@ -1716,7 +1203,7 @@ def smoothingtables():
                 cursor.execute('UPDATE ' + str(table) + ' SET ' + str(element) + ' = ' + str(part[0]) + ' WHERE unixtime = ' + str(part[1]))
             connection.commit()
     newcitris_tables = [5, 6, 7, 8, 9, 10]
-    for elem in tables:
+    for elem in newcitris_tables:
         table = 'light' + str(elem)
         print table
         for element in types:
@@ -1738,7 +1225,7 @@ def smoothingtables():
                 cursor.execute('UPDATE ' + str(table) + ' SET ' + str(element) + ' = ' + str(part[0]) + ' WHERE unixtime = ' + str(part[1]))
             connection.commit()
     new_nasa_tables = [1,2,3,4,5,6,7]
-    for elem in nasa_tables:
+    for elem in new_nasa_tables:
         table = 'newnasalight' + str(elem)
         print table
         for element in types:
@@ -1819,7 +1306,9 @@ def cluster(table,start, end, cen_num = 3,iter_num = 100,n = 20):
     cs = [[1,0,0],[0,1,0],[0,0,1],[0,1,1],[1,1,0],[1,0,1],[0,0,0]]
     allcentroids = []
     #run kmeans (choose int_num and cen_num and iter_num)
-    for int_num in range(1):
+    #font = {'family': 'Times New Roman', 'size': 20}
+    #plt.rc('font', **font)
+    for int_num in range(24):
         #cen_num = 3
         #iter_num = 300
         #run kmeans n-times (different initialization points each time)
@@ -1860,27 +1349,77 @@ def cluster(table,start, end, cen_num = 3,iter_num = 100,n = 20):
             # centroid stores all n centroids
             centroid = centroids
             # just the one with min J
-            plt.scatter(centroid[np.argmin(Js)][:,0],centroid[np.argmin(Js)][:,1],s=200,c=cs[:cen_num])
-            colors = ([(cs[:cen_num])[j] for j in labs[np.argmin(Js)]])
-            plt.scatter(avgs[int_num],stdss,c=colors)
-            centroid = centroid[np.argmin(Js)]
+            if int_num == 22: 
+                fig=mpl.pyplot.gcf()
+                fig, ax = plt.subplots()
+                colors = ([(cs[:cen_num])[j] for j in labs[np.argmin(Js)]])
+                ax.scatter(avgs[int_num],stds[int_num],c=colors)
+                ax.scatter(centroid[np.argmin(Js)][:,0],centroid[np.argmin(Js)][:,1],s=100,c=cs[:cen_num])
+                ax.set_xlabel('Mean Illuminance (lux)',fontsize=30)
+                ax.set_ylabel('Deviation of Illuminance (% from Mean)', fontsize=30)
+                #ax.set_title('Clustering for 5:00-5:30pm', fontsize=30)
+                ax.set_title('Clustering for 10:30-11:00am', fontsize=30)
+                print int(np.max(avgs[int_num])), int(np.max(stds[int_num]))
+                ax.axis([0, int(np.max(avgs[int_num])), 0, int(np.max(stds[int_num]))])
+                for tick in ax.xaxis.get_major_ticks():
+                        tick.label.set_fontsize(24)
+                for tick in ax.yaxis.get_major_ticks():
+                        tick.label.set_fontsize(24)
+                fig.set_size_inches(10.5,9)
+                #plt.savefig('5:00-5:30.png',dpi=400)
+                plt.savefig('10:30-11:30.png',dpi=400)
+                plt.show()
+                #plt.scatter(centroid[np.argmin(Js)][:,0],centroid[np.argmin(Js)][:,1],s=200,c=cs[:cen_num])
+                #colors = ([(cs[:cen_num])[j] for j in labs[np.argmin(Js)]])
+                #plt.scatter(avgs[int_num],stdss,c=colors)
+                #centroid = centroid[np.argmin(Js)]
+                #plt.suptitle('Clustering for 5:00-5:30pm')
+                #plt.xlabel("Mean Illuminance (lux)")
+                #plt.ylabel("Deviation of Illuminance (Percentage from Mean)")
+                ###path = "./nasalight1-interval" + str(i)
+                ###save(path, ext="png", close=True, verbose=False)
+                ##plt.show()
+                #plt.show()
         else:
             centroid,lab = kmeans2(allpoints,cen_num,iter_num,minit='points')
             colors = ([(cs[:cen_num])[j] for j in lab])
-            plt.scatter(avgs[int_num],stds[int_num],c=colors)
-            plt.scatter(centroid[:,0],centroid[:,1],s=100,c=cs[:cen_num])
-            #plt.savefig('D:/Ben/Downloads/Classify/cluster.png')
+            if int_num == 22:
+                fig=matplotlib.pyplot.gcf()
+                fig, ax = plt.subplots()
+                ax.scatter(avgs[int_num],stds[int_num],c=colors)
+                ax.scatter(centroid[:,0],centroid[:,1],s=100,c=cs[:cen_num])
+                ax.set_xlabel('Mean Illuminance (lux)',fontsize=30)
+                ax.set_ylabel('Deviation of Illuminance (% from Mean)', fontsize=30)
+                ax.suptitle('Clustering for 5:00-5:30pm')
+                ax.axis([0, int(np.max(avgs[int_num])), 0, int(np.max(stds[int_num]))])
+                for tick in ax.xaxis.get_major_ticks():
+                        tick.label.set_fontsize(24)
+                for tick in ax.yaxis.get_major_ticks():
+                        tick.label.set_fontsize(24)
+                fig.set_size_inches(10.5,9)
+                plt.savefig('5:00-5:30.png',dpi=400)
+                plt.show()
+                #plt.scatter(avgs[int_num],stds[int_num],c=colors)
+                #plt.scatter(centroid[:,0],centroid[:,1],s=100,c=cs[:cen_num])
+                ##plt.savefig('D:/Ben/Downloads/Classify/cluster.png')
+                #plt.suptitle('Clustering for 5:00-5:30pm')
+                #plt.xlabel("Mean Illuminance (lux)")
+                #plt.ylabel("Deviation of Illuminance (Percentage from Mean)")
+                ###path = "./nasalight1-interval" + str(i)
+                ###save(path, ext="png", close=True, verbose=False)
+                ##plt.show()
+                #plt.show()
             dists = []
             for count in range(len(allpoints)):
                 dist = np.linalg.norm(allpoints[count]-centroid[lab[count]])
                 dists.append(dist)
             J = 1.0/float(len(allpoints))*np.sum(np.array(dists)**2)
         allcentroids.append(centroid)
-    plt.xlabel("Mean Illuminance (lux)")
-    plt.ylabel("Standard Deviation of Illuminance (lux)")
-    #path = "./nasalight1-interval" + str(i)
-    #save(path, ext="png", close=True, verbose=False)
-    plt.show()
+    #plt.xlabel("Mean Illuminance (lux)")
+    #plt.ylabel("Standard Deviation of Illuminance (lux)")
+    ##path = "./nasalight1-interval" + str(i)
+    ##save(path, ext="png", close=True, verbose=False)
+    #plt.show()
     return allcentroids
 
 
@@ -1890,6 +1429,7 @@ def whereisit(light,interval,acs,n=3):
     point = np.array([avg,std])
     dists = []
     for count in range(n):
+        # ERROR: index out of range??
         dist = np.linalg.norm(point - acs[interval][count])
         dists.append(dist)
     tag = interval*n+np.argmin(dists)
@@ -1939,7 +1479,7 @@ def create_cluster(table, start, end, cluster_results):
                 for i in element:
                     lights.append(i[0])
                     unixtimes.append(i[4])
-                cluster = whereisit(lights, interval,cluster_results)
+                cluster = whereisit(lights, interval, cluster_results)
                 for time in unixtimes:
                     cursor.execute('UPDATE ' + str(table) + ' SET cluster = ' + str(cluster) + ' WHERE unixtime = ' + str(time))
                 connection.commit()
@@ -1953,10 +1493,11 @@ def update_clusters(table):
         tables = ['light2', 'light3', 'light4']
     elif table == 'light8':
         tables = ['light5', 'light6', 'light7', 'light9', 'light10']
-    elif table == ['newnasalight1']:
+    elif table == 'newnasalight1':
         tables = ['newnasalight2', 'newnasalight3', 'newnasalight4', 'newnasalight5', 'newnasalight6', 'newnasalight7']
     else:
-        tables = ['nasalight1', 'nasalight2', 'nasalight3', 'nasalight4', 'nasalight5', 'nasalight6', 'nasalight7', 'nasalight9']
+        tables = ['nasalight1', 'nasalight2', 'nasalight3', 'nasalight4', 'nasalight5', 'nasalight6', 'nasalight7', 'nasalight9'] + ['newnasalight2', 'newnasalight3', 'newnasalight4', 'newnasalight5', 'newnasalight6', 'newnasalight7']
+
     for other_tables in tables:
         a = cursor.execute('SELECT cluster, unixtime FROM ' + str(table) + ' WHERE cluster >= 0')
         y = a.fetchall()
@@ -2105,11 +1646,11 @@ def soft_cluster(testbed):
         tables = ['light1', 'light2', 'light3', 'light4']
         month = inter(1354370571000.0,1364777853000.0)
     elif testbed == 'NewCitris':
-        tables = ['light1', 'light2', 'light3', 'light4', 'light5', 'light6', 'light7', 'light8', 'light9', 'light10']
+        tables = ['light5', 'light6', 'light7', 'light8', 'light9', 'light10']
         month = inter(1354370571000.0,1364777853000.0)
     else:
         tables = ['newnasalight1', 'newnasalight2', 'newnasalight3', 'newnasalight4', 'newnasalight5', 'newnasalight6', 'newnasalight7']
-        month = inter(1354370571000.0,1364777853000.0)
+        month = inter(1386033540000,1391559480000)
     for table in tables:
         print table
         avgs, stds, time = new_classify(month, table)
@@ -2146,19 +1687,12 @@ def soft_cluster(testbed):
 ##############################
 
 LightA = [(1337950800000,100), (1337997900000, 100), (1337998260000,0),(1338210000000,100),
-
         (1338257100000,100),(1338257460000,0),(1338296400000,100),(1338343500000,100),
-
         (1338343860000,0),(1338382800000,100),(1338426900000,0),(1338429900000,0),
-
         (1338469200000,100),(1338516300000,100),(1338516600000,0),(1338555600000,100),
-
         (1338602700000,100),(1338603060000,0),(1338814800000,100),(1338861900000,100),
-
         (1338862260000,0),(1338901200000,100),(1338948300000,100),(1338948660000,0),
-
         (1338987600000,100),(1339034700000,100),(1339035000000,0),(1339074000000,100),
-
         (1339121100000,100),(1339121460000, 0),(1339160400000, 100),(1339171440000,0)]
 
 LightB = [(1337950800000,100),(1337997900000,100),(1337998260000,0), (1338210000000,100),
@@ -2326,10 +1860,10 @@ def createDatabase():
     create_tables()
     createCloudData()
     createLightData()
-    create_artificial(True)
-    create_artificial(False)
-    print "Clustering Artificial Light"
-    artificial_clusters()
+    #create_artificial(True)
+    #create_artificial(False)
+    #print "Clustering Artificial Light"
+    #artificial_clusters()
         
 def updateDatabase():
     #updateCloudData()
@@ -2389,13 +1923,13 @@ def save(path, ext='png', close=True, verbose=True):
         print("Done")
 
 if __name__ == '__main__':
-    #best_lat = "37 52 27.447"
-    #best_lon = "122 15 33.3864 W"
-    #best_timezone = "US/Pacific"
-    createNewCitris(best_lat, best_lon, best_timezone)
-    createNewNasa(nasa_lat, nasa_lon, nasa_timezone)
-    createDatabase()
+    print "Done!"
+    #createDatabase()
 
+    # Adding new data to the database from a text file
+    #createNewNasa('newdata_0407.txt', nasa_lat, nasa_lon, nasa_timezone)
+
+    # Generating Plots
     #connection = sqlite3.connect('data.db')
     #cursor = connection.cursor()
     #cursor.execute('SELECT MIN(unixtime), MAX(unixtime) FROM nasalight1')
@@ -2403,3 +1937,8 @@ if __name__ == '__main__':
     #minunixtime = unixtimedata[0][0]
     #maxunixtime = unixtimedata[0][1]
     #cluster('nasalight1', minunixtime, maxunixtime, cen_num = 3,iter_num = 100,n = 20)
+
+    #nasalight8 = cluster('nasalight8', 1335859200000, 1358357465000)
+    # Original nasalight clustering
+    #create_cluster('nasalight8', 1335859200000, 1358357465000, nasalight8)
+    #update_clusters('nasalight8')

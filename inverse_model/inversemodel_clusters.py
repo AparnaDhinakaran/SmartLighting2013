@@ -13,6 +13,7 @@ def inversemodel(testbed,dependents,regressors,option='noaltitude'):
     if testbed=='NASA':
         open('inverse_model_coefficients_NASA.txt','w').close()
         traintimes = [1337929200000,1338966000000] #May25toJun5(midnight-to-midnight)
+        #traintimes = [1367712000000, 1368576000000] #May 5, 2013 to May 15, 2013
     elif testbed=='Hesse':
         open('inverse_model_coefficients_Hesse.txt','w').close()
         traintimes = [1355644800000,1356508800000] #Dec16toDec26(midnight-to-midnight)
@@ -21,8 +22,7 @@ def inversemodel(testbed,dependents,regressors,option='noaltitude'):
         traintimes = [1377887460000, 1382563860000]
     elif testbed == 'NewNasa':
         open('inverse_model_coefficients_NewNasa.txt', 'w').close()
-        traintimes = [1386033540000,1391559480000]
-
+        traintimes = [1386033540000, 1387070340000]
     #connect db
     connection=sqlite3.connect('data.db')
     cursor=connection.cursor()
@@ -35,11 +35,13 @@ def inversemodel(testbed,dependents,regressors,option='noaltitude'):
         light[mote]=dict()
 
     #inversemodel    
-    for clust in range(72):
+    #for clust in range(72):
+    for clust in range(71):
 
         #retrieve sunangle data for each mote
         for mote in regressors:
             sunangle[mote]=[]
+            #print('SELECT altitude FROM %s WHERE unixtime>=%f AND unixtime<=%f AND cluster = %f' %(mote,traintimes[0],traintimes[1],clust))
             cursor.execute('SELECT altitude FROM %s WHERE unixtime>=%f AND unixtime<=%f AND cluster = %f' %(mote,traintimes[0],traintimes[1],clust))
             dat = cursor.fetchall()
             for count in dat:
@@ -128,6 +130,7 @@ def inversemodel(testbed,dependents,regressors,option='noaltitude'):
 
                     #save coeffs and constant to text
                     data=coeffs+'    '+str(constant)+'    '+str(sunanglerange[angle])+'    '+str(clust)+'\n'      
+                    #print "writing data: " + data
                     savedata.write(data)                        
             savedata.close()      
 
@@ -140,15 +143,16 @@ def inversemodel_hour(testbed,dependents,regressors,option='noaltitude'):
     if testbed=='NASA':
         open('inverse_model_coefficients_NASA_hour.txt','w').close()
         traintimes = [1337929200000,1338966000000] #May25toJun5(midnight-to-midnight)
+        #traintimes = [1367712000000, 1368576000000] #May 5, 2013 to May 15, 2013
     elif testbed=='Hesse':
         open('inverse_model_coefficients_Hesse_hour.txt','w').close()
         traintimes = [1362175776000,1362729428000] #Mar1toMar7
     elif testbed == 'NewCitris':
-        open('inverse_model_coefficients_NewCitris.txt', 'w').close()
+        open('inverse_model_coefficients_NewCitris_hour.txt', 'w').close()
         traintimes = [1377887460000, 1382563860000]
     elif testbed == 'NewNasa':
-        open('inverse_model_coefficients_NewNasa.txt', 'w').close()
-        traintimes = [1386033540000,1391559480000]
+        open('inverse_model_coefficients_NewNasa_hour.txt', 'w').close()
+        traintimes = [1386033540000, 1387070340000]
 
     #connect db
     connection=sqlite3.connect('data.db')

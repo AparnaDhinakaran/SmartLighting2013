@@ -22,12 +22,15 @@ def record_error(tt,testbed,dep,regs,clust_type,option):
     if testbed == 'NASA':
         savefile = open('results_NASA.txt','a')
         f = open('compreg_NASA.txt','a')
-    if testbed == 'Hesse':
+    elif testbed == 'Hesse':
         savefile = open('results_Hesse.txt','a')
         f = open('compreg_Hesse.txt','a')
-    if testbed == 'NewCitris':
+    elif testbed == 'NewCitris':
         savefile = open('results_NewCitris.txt','a')
         f = open('compreg_NewCitris.txt','a')
+    elif testbed == 'NewNasa':
+        savefile = open('results_NewNasa.txt','a')
+        f = open('compreg_NewNasa.txt','a')
 
 
     #head files
@@ -72,12 +75,15 @@ def compare_regression(tt,testbed,depmotes,regmotes,clust_type='interval',option
     if testbed == 'NASA':
         savefile = open('results_NASA.txt','a')
         f = open('compreg_NASA.txt','a')
-    if testbed == 'Hesse':
+    elif testbed == 'Hesse':
         savefile = open('results_Hesse.txt','a')
         f = open('compreg_Hesse.txt','a')
-    if testbed == 'NewCitris':
+    elif testbed == 'NewCitris':
         savefile = open('results_NewCitris.txt','a')
         f = open('compreg_NewCitris.txt','a')
+    elif testbed == 'NewNasa':
+        savefile = open('results_NewNasa.txt','a')
+        f = open('compreg_NewNasa.txt','a')
     savefile.write('\n/////START COMPARE REGRESSION/////\n')
     savefile.close()
     f.write('\n/////START COMPARE REGRESSION/////\n')
@@ -91,23 +97,29 @@ def compare_regression(tt,testbed,depmotes,regmotes,clust_type='interval',option
         window = ['light1']
     elif testbed == 'NewCitris':
         window = ['light8']
+    elif testbed == 'NewNasa':
+        window = ['newnasalight1']
     in_list = regmotes
     out_list = []
     for i in range(0,len(in_list)+1):
         out_list.extend(itertools.combinations(in_list,i))
     for dmote in depmotes:
         validtimes = tt
-        if dmote == 'nasalight3':
-            validtimes = [1339138800000,1339570800000] #Jun8toJun13(midnight-to-midnight)
-        print dmote
+        #if dmote == 'nasalight3':
+        #    validtimes = [1339138800000,1339570800000] #Jun8toJun13(midnight-to-midnight)
         rmserrs[dmote]=[]
         combo = 0
         for reg in out_list:
             combo+=1
+            #if window not in list(reg):
+            #    allregs = window + list(reg)
+            #else:
+            #    allregs = list(reg)
             allregs = window + list(reg)
             if combo == int(pow(2,len(regmotes))/2):
                 print '...Halfway through Combinations...'
             ic.inversemodel(testbed,dmote,allregs,option)
+            print "(dmote, reg): ", dmote, ", ", allregs
             val,per = record_error(validtimes,testbed,dmote,allregs,clust_type,option)
             rmserrs[dmote].append([val,per,allregs])
         print 'Number of Regressor Combinations: '+str(combo)
@@ -122,8 +134,12 @@ def compare_regression(tt,testbed,depmotes,regmotes,clust_type='interval',option
     if testbed == 'NewCitris':
         savefile = open('results_NewCitris.txt', 'a')
         f = open('compreg_NewCitris.txt', 'a')
+    if testbed == 'NewNasa':
+        savefile = open('results_NewNasa.txt', 'a')
+        f = open('compreg_NewNasa.txt', 'a')
     savefile.write('\n/////COMPLETED COMPARE REGRESSION/////\n')
     savefile.close()
     f.write('\n/////COMPLETED COMPARE REGRESSION/////\n')
     f.close()
+    print 'rmserrs:', rmserrs
     return rmserrs
