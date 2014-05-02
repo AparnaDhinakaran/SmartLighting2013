@@ -2,7 +2,7 @@
 
 """
 SHORTCUT (CREATES MOST RECENT DATABASE):
-    Delete data.db (if you have an old database)
+
     Run the command
         >>> createDatabase()
 
@@ -1321,8 +1321,8 @@ def cluster(table,start, end, cen_num = 3,iter_num = 100,n = 20):
         if n > 1:
             Js = []
             labs = []
-            plt.figure()
-            plt.scatter(avgs[int_num],stdss,c=cs[6])
+            #plt.figure()
+            #plt.scatter(avgs[int_num],stdss,c=cs[6])
             for i in range(n):
                 dists = []
                 centroid,lab = kmeans2(allpoints,cen_num,iter_num,minit='points')
@@ -1368,8 +1368,8 @@ def cluster(table,start, end, cen_num = 3,iter_num = 100,n = 20):
                         tick.label.set_fontsize(24)
                 fig.set_size_inches(10.5,9)
                 #plt.savefig('5:00-5:30.png',dpi=400)
-                plt.savefig('10:30-11:30.png',dpi=400)
-                plt.show()
+                #plt.savefig('10:30-11:30.png',dpi=400)
+                #plt.show()
                 #plt.scatter(centroid[np.argmin(Js)][:,0],centroid[np.argmin(Js)][:,1],s=200,c=cs[:cen_num])
                 #colors = ([(cs[:cen_num])[j] for j in labs[np.argmin(Js)]])
                 #plt.scatter(avgs[int_num],stdss,c=colors)
@@ -1398,8 +1398,8 @@ def cluster(table,start, end, cen_num = 3,iter_num = 100,n = 20):
                 for tick in ax.yaxis.get_major_ticks():
                         tick.label.set_fontsize(24)
                 fig.set_size_inches(10.5,9)
-                plt.savefig('5:00-5:30.png',dpi=400)
-                plt.show()
+                #plt.savefig('5:00-5:30.png',dpi=400)
+                #plt.show()
                 #plt.scatter(avgs[int_num],stds[int_num],c=colors)
                 #plt.scatter(centroid[:,0],centroid[:,1],s=100,c=cs[:cen_num])
                 ##plt.savefig('D:/Ben/Downloads/Classify/cluster.png')
@@ -1861,10 +1861,10 @@ def createDatabase():
     create_tables()
     createCloudData()
     createLightData()
-    #create_artificial(True)
-    #create_artificial(False)
-    #print "Clustering Artificial Light"
-    #artificial_clusters()
+    create_artificial(True)
+    create_artificial(False)
+    print "Clustering Artificial Light"
+    artificial_clusters()
         
 def updateDatabase():
     #updateCloudData()
@@ -1925,7 +1925,7 @@ def save(path, ext='png', close=True, verbose=True):
 
 if __name__ == '__main__':
     print "Done!"
-    #createDatabase()
+    createDatabase()
 
     # Adding new data to the database from a text file
     #createNewNasa('newdata_0407.txt', nasa_lat, nasa_lon, nasa_timezone)
@@ -1942,4 +1942,16 @@ if __name__ == '__main__':
     #nasalight8 = cluster('nasalight8', 1335859200000, 1358357465000)
     # Original nasalight clustering
     #create_cluster('nasalight8', 1335859200000, 1358357465000, nasalight8)
+    #update_clusters('nasalight8')
+
+    #nasalight8 = cluster('nasalight8', 1394409600000, 1395619200000)
+    #create_cluster('nasalight8', 1394409600000, 1395619200000, nasalight8)
+    #update_clusters('nasalight8')
+
+    #nasalight8 = cluster('nasalight8', 1395446400000, 1396742400000)
+    #create_cluster('nasalight8', 1395446400000, 1396742400000, nasalight8)
+    #update_clusters('nasalight8')
+
+    #nasalight8 = cluster('nasalight8', 1391990400000, 1393200000000)
+    #create_cluster('nasalight8', 1391990400000, 1393200000000, nasalight8)
     #update_clusters('nasalight8')

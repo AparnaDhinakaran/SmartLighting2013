@@ -2366,3 +2366,9 @@ RMS value error is nan and RMS percent error is nan for newnasalight5 using noal
 RMS value error is nan and RMS percent error is nan for newnasalight6 using noaltitude and ['newnasalight1', 'newnasalight3']
 
 RMS value error is nan and RMS percent error is nan for newnasalight7 using noaltitude and ['newnasalight1', 'newnasalight3']
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NewNasa Dependents: nasalight2 Regressors: ['newnasalight1']

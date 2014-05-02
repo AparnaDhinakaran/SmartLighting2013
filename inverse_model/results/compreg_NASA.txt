@@ -1838,3 +1838,747 @@ Hours 6 to 18  1551  1551  95.49  0.31  1551  0  0
 Hours 6 to 18  1473  1473  93.16  0.27  1473  0  0
 
 /////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+Hours 6 to 18  1979  1979  1174.32  4.46  8906  0  -6927
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+Hours 6 to 18  1979  1979  1174.32  4.46  10902  0  -8923
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1941  1941  203.12  0.78  11680  0  -9739
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1958  1958  47.73  0.69  12758  0  -10800
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1895  1895  105.77  0.38  13316  0  -11421
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8']
+Hours 6 to 18  1972  1972  321.26  1.23  14762  0  -12790
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1905  1905  454.13  0.67  15330  0  -13425
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1952  1952  390.24  0.61  16575  0  -14623
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1889  1889  436.48  0.63  17018  0  -15129
+
+/////START COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+Hours 6 to 18  1979  1979  1174.32  4.46  18969  0  -16990
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1941  1941  203.12  0.78  19618  0  -17677
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1958  1958  47.73  0.69  20761  0  -18803
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1895  1895  105.77  0.38  21108  0  -19213
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8']
+Hours 6 to 18  1972  1972  321.26  1.23  22732  0  -20760
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1905  1905  454.13  0.67  23106  0  -21201
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1952  1952  390.24  0.61  24489  0  -22537
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1889  1889  436.48  0.63  24721  0  -22832
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+Hours 6 to 18  1979  1979  1174.32  4.46  26953  0  -24974
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1941  1941  203.12  0.78  27474  0  -25533
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1958  1958  47.73  0.69  28681  0  -26723
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1895  1895  105.77  0.38  28820  0  -26925
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8']
+Hours 6 to 18  1972  1972  321.26  1.23  30620  0  -28648
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1905  1905  454.13  0.67  30802  0  -28897
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1952  1952  390.24  0.61  32321  0  -30369
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1889  1889  436.48  0.63  32345  0  -30456
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+Hours 6 to 18  1979  1979  52.06  8.36  34808  0  -32829
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1941  1941  114.96  2.45  35054  0  -33113
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1958  1958  54.53  0.87  36187  0  -34229
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1895  1895  72.6  0.38  35936  0  -34041
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8']
+Hours 6 to 18  1972  1972  478.63  1.33  37868  0  -35896
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1905  1905  533.36  0.91  37682  0  -35777
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1952  1952  477.95  0.71  39194  0  -37242
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1889  1889  462.87  0.66  38785  0  -36896
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+Hours 6 to 18  1979  1979  138.91  2.38  41841  0  -39862
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1941  1941  156.43  1.58  41986  0  -40045
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1958  1958  97.47  0.93  43273  0  -41315
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1895  1895  193.62  1.92  42852  0  -40957
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8']
+Hours 6 to 18  1972  1972  301.62  2.94  45162  0  -43190
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1905  1905  291.25  2.12  44860  0  -42955
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1952  1952  445.38  4.31  46595  0  -44643
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1889  1889  584.54  3.66  46057  0  -44168
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+Hours 6 to 18  1979  1979  52.09  8.74  61716  0  -59737
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1941  1941  58.68  6.55  62392  0  -60451
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1958  1958  110.93  17.79  64708  0  -62750
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1895  1895  94.82  8.71  64528  0  -62633
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8']
+Hours 6 to 18  1972  1972  415.92  12.46  68412  0  -66440
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1905  1905  347.93  5.26  68404  0  -66499
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1952  1952  394.79  8.45  71383  0  -69431
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1889  1889  339.17  1.75  71021  0  -69132
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+Hours 6 to 18  1979  1979  138.91  2.38  78291  0  -76312
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+
+/////START COMPARE REGRESSION/////
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+/////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8']
+Hours 6 to 18  1648  1648  95.42  3.29  66053  0  -64405
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1627  1627  98.28  3.56  66476  0  -64849
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1648  1648  53.35  2.87  67359  0  -65711
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight2 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1646  1646  132.85  4.39  67964  0  -66318
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8']
+Hours 6 to 18  1673  1673  123.03  6.46  70114  0  -68441
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  1668  1668  129.35  5.29  70742  0  -69074
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  1673  1673  216.35  10.9  71458  0  -69785
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight3 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  1672  1672  326.89  13.28  72110  0  -70438
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight5 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight6 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+
+ From Tue, 31 Dec 2013 16:00:00 to Sun, 12 Jan 2014 16:00:00
+ Testbed: NASA Dependents: nasalight7 Regressors: ['nasalight8', 'nasalight1', 'nasalight4']
+Hours 6 to 18  0  0  nan  nan  0  0  0
+
+/////COMPLETED COMPARE REGRESSION/////

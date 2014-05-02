@@ -1,3 +1,5 @@
+import time
+
 def make_unix_timestamp(date_string, time_string):
     """This command converts string format of date into unix timstamps."""
     format = '%Y %m %d %H %M %S'
@@ -17,7 +19,7 @@ def isLeapYear( year):
 def daysInMonth(month,year):
     """This command determines the number of days in a month"""
     if (month == 2):
-        if (dtu.isLeapYear(year)):
+        if (isLeapYear(year)):
             return 29
         else:
             return 28
@@ -31,7 +33,7 @@ def dayInYear(month, day, year):
     current = 1
     numberOfDays = day
     while (current < month):
-        numberOfDays = numberOfDays + dtu.daysInMonth(current, year)
+        numberOfDays = numberOfDays + daysInMonth(current, year)
         current = current + 1
     return numberOfDays
 
@@ -39,7 +41,7 @@ def arrayofdaysmonthsyears(month1, day1, year1, month2, day2, year2):
     """This code returns the days and months and years in between 2
         different days. It returns them in three different arrays so
         that printing all the days in between 2 days is possible. """
-    daysleftinmonth2 = dtu.daysInMonth(month2, year2) - day2 + 1
+    daysleftinmonth2 = daysInMonth(month2, year2) - day2 + 1
     if year1 == year2:
             if month1 == month2:
                 monthsinbetween = 0
@@ -73,7 +75,7 @@ def arrayofdaysmonthsyears(month1, day1, year1, month2, day2, year2):
         if currentmonth > 12:
               currentmonth = 1
               currentyear = currentyear + 1
-        daystoadd = dtu.daysInMonth(currentmonth, currentyear)
+        daystoadd = daysInMonth(currentmonth, currentyear)
         currentdaytoadd = 1
         while daystoadd > 0:
             dayarray.append(currentdaytoadd)
@@ -96,13 +98,13 @@ def arrayofdaysmonthsyears(month1, day1, year1, month2, day2, year2):
 
 def arrayofdays(month1,day1,year1,month2,day2,year2):
     """This code returns just the days between two different dates"""
-    return (dtu.arrayofdaysmonthyears(month1,day1,year1,month2,day2,year2))[0]
+    return (arrayofdaysmonthsyears(month1,day1,year1,month2,day2,year2))[0]
 
 def arrayofmonths(month1,day1,year1,month2,day2,year2):
     """This code returns just the months between two different dates"""
-    return (dtu.arrayofdaysmonthyears(month1,day1,year1,month2,day2,year2))[1]
+    return (arrayofdaysmonthsyears(month1,day1,year1,month2,day2,year2))[1]
 
 def arrayofyears(month1,day1,year1,month2,day2,year2):
     """This code returns just the years between two different dates"""
-    return (dtu.arrayofdaysmonthyears(month1,day1,year1,month2,day2,year2))[2]
+    return (arrayofdaysmonthsyears(month1,day1,year1,month2,day2,year2))[2]
 
