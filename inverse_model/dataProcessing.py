@@ -10,30 +10,28 @@
 import math
 import numpy as np
 
-def process(dataDict,option='light',intervalSize=300000):
-
-    #initialize
-    finaldataDict=dict()
+def process(dataDict, option='light', intervalSize=300000):
+    # Initialize
+    finaldataDict = dict()
     for mote in dataDict.keys():
-        finaldataDict[mote]=[]
-    empties=0 #track
-    unixtimes=[]
+        finaldataDict[mote] = []
+    empties = 0 #track
+    unixtimes = []
 	
-    #retrieve unixtimes of the first mote
-    key=dataDict.keys()[0]
+    # Retrieve unixtimes of the first mote
+    key = dataDict.keys()[0]
     for ind in range(len(dataDict[key])):
-        unixtime=dataDict[key][ind][1]
+        unixtime = dataDict[key][ind][1]
         unixtimes.append(unixtime)
-    #print unixtimes
 
-    #match unixtimes to that of first mote
+    # Match unixtimes to that of first mote
     i = 0
     for unixtime in unixtimes:
-        timepointData=dict()
-        Uwindow=math.ceil(unixtime+0.5*(intervalSize))
-        Dwindow=math.floor(unixtime-0.5*(intervalSize))
+        timepointData = dict()
+        Uwindow = math.ceil(unixtime+0.5*(intervalSize))
+        Dwindow = math.floor(unixtime-0.5*(intervalSize))
         for moteNum in dataDict.keys():
-            timepointData[moteNum]=[]
+            timepointData[moteNum] = []
 
             #relevant is a list of datapoints that is within time window
             relevant=[datum for datum in dataDict[moteNum] if Dwindow<=datum[1]<Uwindow and datum[0]!=1.0]
@@ -72,5 +70,4 @@ def process(dataDict,option='light',intervalSize=300000):
     #result
     if len(finaldataDict)==0: 
         print 'FAILURE: no matching datapoints'
-    #print "finaldataDict: ", finaldataDict
     return finaldataDict

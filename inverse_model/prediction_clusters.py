@@ -1,54 +1,47 @@
-import sqlite3
+import dataProcessing as dP
+import math
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
-import math
-import dataProcessing as dP
+import sqlite3
 
-def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitude'):
+windowsMap = {'NASA': 'nasalight8',
+              'Hesse': 'light1',
+              'NewCitris': 'light8',
+              'NewNasa': 'newnasalight1'}
 
-    #keep track of data
+def prediction(traintimes, cluster, testbed, dependent, regressors, option = 'noaltitude'):
+
+    # Keep track of data
     counted = 0
     uncounted = 0
     countedlim = 0
 
-    #defaulted options
-    bins = 1
-
-    #connect db
+    # Connect db
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
             
-    #retrieve all regressors and dependent data
+    # Retrieve all regressors and dependent data
     allmotes = [dependent] + regressors
     all_light = dict()
     for mote in allmotes:
         all_light[mote] = []
-        # winter_summer: our case is 'all'
         if cluster == 'all':
-            cursor.execute('SELECT average,unixtime,cluster,altitude FROM %s WHERE unixtime>=%f AND unixtime<=%f AND cluster>=0' %(mote, traintimes[0],traintimes[1]))
+            cursor.execute('SELECT average, unixtime, cluster, altitude FROM %s WHERE unixtime>=%f AND unixtime<=%f AND cluster>=0' %(mote, traintimes[0], traintimes[1]))
         elif type(cluster) == int:
-            cursor.execute('SELECT average,unixtime,cluster,altitude FROM %s WHERE unixtime>=%f AND unixtime<=%f AND cluster=%d' %(mote, traintimes[0],traintimes[1],cluster))
+            cursor.execute('SELECT average, unixtime, cluster, altitude FROM %s WHERE unixtime>=%f AND unixtime<=%f AND cluster=%d' %(mote, traintimes[0], traintimes[1], cluster))
         else:
-            cursor.execute('SELECT average,unixtime,cluster,altitude FROM %s WHERE unixtime>=%f AND unixtime<=%f AND cluster>=%d AND cluster<=%d' %(mote, traintimes[0],traintimes[1],cluster[0],cluster[1]))
-        temp=cursor.fetchall()
+            cursor.execute('SELECT average, unixtime, cluster, altitude FROM %s WHERE unixtime>=%f AND unixtime<=%f AND cluster>=%d AND cluster<=%d' %(mote, traintimes[0], traintimes[1], cluster[0], cluster[1]))
+        temp = cursor.fetchall()
         for j in temp:
             all_light[mote].append(j)
-    alldata = dP.process(all_light,'all')
-    print alldata.keys()
-    
-    #win_reg data depending on testbed
-    if testbed == 'Hesse':
-        win_reg = 'light1'
-    elif testbed == 'NASA':
-        win_reg = 'nasalight8'
-    elif testbed == 'NewCitris':
-        win_reg = 'light8'
-    elif testbed == 'NewNasa':
-        win_reg = 'newnasalight1'
+    alldata = dP.process(all_light, 'all')
+
+    # win_reg data depending on testbed
+    win_reg = windowsMap[testbed]
     data = alldata[win_reg]
 
-    #initialize
+    # Initialize
     light = []
     unixtime = []
     clust = []
@@ -61,7 +54,7 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
     errorsq = []
     errorpersq = []
     
-    #store data
+    # Store data
     for i in data:
         if i[2] != None:
             light.append(i[0])
@@ -69,7 +62,7 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
             clust.append(i[2])
             alt.append(i[3])
 
-    #prediction
+    # Prediction
     countfix=0 #correct predicted appending index when no matches are made
     for count in range(len(light)):
         uncounted+=1 #track
@@ -79,34 +72,26 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
         constant=9000000 #if uncounted  (so that error can be detected when data is uncounted for)
         loc_altA=[] #for when clust matches, but alt is out of range
 
-        #access coefficients and constants
-        if testbed == 'NASA':
-            openfile=open('inverse_model_coefficients_NASA.txt')
-        elif testbed == 'Hesse':
-            openfile=open('inverse_model_coefficients_Hesse.txt')
-        elif testbed == 'NewCitris':
-            openfile=open('inverse_model_coefficients_NewCitris.txt')
-        elif testbed == 'NewNasa':
-            openfile=open('inverse_model_coefficients_NewNasa.txt')
+        # Access coefficients and constants
+        openfile = open('results/inverse_model_coefficients_' + testbed + '.txt')
         getdata=openfile.readlines()
 
-        #option
+        # Option
         if option == 'altitude':
-
-            #retrieve through looping
+            # Retrieve through looping
             for n in range(len(getdata)):
-                dat=str.split(getdata[n])
-                if int(round(alt[count]))==int(float(dat[-2])) and int(clust[count])==int(dat[-1]):
-                    counted+=1 #track
-                    uncounted-=1 #track
-                    match=1
-                    coeff=[] #reinitialize
+                dat = str.split(getdata[n])
+                if int(round(alt[count])) == int(float(dat[-2])) and int(clust[count]) == int(dat[-1]):
+                    counted += 1 #track
+                    uncounted -= 1 #track
+                    match = 1
+                    coeff = [] #reinitialize
                     for k in range(len(dat)-3):
                         coeff.append(float(dat[k]))
                     constant=float(dat[-3])
                 elif int(clust[count])==int(dat[-1]):
                     loc_altA.append(int(float(dat[-2])))
-            if match==1:
+            if match == 1:
                 loc_altA.append(1000000) #arbitrary large number
                 loc_altA.append(-1000000) #so that condition will not be satisfied
             elif len(loc_altA) == 0:
@@ -228,32 +213,18 @@ def prediction(traintimes,cluster,testbed,dependent,regressors,option='noaltitud
         errorpersq.append(math.pow(eper,2))
     rmsvalue=math.sqrt(np.mean(errorsq))
     rmspercent=math.sqrt(np.mean(errorpersq))
-    if testbed == 'NASA':
-        savefile=open('results_NASA.txt','a')
-        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
-    elif testbed == 'Hesse':
-        savefile=open('results_Hesse.txt','a')
-        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
-    elif testbed == 'NewCitris':
-        savefile=open('results_NewCitris.txt','a')
-        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
-    elif testbed == 'NewNasa':
-        savefile=open('results_NewNasa.txt','a')
-        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
+    savefile = open('results/results_' + testbed + '.txt', 'a')
+    text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
     savefile.write(text)
     savefile.close()
     return round(rmsvalue,2),round(rmspercent,2),predictedfinal,actual,counted,uncounted,countedlim,time
 
 
-def prediction_hour(traintimes,testbed,dependent,regressors,option='noaltitude'):
-
+def prediction_hour(traintimes, testbed, dependent, regressors, option='noaltitude'):
     #keep track of data
     counted = 0
     uncounted = 0
     countedlim = 0
-
-    #defaulted options
-    bins = 1
 
     #connect db
     connection = sqlite3.connect('data.db')
@@ -271,14 +242,7 @@ def prediction_hour(traintimes,testbed,dependent,regressors,option='noaltitude')
     alldata = dP.process(all_light,'all')
     
     #win_reg data depending on testbed
-    if testbed == 'Hesse':
-        win_reg = 'light1' 
-    elif testbed == 'NASA':
-        win_reg = 'nasalight8' 
-    elif testbed == 'NewCitris':
-        win_reg = 'light8' 
-    elif testbed == 'NewNasa':
-        win_reg = 'newnasalight1' 
+    win_reg = windowsMap[testbed]
     data = alldata[win_reg]
 
     #initialize
@@ -312,14 +276,7 @@ def prediction_hour(traintimes,testbed,dependent,regressors,option='noaltitude')
         loc_altA=[] #for when hour matches, but alt is out of range
 
         #access coefficients and constants
-        if testbed == 'NASA':
-            openfile=open('inverse_model_coefficients_NASA_hour.txt')
-        elif testbed == 'Hesse':
-            openfile=open('inverse_model_coefficients_Hesse_hour.txt')
-        elif testbed == 'NewCitris':
-            openfile=open('inverse_model_coefficients_NewCitris_hour.txt')
-        elif testbed == 'NewNasa':
-            openfile=open('inverse_model_coefficients_NewNasa_hour.txt')
+        openfile = open('results/inverse_model_coefficients_' + testbed + '.txt')
         getdata=openfile.readlines()
 
         #option
@@ -438,18 +395,8 @@ def prediction_hour(traintimes,testbed,dependent,regressors,option='noaltitude')
         errorpersq.append(math.pow(eper,2))
     rmsvalue=math.sqrt(np.mean(errorsq))
     rmspercent=math.sqrt(np.mean(errorpersq))
-    if testbed == 'NASA':
-        savefile=open('results_NASA_hour.txt','a')
-        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
-    elif testbed == 'Hesse':
-        savefile=open('results_Hesse_hour.txt','a')
-        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
-    elif testbed == 'NewCitris':
-        savefile=open('results_NewCitris_hour.txt','a')
-        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
-    elif testbed == 'NewNasa':
-        savefile=open('results_NewNasa_hour.txt','a')
-        text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
+    savefile = open('results/results_' + testbed + '_hour.txt', 'a')
+    text='\nRMS value error is '+str(rmsvalue)+' and RMS percent error is '+str(rmspercent)+' for '+dependent+' using '+option+' and '+str(regressors)+'\n'
     savefile.write(text)
     savefile.close()
     return round(rmsvalue,2),round(rmspercent,2),predictedfinal,actual,counted,uncounted,countedlim,time       

@@ -1845,3 +1845,9 @@ Hours 6 to 18  1669  1669  26.35  4.86  1533  0.0136  0
 Hours 6 to 18  1669  1669  26.35  4.86  1533  0.0136  0
 
 /////COMPLETED COMPARE REGRESSION/////
+
+/////START COMPARE REGRESSION/////
+
+
+ From Sun, 09 Mar 2014 17:00:00 to Sun, 23 Mar 2014 17:00:00
+ Testbed: NewNasa Dependents: nasalight2 Regressors: ['newnasalight1']

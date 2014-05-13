@@ -14,6 +14,8 @@ Smart Lighting Fall 2013
 3. error directory: contains text files of several testing results
 
 4. inverse_model: contains the scripts used for the inverse model
+    - Refer to the README.txt in the inverse_model directory for further instructions
+    on how to run the inverse model scripts from the command line
 
 5. util directory:
     - generatePlots.py: a script used for generating png images of sensor readings
@@ -21,4 +23,4 @@ Smart Lighting Fall 2013
 
 6. data.db: database containing CITRIS light sensor data and NASA light sensor data.
 
-Updated 01/30/14
+Updated 05/13/14 by Elizabeth Cheng
