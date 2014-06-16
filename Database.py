@@ -33,7 +33,7 @@ ARTIFICIAL DATA:
 ### QUERYING FROM THE DATABASE ###
 
 """
-Values in the Light Tables you can Request:
+Values in the Light Tables you can request:
                 unixtime REAL, weekday TEXT,
                 day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
                 minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
@@ -42,13 +42,13 @@ Values in the Light Tables you can Request:
                 soft1 INTEGER, soft2 INTEGER, soft3 INTEGER, mem1 REAL,mem2 REAL,
                 mem3 REAL, movingavg REAL, processed REAL
 
-Values in the Cloud Table you can Request:
+Values in the Cloud Table you can request:
                 timezone TEXT, year INTEGER, month
                 INTEGER, day INTEGER, hour INTEGER, minute INTEGER,
                 seconds INTEGER, unixtime REAL, cloudiness TEXT,
                 cloudvalue REAL, daycloudvalue REAL
 
-Values in the Artificial Light Tables you can Request:
+Values in the Artificial Light Tables you can request:
                 unixtime REAL, weekday TEXT,
                 day INTEGER, month INTEGER, year INTEGER, hour INTEGER,
                 minute INTEGER, seconds INTEGER, light REAL, altitude REAL,
@@ -56,7 +56,7 @@ Values in the Artificial Light Tables you can Request:
                 cluster INTEGER
 
 """
-
+import argparse
 import datetime
 import dateTimeUtil as dtu
 import json
@@ -79,8 +79,6 @@ from scipy import stats
 from scipy.cluster.vq import *
 from sqlite3 import dbapi2 as sqlite3
 from time import mktime, localtime, gmtime, strftime
-
-
 
 ##########################
 ### CREATE TABLE CODE ####
@@ -201,8 +199,8 @@ def create_tables(table = all):
 ### CLOUD DATA ###
 ##################
 
-cloudiness=['Clear', 'Partly','Scattered','Light','Mostly','Rain','Overcast','Heavy','Fog','Haze']
-values=[0, 2, 4, 4, 7, 7, 8, 8, 4, 4]
+cloudiness = ['Clear', 'Partly','Scattered','Light','Mostly','Rain','Overcast','Heavy','Fog','Haze']
+values = [0, 2, 4, 4, 7, 7, 8, 8, 4, 4]
 clouddict = {'Clear': 0, 'Partly Cloudy':2, 'Scattered Clouds':4, 'Light Rain':4, 'Mostly Cloudy':7, 'Rain':7, 'Overcast':8, 'Heavy Rain':8, 'Fog':4, 'Haze':4}
 tzname = 'America/Los_Angeles'
 
@@ -291,7 +289,6 @@ def createCloudData(end = strftime('%Y %m %d', time.localtime()), start = "2012 
                 cloudvalue = float('nan')
             unixtime = dtu.make_unix_timestamp(str(YYYY[i]) + " " + month + " " + day, hour + " " + minute + " " + "00")
             to_db = [timezone, YYYY[i], MM[i], DD[i], int(hour), int(minute), 0, unixtime, cloudiness, hum, temp_f, cloudvalue, float('nan')]
-            #print to_db
             cursor.execute('INSERT OR IGNORE INTO cloud VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)',
                    to_db)
             connection.commit()
@@ -305,12 +302,7 @@ def updateCloudData():
     """This command updates the cloud value in the database"""
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
-    cursor.execute('SELECT year, month, day, MAX(unixtime) FROM cloud')
-    #cursor.execute('SELECT MAX(unixtime) FROM cloud')
     current = cursor.fetchall()[0]
-    #for i in cursor.fetchmany(2):
-     #   print i
-    #print(current)
     year = str(current[0])
     month = str(current[1])
     day = str(current[2])
@@ -321,8 +313,6 @@ def updateCloudData():
     start = year + " " + month + " " + day
     ttb = time.localtime()
     end = strftime("%Y %m %d", ttb)
-    #print(start)
-    #print(end)
     createCloudData(end, start)
 
 
@@ -583,7 +573,7 @@ def createNewCitris(lat, lon, timezon):
     connection = sqlite3.connect('data.db')
     cursor = connection.cursor()
     lines = []
-    with open("./COMPILED_test_data_8_30_to_10_23.txt") as file:
+    with open("data_files/COMPILED_test_data_8_30_to_10_23.txt") as file:
         for line in file:
             # The rstrip method gets rid of the "\n" at the end of each line
             lines.append(line.rstrip().split(","))
@@ -601,7 +591,6 @@ def createNewCitris(lat, lon, timezon):
             unix = int(dtu.make_unix_timestamp(date_string, time_string)) * 1000
             lux = str(elem[0][7])
             sensor = str(int(elem[0][9]) + 4)
-            print "sensor num: ", sensor
             table = 'light' + sensor
             sunpos = getSunpos(lat, lon, timezon, date[0], date[1], date[2], tim[0], tim[1], 0)
             to_db = [unix, "Unknown", date[2], date[1], date[0],
@@ -610,7 +599,6 @@ def createNewCitris(lat, lon, timezon):
                          float('NaN'), float('NaN'), float('Nan'),float('NaN'),
                          float('NaN'), float('NaN'), float('Nan'),float('NaN'),
                          float('NaN'), float('NaN'), float('Nan')]
-            print "to_db: ", to_db
             cursor.execute('INSERT OR IGNORE INTO ' + table +
                            ' VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
                            to_db)
@@ -697,8 +685,8 @@ def createRawLightData():
     
     #Recent New Data
     createNewCitris(best_lat, best_lon, best_timezone)
-    createNewNasa("newnasadata.txt", nasa_lat, nasa_lon, nasa_timezone)
-    createNewNasa("newdata_0407.txt", nasa_lat, nasa_lon, nasa_timezone)
+    createNewNasa("data_files/newnasadata.txt", nasa_lat, nasa_lon, nasa_timezone)
+    createNewNasa("data_files/newdata_0407.txt", nasa_lat, nasa_lon, nasa_timezone)
     connection.commit()
     
 
@@ -1924,11 +1912,26 @@ def save(path, ext='png', close=True, verbose=True):
         print("Done")
 
 if __name__ == '__main__':
-    print "Done!"
-    createDatabase()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--cluster', nargs=3)
+    recreateGroup = parser.add_mutually_exclusive_group()
+    recreateGroup.add_argument('-recreate', action="store_true")
+    args = parser.parse_args()
+    if args.recreate:
+        print "Creating database!"
+        createDatabase()
+    elif args.cluster:
+        print "Clustering table!"
+        print args.cluster[0], args.cluster[1], args.cluster[2]
+        tableName = args.cluster[0]
+        startTrain = int(args.cluster[1])
+        endTrain = int(args.cluster[2])
+        table = cluster(tableName, startTrain, endTrain)
+        create_cluster(tableName, startTrain, endTrain, table)
+        update_clusters(tableName)
 
     # Adding new data to the database from a text file
-    #createNewNasa('newdata_0407.txt', nasa_lat, nasa_lon, nasa_timezone)
+    #createNewNasa('data_files/newdata_0407.txt', nasa_lat, nasa_lon, nasa_timezone)
 
     # Generating Plots
     #connection = sqlite3.connect('data.db')
@@ -1944,9 +1947,6 @@ if __name__ == '__main__':
     #create_cluster('nasalight8', 1335859200000, 1358357465000, nasalight8)
     #update_clusters('nasalight8')
 
-    #nasalight8 = cluster('nasalight8', 1394409600000, 1395619200000)
-    #create_cluster('nasalight8', 1394409600000, 1395619200000, nasalight8)
-    #update_clusters('nasalight8')
 
     #nasalight8 = cluster('nasalight8', 1395446400000, 1396742400000)
     #create_cluster('nasalight8', 1395446400000, 1396742400000, nasalight8)
